@@ -12,7 +12,8 @@ const FONTS = `
 @font-face{font-family:'IBM Plex Mono';src:url('../assets/fonts/IBMPlexMono-Regular.ttf');font-weight:400}
 `;
 const LAYOUTS = ["cover", "contrast", "architecture", "process", "matrix", "scenario", "checklist",
-  "evidence", "roadmap", "dataflow", "sequence", "network", "metrics", "walkthrough", "closing"];
+  "evidence", "roadmap", "dataflow", "sequence", "network", "metrics", "walkthrough",
+  "decision", "pyramid", "funnel", "riskmap", "swimlane", "closing"];
 const escape = value => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const digest = data => crypto.createHash("sha256").update(data).digest("hex");
 
@@ -57,12 +58,12 @@ const diagramText = {
 
 function chapters(slides, theme, sources, templateFile) {
   if (JSON.stringify(slides.map(s => s.kind)) !== JSON.stringify(LAYOUTS)) {
-    throw new Error("The manuscript must cover all 15 layouts exactly once, in template order.");
+    throw new Error(`The manuscript must cover all ${LAYOUTS.length} layouts exactly once, in template order.`);
   }
   const template = fs.readFileSync(templateFile, "utf8");
   const originals = [...template.matchAll(/<article\b[^>]*class="chapter"[^>]*>[\s\S]*?<\/article>/g)];
   const byLayout = new Map(originals.map(m => [m[0].match(/data-layout="([^"]+)"/)[1], m[0]]));
-  if (byLayout.size !== 15) throw new Error(`Expected 15 actual templates: ${templateFile}`);
+  if (byLayout.size !== LAYOUTS.length) throw new Error(`Expected ${LAYOUTS.length} actual templates: ${templateFile}`);
   const records = [];
   const html = slides.map((data, i) => {
     const original = byLayout.get(data.kind);

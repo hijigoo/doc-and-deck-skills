@@ -137,7 +137,7 @@ async function port(input, out, skill, animate = true) {
             width: parseFloat(cs[`border${side}Width`]), color: rgba(cs[`border${side}Color`]),
             style: cs[`border${side}Style`],
           }));
-          const complex = cs.backgroundImage !== "none" || cs.transform !== "none" ||
+          const complex = cs.backgroundImage !== "none" || cs.transform !== "none" || cs.clipPath !== "none" ||
             ((!parseFloat(cs.width) || !parseFloat(cs.height)) && sides.some(s => s.width > 2));
           const radius = parseFloat(cs.borderTopLeftRadius) * (cs.borderTopLeftRadius.includes("%") ? Math.min(rect.w, rect.h) / 100 : 1);
           const ellipse = radius > 0 && radius >= Math.min(rect.w, rect.h) / 2;
@@ -210,7 +210,7 @@ async function port(input, out, skill, animate = true) {
   } finally { await browser.close(); }
   const deck = new pptxgen();
   deck.layout = "LAYOUT_WIDE";
-  deck.title = "Microsoft Foundry on Azure · All 15 templates";
+  deck.title = `Microsoft Foundry on Azure · All ${measured.length} templates`;
   deck.lang = "ko-KR";
   const manifest = [];
   for (const data of measured) {

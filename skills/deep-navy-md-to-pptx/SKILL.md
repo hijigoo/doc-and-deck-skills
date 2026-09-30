@@ -1,13 +1,13 @@
 ---
 name: deep-navy-md-to-pptx
-description: Markdown을 Deep Navy PowerPoint로 만듭니다. 지침·15종 HTML 디자인 기준·네이티브 생성기·검증 도구를 포함해 폴더 하나로 사용하며 편집 가능한 텍스트·표·도형·노트를 유지합니다.
+description: Markdown을 Deep Navy PowerPoint로 만듭니다. 지침·20종 HTML 디자인 기준·네이티브 생성기·검증 도구를 포함해 폴더 하나로 사용하며 편집 가능한 텍스트·표·도형·노트를 유지합니다.
 ---
 
 # Markdown → Deep Navy PowerPoint
 
 **이 스킬 폴더 하나로 사용한다.** 원래 레포·다른 스킬은 필요하지 않다.
 [독립 사용 규칙](references/guide.md)과 [PPTX 작성/검증](references/pptx.md)을 읽는다.
-[deck.html](deck.html)은 동봉된 15종 디자인 기준이다. `SKILL_DIR`은 이 폴더의 절대 경로다.
+[deck.html](deck.html)은 동봉된 20종 디자인 기준이다. `SKILL_DIR`은 이 폴더의 절대 경로다.
 
 1. 원고를 읽고 메시지·전체 항목·표·원본 자산·상세 스크립트를 장별로 구성한다.
 2. **맞는 템플릿이 없으면 같은 스킨의 새 레이아웃을 만들어 사용한다.**

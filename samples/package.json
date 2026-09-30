@@ -5,6 +5,7 @@
   "description": "Reproducible Microsoft Foundry samples for the ten local presentation skills.",
   "type": "commonjs",
   "scripts": {
+    "test": "node --test scripts/test_templates.cjs",
     "build": "node scripts/build.cjs",
     "verify": "node scripts/verify.cjs"
   },

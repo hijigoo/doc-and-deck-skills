@@ -538,6 +538,83 @@ code,kbd,samp,pre{word-break:normal;overflow-wrap:break-word}
 @media(prefers-reduced-motion:reduce) {
   .slide .reveal,.slide .stagger>*,.slide .cv{opacity:1!important;transform:none!important;animation:none!important}
 }
+
+.layout-expanded .layout-new-columns{display:grid;grid-template-columns:minmax(0,1.85fr) minmax(0,1fr);gap:32px;height:100%}
+.layout-expanded .layout-new-item{padding:18px 22px}
+.layout-expanded .layout-new-item h3{font-size:29px;line-height:1.18;margin:0}
+.layout-expanded .layout-new-item p{font-size:24px;line-height:1.3;margin-top:10px}
+.layout-expanded .layout-new-notes{display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:18px}
+.layout-expanded .layout-new-notes>section{padding:22px}
+.layout-expanded .layout-new-notes p{font-size:25px;line-height:1.32}
+.layout-expanded .layout-new-caption{font-size:21px;line-height:1.3;text-align:center;margin-top:12px}
+.layout-decision-tree{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:110px 44px 128px 40px 142px;gap:14px;align-content:center}
+.layout-decision-tree .decision-root{grid-column:1/5;width:76%;justify-self:center;text-align:center}
+.layout-decision-tree .decision-no,.layout-decision-tree .decision-stop{grid-column:1/3}
+.layout-decision-tree .decision-yes,.layout-decision-tree .decision-next{grid-column:3/5}
+.layout-decision-tree .decision-pass,.layout-decision-tree .decision-end-a{grid-column:3}
+.layout-decision-tree .decision-hold,.layout-decision-tree .decision-end-b{grid-column:4}
+.layout-decision-tree .decision-end-a,.layout-decision-tree .decision-end-b{grid-row:5;padding:16px}
+.layout-decision-tree>p{text-align:center;align-self:center;font-size:24px}
+.layout-decision-tree .decision-end-a h3,.layout-decision-tree .decision-end-b h3{font-size:26px}
+.layout-decision-tree .decision-end-a p,.layout-decision-tree .decision-end-b p{font-size:22px}
+.layout-pyramid-stack{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px}
+.layout-pyramid-stack .layout-new-item{height:150px;text-align:center;padding:26px 30px}
+.layout-pyramid-stack .pyramid-top{width:48%}
+.layout-pyramid-stack .pyramid-middle{width:72%}
+.layout-pyramid-stack .pyramid-base{width:100%}
+.layout-funnel-stack{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
+.layout-funnel-stack .layout-new-item{height:126px;text-align:center;padding:18px 38px;clip-path:polygon(0 0,100% 0,92% 100%,8% 100%)}
+.layout-funnel-stack .funnel-one{width:100%}
+.layout-funnel-stack .funnel-two{width:83%}
+.layout-funnel-stack .funnel-three{width:66%}
+.layout-funnel-stack .funnel-four{width:49%}
+.layout-risk-plot{position:relative;padding:42px 0 50px 0}
+.layout-risk-plot .risk-y{position:absolute;top:0;left:0;font-size:23px;font-weight:700}
+.layout-risk-plot .risk-x{position:absolute;bottom:4px;right:0;font-size:23px}
+.layout-risk-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:100%}
+.layout-risk-grid .risk-cell{padding:20px}
+.layout-risk-grid .risk-cell>span{display:block;font-size:21px;margin-bottom:20px}
+.layout-risk-grid .layout-new-item{padding:0}
+.layout-swimlane-board{display:grid;grid-template-rows:398px 1fr;gap:28px;height:100%}
+.layout-swimlane-table{width:100%;height:398px;border-collapse:collapse;table-layout:fixed}
+.layout-swimlane-table th,.layout-swimlane-table td{font-size:25px;line-height:1.35;text-align:left;padding:18px 22px;vertical-align:middle}
+.layout-swimlane-table th:first-child{width:240px}
+.layout-swimlane-board .layout-new-notes{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:1fr;gap:24px}
+
+.layout-sheet.layout-expanded .layout-body{display:grid;grid-template-rows:70px 1fr;gap:18px}
+.layout-sheet.layout-expanded .layout-new-columns{grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:48px}
+.layout-sheet.layout-expanded .layout-new-item{border-top:3px solid var(--ink)}
+.layout-sheet.layout-expanded .layout-new-item h3{color:var(--ink)}
+.layout-sheet.layout-expanded .layout-new-item p,.layout-sheet.layout-expanded .layout-new-notes p{color:var(--ink-soft)}
+.layout-sheet.layout-expanded .layout-new-notes>section{border-top:1px solid var(--rule);padding:20px 0}
+.layout-sheet.layout-expanded .layout-new-notes>section:first-child{border-top:6px solid var(--accent)}
+.layout-sheet.layout-expanded .decision-root{background:var(--accent);border:0}
+.layout-sheet.layout-expanded .decision-root h3,.layout-sheet.layout-expanded .decision-root p{color:var(--paper)}
+.layout-sheet.layout-expanded .decision-next,.layout-sheet.layout-expanded .decision-end-a{background:var(--accent-tint);border-top-color:var(--accent)}
+.layout-sheet.layout-expanded .pyramid-top{background:var(--accent);border:0}
+.layout-sheet.layout-expanded .pyramid-top h3,.layout-sheet.layout-expanded .pyramid-top p{color:var(--paper)}
+.layout-sheet.layout-expanded .pyramid-middle{background:var(--accent-tint);border:0}
+.layout-sheet.layout-expanded .pyramid-base{border:2px solid var(--ink)}
+.layout-sheet.layout-expanded .layout-pyramid-stack{gap:12px}
+.layout-sheet.layout-expanded .layout-pyramid-stack .layout-new-item{height:134px}
+.layout-sheet.layout-expanded .layout-funnel-stack{gap:10px}
+.layout-sheet.layout-expanded .layout-funnel-stack .layout-new-item{height:114px;border:0;background:var(--accent-tint);padding:15px 32px}
+.layout-sheet.layout-expanded .layout-funnel-stack .funnel-one,.layout-sheet.layout-expanded .layout-funnel-stack .funnel-three{background:var(--accent)}
+.layout-sheet.layout-expanded .funnel-one h3,.layout-sheet.layout-expanded .funnel-one p,.layout-sheet.layout-expanded .funnel-three h3,.layout-sheet.layout-expanded .funnel-three p{color:var(--paper)}
+.layout-sheet.layout-expanded .risk-cell{border:1px solid var(--rule);border-top:3px solid var(--ink)}
+.layout-sheet.layout-expanded .risk-cell .layout-new-item{border:0}
+.layout-sheet.layout-expanded .risk-priority{background:var(--accent);border-color:var(--accent)}
+.layout-sheet.layout-expanded .risk-priority span,.layout-sheet.layout-expanded .risk-priority h3,.layout-sheet.layout-expanded .risk-priority p{color:var(--paper)}
+.layout-sheet.layout-expanded .risk-frequent{background:var(--accent-tint)}
+.layout-sheet.layout-expanded .layout-swimlane-board{grid-template-rows:338px 1fr;gap:20px}
+.layout-sheet.layout-expanded .layout-swimlane-table{height:338px}
+.layout-sheet.layout-expanded .layout-swimlane-table th,.layout-sheet.layout-expanded .layout-swimlane-table td{padding:14px 20px;border-bottom:1px solid var(--rule)}
+.layout-sheet.layout-expanded .layout-swimlane-table thead th{background:var(--accent);color:var(--paper)}
+.layout-sheet.layout-expanded .layout-swimlane-table tbody th{border-right:2px solid var(--ink);font-weight:600}
+.layout-sheet.layout-expanded .layout-swimlane-table td:last-child{background:var(--accent-tint)}
+.layout-sheet.layout-expanded .layout-swimlane-board .layout-new-notes>section{padding:14px 0;border-top:1px solid var(--ink)}
+.layout-sheet.layout-expanded .layout-swimlane-board .layout-new-notes p{font-size:23px}
+
 </style>
 <style>
 .layout-technical .layout-body{grid-template-rows:62px 424px 150px}
@@ -605,7 +682,7 @@ code,kbd,samp,pre{word-break:normal;overflow-wrap:break-word}
     <div class="ik">READING DOCUMENT</div>
     <h1><!-- h1:start -->White Cobalt<!-- h1:end --><span class="q">.</span></h1>
     <p><!-- intro:start -->시트 안의 원래 White Cobalt 디자인은 유지하고, 바깥 구성은 Deep Navy와 같은 읽는 문서입니다. 스크롤하며 읽고 각 장의 설명·스크립트를 펼칠 수 있습니다.<!-- intro:end --></p>
-    <div class="meta"><!-- meta:start --><span>15 Sections</span><span>1920×1080</span><span>J/K · N · M</span><!-- meta:end --></div>
+    <div class="meta"><!-- meta:start --><span>20 Sections</span><span>1920×1080</span><span>J/K · N · M</span><!-- meta:end --></div>
   </header>
 
 <!-- chapters:start -->
@@ -888,6 +965,93 @@ code,kbd,samp,pre{word-break:normal;overflow-wrap:break-word}
   </div>
 </section></div>
 <aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>행 앵커·번호를 함께 수정합니다. 사용자 화면+주석으로 교체해도 원본 이미지·아이콘을 보존합니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="decision" data-part="판단과 협업">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">의사결정 트리</h2><span class="ch-part">판단과 협업</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-expanded layout-decision" data-layout="decision">
+<header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->의사결정 트리<!-- slot:eyebrow:end --></div><div class="chrome"><div class="pg"></div></div></header><h2 class="layout-title reveal r2"><!-- slot:title:start -->조건에 따라 다음 행동을 분기합니다<!-- slot:title:end --></h2>
+<div class="layout-body reveal r3"><p class="layout-lead"><!-- slot:lead:start -->두 조건과 세 결과를 연결합니다. 분기 라벨과 결과를 함께 읽습니다.<!-- slot:lead:end --></p>
+<div class="layout-new-columns">
+  <div class="layout-decision-tree" role="group" aria-label="두 조건과 세 결과의 의사결정 트리">
+    <section class="layout-new-item decision-root"><h3><!-- slot:item1-title:start -->첫 번째 조건을 확인합니다<!-- slot:item1-title:end --></h3><p><!-- slot:item1-body:start -->충족 여부에 따라 경로를 나눕니다.<!-- slot:item1-body:end --></p></section>
+    <p class="decision-no"><!-- slot:branch1:start -->아니오 ↓<!-- slot:branch1:end --></p><p class="decision-yes"><!-- slot:branch2:start -->예 ↓<!-- slot:branch2:end --></p>
+    <section class="layout-new-item decision-stop"><h3><!-- slot:item2-title:start -->진행을 멈춥니다<!-- slot:item2-title:end --></h3><p><!-- slot:item2-body:start -->미충족 조건을 확인합니다.<!-- slot:item2-body:end --></p></section>
+    <section class="layout-new-item decision-next"><h3><!-- slot:item3-title:start -->두 번째 조건을 확인합니다<!-- slot:item3-title:end --></h3><p><!-- slot:item3-body:start -->다음 단계의 근거를 확인합니다.<!-- slot:item3-body:end --></p></section>
+    <p class="decision-pass"><!-- slot:branch3:start -->예 ↓<!-- slot:branch3:end --></p><p class="decision-hold"><!-- slot:branch4:start -->아니오 ↓<!-- slot:branch4:end --></p>
+    <section class="layout-new-item decision-end-a"><h3><!-- slot:item4-title:start -->진행합니다<!-- slot:item4-title:end --></h3><p><!-- slot:item4-body:start -->근거를 남기고 실행합니다.<!-- slot:item4-body:end --></p></section>
+    <section class="layout-new-item decision-end-b"><h3><!-- slot:item5-title:start -->확인을 요청합니다<!-- slot:item5-title:end --></h3><p><!-- slot:item5-body:start -->보완할 정보를 기록합니다.<!-- slot:item5-body:end --></p></section>
+  </div>
+  <aside class="layout-new-notes"><section><span class="layout-label">판단 기준</span><p><!-- slot:context:start -->조건과 대상 범위를 먼저 정합니다.<!-- slot:context:end --></p></section><section><span class="layout-label">읽는 관점</span><p><!-- slot:insight:start -->정보 관계와 담당자의 판단을 연결합니다.<!-- slot:insight:end --></p></section><section><span class="layout-label">범위와 한계</span><p><!-- slot:caution:start -->설명용 구조이며 실제 평가 결과가 아닙니다.<!-- slot:caution:end --></p></section></aside>
+</div></div>
+</section></div>
+<aside class="note" aria-label="슬라이드 설명"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>두 조건과 세 결과를 연결합니다. 분기 라벨과 결과를 함께 읽습니다. 항목·조건·출처를 함께 바꾸며 전체 내용을 보존합니다. 발표 자료의 목적에 맞는 실제 내용을 넣고 설명용 예시와 검증한 사실을 구분합니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="pyramid" data-part="판단과 협업">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">우선순위 피라미드</h2><span class="ch-part">판단과 협업</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-expanded layout-pyramid" data-layout="pyramid">
+<header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->우선순위 피라미드<!-- slot:eyebrow:end --></div><div class="chrome"><div class="pg"></div></div></header><h2 class="layout-title reveal r2"><!-- slot:title:start -->기반부터 확장까지 의존 순서를 읽습니다<!-- slot:title:end --></h2>
+<div class="layout-body reveal r3"><p class="layout-lead"><!-- slot:lead:start -->위에 있는 단계가 아래 기반을 대신하지 않습니다. 면적은 정량 데이터가 아닙니다.<!-- slot:lead:end --></p>
+<div class="layout-new-columns">
+  <div class="layout-pyramid-stack" role="group" aria-label="아래 기반에서 위 확장으로 읽는 세 단계 피라미드">
+    <section class="layout-new-item pyramid-top"><h3><!-- slot:item1-title:start -->03 · 확장<!-- slot:item1-title:end --></h3><p><!-- slot:item1-body:start -->기반 위에서 범위를 넓힙니다.<!-- slot:item1-body:end --></p></section>
+    <section class="layout-new-item pyramid-middle"><h3><!-- slot:item2-title:start -->02 · 검증<!-- slot:item2-title:end --></h3><p><!-- slot:item2-body:start -->기준과 근거를 확인합니다.<!-- slot:item2-body:end --></p></section>
+    <section class="layout-new-item pyramid-base"><h3><!-- slot:item3-title:start -->01 · 기반<!-- slot:item3-title:end --></h3><p><!-- slot:item3-body:start -->대상·범위·책임을 먼저 정합니다.<!-- slot:item3-body:end --></p></section>
+    <p class="layout-new-caption"><!-- slot:caption:start -->아래에서 위로 읽습니다 · 면적은 수치를 나타내지 않습니다<!-- slot:caption:end --></p>
+  </div>
+  <aside class="layout-new-notes"><section><span class="layout-label">판단 기준</span><p><!-- slot:context:start -->조건과 대상 범위를 먼저 정합니다.<!-- slot:context:end --></p></section><section><span class="layout-label">읽는 관점</span><p><!-- slot:insight:start -->정보 관계와 담당자의 판단을 연결합니다.<!-- slot:insight:end --></p></section><section><span class="layout-label">범위와 한계</span><p><!-- slot:caution:start -->설명용 구조이며 실제 평가 결과가 아닙니다.<!-- slot:caution:end --></p></section></aside>
+</div></div>
+</section></div>
+<aside class="note" aria-label="슬라이드 설명"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>위에 있는 단계가 아래 기반을 대신하지 않습니다. 면적은 정량 데이터가 아닙니다. 항목·조건·출처를 함께 바꾸며 전체 내용을 보존합니다. 발표 자료의 목적에 맞는 실제 내용을 넣고 설명용 예시와 검증한 사실을 구분합니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="funnel" data-part="판단과 협업">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">선정 퍼널</h2><span class="ch-part">판단과 협업</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-expanded layout-funnel" data-layout="funnel">
+<header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->선정 퍼널<!-- slot:eyebrow:end --></div><div class="chrome"><div class="pg"></div></div></header><h2 class="layout-title reveal r2"><!-- slot:title:start -->조건으로 후보 범위를 좁힙니다<!-- slot:title:end --></h2>
+<div class="layout-body reveal r3"><p class="layout-lead"><!-- slot:lead:start -->선정·제외·보류의 이유를 함께 기록합니다. 정성적인 단계 구조입니다.<!-- slot:lead:end --></p>
+<div class="layout-new-columns">
+  <div class="layout-funnel-stack" role="group" aria-label="선정 기준으로 범위를 좁히는 네 단계 퍼널">
+    <section class="layout-new-item funnel-one"><h3><!-- slot:item1-title:start -->후보를 모읍니다<!-- slot:item1-title:end --></h3><p><!-- slot:item1-body:start -->출발 범위를 넓게 살펴봅니다.<!-- slot:item1-body:end --></p></section>
+    <section class="layout-new-item funnel-two"><h3><!-- slot:item2-title:start -->조건을 확인합니다<!-- slot:item2-title:end --></h3><p><!-- slot:item2-body:start -->불충족 후보를 제외합니다.<!-- slot:item2-body:end --></p></section>
+    <section class="layout-new-item funnel-three"><h3><!-- slot:item3-title:start -->작게 검증합니다<!-- slot:item3-title:end --></h3><p><!-- slot:item3-body:start -->선정 근거를 확인합니다.<!-- slot:item3-body:end --></p></section>
+    <section class="layout-new-item funnel-four"><h3><!-- slot:item4-title:start -->범위를 정합니다<!-- slot:item4-title:end --></h3><p><!-- slot:item4-body:start -->남은 질문과 책임을 기록합니다.<!-- slot:item4-body:end --></p></section>
+    <p class="layout-new-caption"><!-- slot:caption:start -->정성적 선정 흐름 · 폭은 실제 수량이나 전환율이 아닙니다<!-- slot:caption:end --></p>
+  </div>
+  <aside class="layout-new-notes"><section><span class="layout-label">판단 기준</span><p><!-- slot:context:start -->조건과 대상 범위를 먼저 정합니다.<!-- slot:context:end --></p></section><section><span class="layout-label">읽는 관점</span><p><!-- slot:insight:start -->정보 관계와 담당자의 판단을 연결합니다.<!-- slot:insight:end --></p></section><section><span class="layout-label">범위와 한계</span><p><!-- slot:caution:start -->설명용 구조이며 실제 평가 결과가 아닙니다.<!-- slot:caution:end --></p></section></aside>
+</div></div>
+</section></div>
+<aside class="note" aria-label="슬라이드 설명"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>선정·제외·보류의 이유를 함께 기록합니다. 정성적인 단계 구조입니다. 항목·조건·출처를 함께 바꾸며 전체 내용을 보존합니다. 발표 자료의 목적에 맞는 실제 내용을 넣고 설명용 예시와 검증한 사실을 구분합니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="riskmap" data-part="판단과 협업">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">위험도 맵</h2><span class="ch-part">판단과 협업</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-expanded layout-riskmap" data-layout="riskmap">
+<header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->위험도 맵<!-- slot:eyebrow:end --></div><div class="chrome"><div class="pg"></div></div></header><h2 class="layout-title reveal r2"><!-- slot:title:start -->영향과 가능성을 나누어 우선순위를 정합니다<!-- slot:title:end --></h2>
+<div class="layout-body reveal r3"><p class="layout-lead"><!-- slot:lead:start -->네 구역의 위치는 설명용 분류입니다. 실제 위험 평가나 확률 수치가 아닙니다.<!-- slot:lead:end --></p>
+<div class="layout-new-columns">
+  <div class="layout-risk-plot" role="group" aria-label="영향은 아래에서 위로, 가능성은 왼쪽에서 오른쪽으로 커지는 위험도 맵">
+    <p class="risk-y">영향 ↑</p><p class="risk-x">가능성 → 낮음에서 높음</p>
+    <div class="layout-risk-grid">
+      <div class="risk-cell"><span>높은 영향 · 낮은 가능성</span><section class="layout-new-item "><h3><!-- slot:item1-title:start -->대비 계획<!-- slot:item1-title:end --></h3><p><!-- slot:item1-body:start -->영향을 줄일 대안을 정합니다.<!-- slot:item1-body:end --></p></section></div>
+      <div class="risk-cell risk-priority"><span>높은 영향 · 높은 가능성</span><section class="layout-new-item "><h3><!-- slot:item2-title:start -->우선 대응<!-- slot:item2-title:end --></h3><p><!-- slot:item2-body:start -->즉시 확인할 항목을 정합니다.<!-- slot:item2-body:end --></p></section></div>
+      <div class="risk-cell"><span>낮은 영향 · 낮은 가능성</span><section class="layout-new-item "><h3><!-- slot:item3-title:start -->관찰 유지<!-- slot:item3-title:end --></h3><p><!-- slot:item3-body:start -->변화를 확인할 시점을 정합니다.<!-- slot:item3-body:end --></p></section></div>
+      <div class="risk-cell risk-frequent"><span>낮은 영향 · 높은 가능성</span><section class="layout-new-item "><h3><!-- slot:item4-title:start -->반복 감소<!-- slot:item4-title:end --></h3><p><!-- slot:item4-body:start -->작은 실패가 쌓이지 않게 합니다.<!-- slot:item4-body:end --></p></section></div>
+    </div>
+  </div>
+  <aside class="layout-new-notes"><section><span class="layout-label">판단 기준</span><p><!-- slot:context:start -->조건과 대상 범위를 먼저 정합니다.<!-- slot:context:end --></p></section><section><span class="layout-label">읽는 관점</span><p><!-- slot:insight:start -->정보 관계와 담당자의 판단을 연결합니다.<!-- slot:insight:end --></p></section><section><span class="layout-label">범위와 한계</span><p><!-- slot:caution:start -->설명용 구조이며 실제 평가 결과가 아닙니다.<!-- slot:caution:end --></p></section></aside>
+</div></div>
+</section></div>
+<aside class="note" aria-label="슬라이드 설명"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>네 구역의 위치는 설명용 분류입니다. 실제 위험 평가나 확률 수치가 아닙니다. 항목·조건·출처를 함께 바꾸며 전체 내용을 보존합니다. 발표 자료의 목적에 맞는 실제 내용을 넣고 설명용 예시와 검증한 사실을 구분합니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="swimlane" data-part="판단과 협업">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">역할별 스윔레인</h2><span class="ch-part">판단과 협업</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-expanded layout-swimlane" data-layout="swimlane">
+<header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->역할별 스윔레인<!-- slot:eyebrow:end --></div><div class="chrome"><div class="pg"></div></div></header><h2 class="layout-title reveal r2"><!-- slot:title:start -->역할과 단계 사이의 인계를 명확히 합니다<!-- slot:title:end --></h2>
+<div class="layout-body reveal r3"><p class="layout-lead"><!-- slot:lead:start -->행은 담당 역할, 열은 진행 단계입니다. 셀에는 행동과 인계할 근거를 씁니다.<!-- slot:lead:end --></p>
+<div class="layout-swimlane-board">
+  <table class="layout-swimlane-table" aria-label="역할별 단계와 인계 책임"><thead><tr><th scope="col"><!-- slot:head1:start -->역할<!-- slot:head1:end --></th><th scope="col"><!-- slot:head2:start -->준비<!-- slot:head2:end --></th><th scope="col"><!-- slot:head3:start -->실행<!-- slot:head3:end --></th><th scope="col"><!-- slot:head4:start -->확인<!-- slot:head4:end --></th></tr></thead><tbody><tr><th scope="row"><!-- slot:cell1-1:start -->기획 담당<!-- slot:cell1-1:end --></th><td><!-- slot:cell1-2:start -->조건을 정합니다<!-- slot:cell1-2:end --></td><td><!-- slot:cell1-3:start -->작업을 연결합니다<!-- slot:cell1-3:end --></td><td><!-- slot:cell1-4:start -->근거를 확인합니다<!-- slot:cell1-4:end --></td></tr><tr><th scope="row"><!-- slot:cell2-1:start -->구현 담당<!-- slot:cell2-1:end --></th><td><!-- slot:cell2-2:start -->조건을 정합니다<!-- slot:cell2-2:end --></td><td><!-- slot:cell2-3:start -->작업을 연결합니다<!-- slot:cell2-3:end --></td><td><!-- slot:cell2-4:start -->근거를 확인합니다<!-- slot:cell2-4:end --></td></tr><tr><th scope="row"><!-- slot:cell3-1:start -->운영 담당<!-- slot:cell3-1:end --></th><td><!-- slot:cell3-2:start -->조건을 정합니다<!-- slot:cell3-2:end --></td><td><!-- slot:cell3-3:start -->작업을 연결합니다<!-- slot:cell3-3:end --></td><td><!-- slot:cell3-4:start -->근거를 확인합니다<!-- slot:cell3-4:end --></td></tr></tbody></table>
+  <aside class="layout-new-notes"><section><span class="layout-label">판단 기준</span><p><!-- slot:context:start -->조건과 대상 범위를 먼저 정합니다.<!-- slot:context:end --></p></section><section><span class="layout-label">읽는 관점</span><p><!-- slot:insight:start -->정보 관계와 담당자의 판단을 연결합니다.<!-- slot:insight:end --></p></section><section><span class="layout-label">범위와 한계</span><p><!-- slot:caution:start -->설명용 구조이며 실제 평가 결과가 아닙니다.<!-- slot:caution:end --></p></section></aside>
+</div></div>
+</section></div>
+<aside class="note" aria-label="슬라이드 설명"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>행은 담당 역할, 열은 진행 단계입니다. 셀에는 행동과 인계할 근거를 씁니다. 항목·조건·출처를 함께 바꾸며 전체 내용을 보존합니다. 발표 자료의 목적에 맞는 실제 내용을 넣고 설명용 예시와 검증한 사실을 구분합니다.</p></div></aside>
 </article>
 <article class="chapter" data-layout="closing" data-part="마무리" data-part-kicker="OUTRO">
 <div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">다음 행동이 분명한 합의로 마무리합니다</h2><span class="ch-part">마무리</span><a class="ch-link" href="#">#</a></div>

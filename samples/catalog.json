@@ -16,13 +16,18 @@
     "network",
     "metrics",
     "walkthrough",
+    "decision",
+    "pyramid",
+    "funnel",
+    "riskmap",
+    "swimlane",
     "closing"
   ],
   "samples": [
     {
       "skill": "deep-navy-html-to-pptx",
       "output": "deep-navy-html-to-pptx/foundry.pptx",
-      "slides": 15,
+      "slides": 20,
       "input": "deep-navy-md-to-html/foundry.html",
       "mode": "native text/tables/shapes; SVG and complex CSS decorations as images; entrance effects",
       "layouts": [
@@ -40,11 +45,16 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "coverage": {
         "template": "skills/deep-navy-md-to-html/deck.html",
-        "template_sha256": "07bb1ff3acbf56b0820473792e740aff226a71ad6e616b13ac74df6484af5df2",
+        "template_sha256": "fc5ce5a379647a648a7d43ba9fbb7b91ceaf9d14a5a387d8ada640541cb91821",
         "slides": [
           {
             "slide": 1,
@@ -132,9 +142,39 @@
           },
           {
             "slide": 15,
+            "layout": "decision",
+            "template_sha256": "dbb30491d38f4ff948a169bff5a8fe2535659a7022da6fdcfd3f450b3212d2ae",
+            "chapter_sha256": "aafcc7d757046e706705f66d61e52f6f98150dab3abee9884beb0b9f3f3f4e7d"
+          },
+          {
+            "slide": 16,
+            "layout": "pyramid",
+            "template_sha256": "16b6e2becf2340674f6d6dccd5157a6264fa896e97d38d2c313a809e19ba79fe",
+            "chapter_sha256": "e22360a944e73cbde563e88310199c0b57648a3b8fce4a329131b0aa14ec4aff"
+          },
+          {
+            "slide": 17,
+            "layout": "funnel",
+            "template_sha256": "c6bbb95534e8b07020cb7c0777c3777e2b9525b0d8b3539b2abefd3d36f7ec44",
+            "chapter_sha256": "6c263f80c6ba20c80b6193643e2dfb0770058dad124fc69c6005ce8f077a89b8"
+          },
+          {
+            "slide": 18,
+            "layout": "riskmap",
+            "template_sha256": "b08e32a088b51a624a6158d120fbc7a9052c77950874369dbd419220b3b45fcb",
+            "chapter_sha256": "caea28511ad453d9a3476547802a7d18799250992101624946e65713b555bade"
+          },
+          {
+            "slide": 19,
+            "layout": "swimlane",
+            "template_sha256": "3627b2ff19772b51d22f648e2f8e668a5ed86d9b4558436194b34e0f92d89f5f",
+            "chapter_sha256": "ecbf3b8bcebbe68576f4d19ea4534d1e9906a573fa7f1c954dc6b11fa0bc24f6"
+          },
+          {
+            "slide": 20,
             "layout": "closing",
             "template_sha256": "0a1e52387b43a311225d0b6fca88de602f249ce94adb04c4523a8018db677146",
-            "chapter_sha256": "89acf189d8f85bbe0a3a89527e6d9554578f26937cb7a61a03219e5ebdcfd5f5"
+            "chapter_sha256": "f8be675c8aa401a0dc2466fc703877a60dd8e9d5ca586d426d07a22ee961f82a"
           }
         ]
       }
@@ -142,7 +182,7 @@
     {
       "skill": "deep-navy-md-to-html",
       "output": "deep-navy-md-to-html/foundry.html",
-      "slides": 15,
+      "slides": 20,
       "input": "shared/foundry.md",
       "mode": "standalone HTML; all actual templates",
       "layouts": [
@@ -160,11 +200,16 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "coverage": {
         "template": "skills/deep-navy-md-to-html/deck.html",
-        "template_sha256": "07bb1ff3acbf56b0820473792e740aff226a71ad6e616b13ac74df6484af5df2",
+        "template_sha256": "fc5ce5a379647a648a7d43ba9fbb7b91ceaf9d14a5a387d8ada640541cb91821",
         "slides": [
           {
             "slide": 1,
@@ -252,9 +297,39 @@
           },
           {
             "slide": 15,
+            "layout": "decision",
+            "template_sha256": "dbb30491d38f4ff948a169bff5a8fe2535659a7022da6fdcfd3f450b3212d2ae",
+            "chapter_sha256": "aafcc7d757046e706705f66d61e52f6f98150dab3abee9884beb0b9f3f3f4e7d"
+          },
+          {
+            "slide": 16,
+            "layout": "pyramid",
+            "template_sha256": "16b6e2becf2340674f6d6dccd5157a6264fa896e97d38d2c313a809e19ba79fe",
+            "chapter_sha256": "e22360a944e73cbde563e88310199c0b57648a3b8fce4a329131b0aa14ec4aff"
+          },
+          {
+            "slide": 17,
+            "layout": "funnel",
+            "template_sha256": "c6bbb95534e8b07020cb7c0777c3777e2b9525b0d8b3539b2abefd3d36f7ec44",
+            "chapter_sha256": "6c263f80c6ba20c80b6193643e2dfb0770058dad124fc69c6005ce8f077a89b8"
+          },
+          {
+            "slide": 18,
+            "layout": "riskmap",
+            "template_sha256": "b08e32a088b51a624a6158d120fbc7a9052c77950874369dbd419220b3b45fcb",
+            "chapter_sha256": "caea28511ad453d9a3476547802a7d18799250992101624946e65713b555bade"
+          },
+          {
+            "slide": 19,
+            "layout": "swimlane",
+            "template_sha256": "3627b2ff19772b51d22f648e2f8e668a5ed86d9b4558436194b34e0f92d89f5f",
+            "chapter_sha256": "ecbf3b8bcebbe68576f4d19ea4534d1e9906a573fa7f1c954dc6b11fa0bc24f6"
+          },
+          {
+            "slide": 20,
             "layout": "closing",
             "template_sha256": "0a1e52387b43a311225d0b6fca88de602f249ce94adb04c4523a8018db677146",
-            "chapter_sha256": "89acf189d8f85bbe0a3a89527e6d9554578f26937cb7a61a03219e5ebdcfd5f5"
+            "chapter_sha256": "f8be675c8aa401a0dc2466fc703877a60dd8e9d5ca586d426d07a22ee961f82a"
           }
         ]
       }
@@ -262,7 +337,7 @@
     {
       "skill": "deep-navy-md-to-pptx",
       "output": "deep-navy-md-to-pptx/foundry.pptx",
-      "slides": 15,
+      "slides": 20,
       "input": "shared/foundry.md",
       "mode": "Markdown → own HTML templates → native text/tables/shapes; SVG and complex CSS decorations as images; static",
       "layouts": [
@@ -280,11 +355,16 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "coverage": {
         "template": "skills/deep-navy-md-to-pptx/deck.html",
-        "template_sha256": "07bb1ff3acbf56b0820473792e740aff226a71ad6e616b13ac74df6484af5df2",
+        "template_sha256": "fc5ce5a379647a648a7d43ba9fbb7b91ceaf9d14a5a387d8ada640541cb91821",
         "slides": [
           {
             "slide": 1,
@@ -372,9 +452,39 @@
           },
           {
             "slide": 15,
+            "layout": "decision",
+            "template_sha256": "dbb30491d38f4ff948a169bff5a8fe2535659a7022da6fdcfd3f450b3212d2ae",
+            "chapter_sha256": "aafcc7d757046e706705f66d61e52f6f98150dab3abee9884beb0b9f3f3f4e7d"
+          },
+          {
+            "slide": 16,
+            "layout": "pyramid",
+            "template_sha256": "16b6e2becf2340674f6d6dccd5157a6264fa896e97d38d2c313a809e19ba79fe",
+            "chapter_sha256": "e22360a944e73cbde563e88310199c0b57648a3b8fce4a329131b0aa14ec4aff"
+          },
+          {
+            "slide": 17,
+            "layout": "funnel",
+            "template_sha256": "c6bbb95534e8b07020cb7c0777c3777e2b9525b0d8b3539b2abefd3d36f7ec44",
+            "chapter_sha256": "6c263f80c6ba20c80b6193643e2dfb0770058dad124fc69c6005ce8f077a89b8"
+          },
+          {
+            "slide": 18,
+            "layout": "riskmap",
+            "template_sha256": "b08e32a088b51a624a6158d120fbc7a9052c77950874369dbd419220b3b45fcb",
+            "chapter_sha256": "caea28511ad453d9a3476547802a7d18799250992101624946e65713b555bade"
+          },
+          {
+            "slide": 19,
+            "layout": "swimlane",
+            "template_sha256": "3627b2ff19772b51d22f648e2f8e668a5ed86d9b4558436194b34e0f92d89f5f",
+            "chapter_sha256": "ecbf3b8bcebbe68576f4d19ea4534d1e9906a573fa7f1c954dc6b11fa0bc24f6"
+          },
+          {
+            "slide": 20,
             "layout": "closing",
             "template_sha256": "0a1e52387b43a311225d0b6fca88de602f249ce94adb04c4523a8018db677146",
-            "chapter_sha256": "89acf189d8f85bbe0a3a89527e6d9554578f26937cb7a61a03219e5ebdcfd5f5"
+            "chapter_sha256": "f8be675c8aa401a0dc2466fc703877a60dd8e9d5ca586d426d07a22ee961f82a"
           }
         ]
       }
@@ -382,7 +492,7 @@
     {
       "skill": "deep-navy-pptx-to-html",
       "output": "deep-navy-pptx-to-html/index.html",
-      "slides": 15,
+      "slides": 20,
       "input": "deep-navy-html-to-pptx/foundry.pptx",
       "mode": "standalone HTML; static original render; embedded pages/assets; notes + transcript",
       "layouts": [
@@ -400,11 +510,16 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "coverage": {
         "template": "skills/deep-navy-md-to-html/deck.html",
-        "template_sha256": "07bb1ff3acbf56b0820473792e740aff226a71ad6e616b13ac74df6484af5df2",
+        "template_sha256": "fc5ce5a379647a648a7d43ba9fbb7b91ceaf9d14a5a387d8ada640541cb91821",
         "slides": [
           {
             "slide": 1,
@@ -492,9 +607,39 @@
           },
           {
             "slide": 15,
+            "layout": "decision",
+            "template_sha256": "dbb30491d38f4ff948a169bff5a8fe2535659a7022da6fdcfd3f450b3212d2ae",
+            "chapter_sha256": "aafcc7d757046e706705f66d61e52f6f98150dab3abee9884beb0b9f3f3f4e7d"
+          },
+          {
+            "slide": 16,
+            "layout": "pyramid",
+            "template_sha256": "16b6e2becf2340674f6d6dccd5157a6264fa896e97d38d2c313a809e19ba79fe",
+            "chapter_sha256": "e22360a944e73cbde563e88310199c0b57648a3b8fce4a329131b0aa14ec4aff"
+          },
+          {
+            "slide": 17,
+            "layout": "funnel",
+            "template_sha256": "c6bbb95534e8b07020cb7c0777c3777e2b9525b0d8b3539b2abefd3d36f7ec44",
+            "chapter_sha256": "6c263f80c6ba20c80b6193643e2dfb0770058dad124fc69c6005ce8f077a89b8"
+          },
+          {
+            "slide": 18,
+            "layout": "riskmap",
+            "template_sha256": "b08e32a088b51a624a6158d120fbc7a9052c77950874369dbd419220b3b45fcb",
+            "chapter_sha256": "caea28511ad453d9a3476547802a7d18799250992101624946e65713b555bade"
+          },
+          {
+            "slide": 19,
+            "layout": "swimlane",
+            "template_sha256": "3627b2ff19772b51d22f648e2f8e668a5ed86d9b4558436194b34e0f92d89f5f",
+            "chapter_sha256": "ecbf3b8bcebbe68576f4d19ea4534d1e9906a573fa7f1c954dc6b11fa0bc24f6"
+          },
+          {
+            "slide": 20,
             "layout": "closing",
             "template_sha256": "0a1e52387b43a311225d0b6fca88de602f249ce94adb04c4523a8018db677146",
-            "chapter_sha256": "89acf189d8f85bbe0a3a89527e6d9554578f26937cb7a61a03219e5ebdcfd5f5"
+            "chapter_sha256": "f8be675c8aa401a0dc2466fc703877a60dd8e9d5ca586d426d07a22ee961f82a"
           }
         ]
       }
@@ -502,7 +647,7 @@
     {
       "skill": "deep-navy-topic-to-html",
       "output": "deep-navy-topic-to-html/topic.html",
-      "slides": 15,
+      "slides": 20,
       "input": "shared/topic-brief.md + shared/foundry.md",
       "mode": "researched standalone HTML; all actual templates",
       "layouts": [
@@ -520,11 +665,16 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "coverage": {
         "template": "skills/deep-navy-topic-to-html/deck.html",
-        "template_sha256": "07bb1ff3acbf56b0820473792e740aff226a71ad6e616b13ac74df6484af5df2",
+        "template_sha256": "fc5ce5a379647a648a7d43ba9fbb7b91ceaf9d14a5a387d8ada640541cb91821",
         "slides": [
           {
             "slide": 1,
@@ -612,9 +762,39 @@
           },
           {
             "slide": 15,
+            "layout": "decision",
+            "template_sha256": "dbb30491d38f4ff948a169bff5a8fe2535659a7022da6fdcfd3f450b3212d2ae",
+            "chapter_sha256": "aafcc7d757046e706705f66d61e52f6f98150dab3abee9884beb0b9f3f3f4e7d"
+          },
+          {
+            "slide": 16,
+            "layout": "pyramid",
+            "template_sha256": "16b6e2becf2340674f6d6dccd5157a6264fa896e97d38d2c313a809e19ba79fe",
+            "chapter_sha256": "e22360a944e73cbde563e88310199c0b57648a3b8fce4a329131b0aa14ec4aff"
+          },
+          {
+            "slide": 17,
+            "layout": "funnel",
+            "template_sha256": "c6bbb95534e8b07020cb7c0777c3777e2b9525b0d8b3539b2abefd3d36f7ec44",
+            "chapter_sha256": "6c263f80c6ba20c80b6193643e2dfb0770058dad124fc69c6005ce8f077a89b8"
+          },
+          {
+            "slide": 18,
+            "layout": "riskmap",
+            "template_sha256": "b08e32a088b51a624a6158d120fbc7a9052c77950874369dbd419220b3b45fcb",
+            "chapter_sha256": "caea28511ad453d9a3476547802a7d18799250992101624946e65713b555bade"
+          },
+          {
+            "slide": 19,
+            "layout": "swimlane",
+            "template_sha256": "3627b2ff19772b51d22f648e2f8e668a5ed86d9b4558436194b34e0f92d89f5f",
+            "chapter_sha256": "ecbf3b8bcebbe68576f4d19ea4534d1e9906a573fa7f1c954dc6b11fa0bc24f6"
+          },
+          {
+            "slide": 20,
             "layout": "closing",
             "template_sha256": "0a1e52387b43a311225d0b6fca88de602f249ce94adb04c4523a8018db677146",
-            "chapter_sha256": "89acf189d8f85bbe0a3a89527e6d9554578f26937cb7a61a03219e5ebdcfd5f5"
+            "chapter_sha256": "f8be675c8aa401a0dc2466fc703877a60dd8e9d5ca586d426d07a22ee961f82a"
           }
         ]
       }
@@ -622,7 +802,7 @@
     {
       "skill": "white-cobalt-html-to-pptx",
       "output": "white-cobalt-html-to-pptx/foundry.pptx",
-      "slides": 15,
+      "slides": 20,
       "input": "white-cobalt-md-to-html/foundry.html",
       "mode": "native text/tables/shapes; SVG and complex CSS decorations as images; entrance effects",
       "layouts": [
@@ -640,11 +820,16 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "coverage": {
         "template": "skills/white-cobalt-md-to-html/deck.html",
-        "template_sha256": "e65d7e94bb6ff7d449504fefbf634610e7f7b50a5f5fa64b742b4af9ac54b3b0",
+        "template_sha256": "1eec762545b55f2f19f64438ddf9db782f33853f2f24b2b3a5c91bdd5cee41b7",
         "slides": [
           {
             "slide": 1,
@@ -732,9 +917,39 @@
           },
           {
             "slide": 15,
+            "layout": "decision",
+            "template_sha256": "c0a127702ea0744c3042336e4e3eaf17856fcf79b61f347799461b596f42060e",
+            "chapter_sha256": "be0c5ef3462ce96d33cfb4ea04ada25340494e12c6a05f54fe2cbe087ba8de36"
+          },
+          {
+            "slide": 16,
+            "layout": "pyramid",
+            "template_sha256": "2bf05d30b24fc92f128c6b1677034d928211e18a5611a42cb6db300252953526",
+            "chapter_sha256": "2b9451755369d3bcee53a06dc4468fca3e21f4cd21609a585ea84c4ca5a1a2b3"
+          },
+          {
+            "slide": 17,
+            "layout": "funnel",
+            "template_sha256": "ef42b3302fe52d288934731a14528960b297632d564885448e83e4a67993669c",
+            "chapter_sha256": "097b3c0b535d4120689fa1f00c1f5b53ab2ea386fe82dba888d9c47056c60034"
+          },
+          {
+            "slide": 18,
+            "layout": "riskmap",
+            "template_sha256": "6e16958604ab4947142baec07e7629ee40a522880e180011ed1d441cddc4e0b3",
+            "chapter_sha256": "ebabd14487e94149a3114aa5e9b0422af0391c7b887ef560e82aa6dfba71fe7d"
+          },
+          {
+            "slide": 19,
+            "layout": "swimlane",
+            "template_sha256": "ce4e7961964572856a258f9fe8fc9d07a0ba9ec29d92e97d7f75c4173de5d89c",
+            "chapter_sha256": "0dc3555bdf13e8d7fa8853ea0043611f2c4b6f8a1497146101a7c5005b5bb658"
+          },
+          {
+            "slide": 20,
             "layout": "closing",
             "template_sha256": "9bcdf80e2aa94673f218f730d7aae93bf6ddfdfe417a9df4fc30f4bbaff2381f",
-            "chapter_sha256": "f55ee50b9da30012941dff50a0eb2cc114b101c3c20bdca14821601c2e776f7e"
+            "chapter_sha256": "57033dc52f07269ad0de62dbe97610a5c3866b6982d20faebc45f3dbe50402c2"
           }
         ]
       }
@@ -742,7 +957,7 @@
     {
       "skill": "white-cobalt-md-to-html",
       "output": "white-cobalt-md-to-html/foundry.html",
-      "slides": 15,
+      "slides": 20,
       "input": "shared/foundry.md",
       "mode": "standalone HTML; all actual templates",
       "layouts": [
@@ -760,11 +975,16 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "coverage": {
         "template": "skills/white-cobalt-md-to-html/deck.html",
-        "template_sha256": "e65d7e94bb6ff7d449504fefbf634610e7f7b50a5f5fa64b742b4af9ac54b3b0",
+        "template_sha256": "1eec762545b55f2f19f64438ddf9db782f33853f2f24b2b3a5c91bdd5cee41b7",
         "slides": [
           {
             "slide": 1,
@@ -852,9 +1072,39 @@
           },
           {
             "slide": 15,
+            "layout": "decision",
+            "template_sha256": "c0a127702ea0744c3042336e4e3eaf17856fcf79b61f347799461b596f42060e",
+            "chapter_sha256": "be0c5ef3462ce96d33cfb4ea04ada25340494e12c6a05f54fe2cbe087ba8de36"
+          },
+          {
+            "slide": 16,
+            "layout": "pyramid",
+            "template_sha256": "2bf05d30b24fc92f128c6b1677034d928211e18a5611a42cb6db300252953526",
+            "chapter_sha256": "2b9451755369d3bcee53a06dc4468fca3e21f4cd21609a585ea84c4ca5a1a2b3"
+          },
+          {
+            "slide": 17,
+            "layout": "funnel",
+            "template_sha256": "ef42b3302fe52d288934731a14528960b297632d564885448e83e4a67993669c",
+            "chapter_sha256": "097b3c0b535d4120689fa1f00c1f5b53ab2ea386fe82dba888d9c47056c60034"
+          },
+          {
+            "slide": 18,
+            "layout": "riskmap",
+            "template_sha256": "6e16958604ab4947142baec07e7629ee40a522880e180011ed1d441cddc4e0b3",
+            "chapter_sha256": "ebabd14487e94149a3114aa5e9b0422af0391c7b887ef560e82aa6dfba71fe7d"
+          },
+          {
+            "slide": 19,
+            "layout": "swimlane",
+            "template_sha256": "ce4e7961964572856a258f9fe8fc9d07a0ba9ec29d92e97d7f75c4173de5d89c",
+            "chapter_sha256": "0dc3555bdf13e8d7fa8853ea0043611f2c4b6f8a1497146101a7c5005b5bb658"
+          },
+          {
+            "slide": 20,
             "layout": "closing",
             "template_sha256": "9bcdf80e2aa94673f218f730d7aae93bf6ddfdfe417a9df4fc30f4bbaff2381f",
-            "chapter_sha256": "f55ee50b9da30012941dff50a0eb2cc114b101c3c20bdca14821601c2e776f7e"
+            "chapter_sha256": "57033dc52f07269ad0de62dbe97610a5c3866b6982d20faebc45f3dbe50402c2"
           }
         ]
       }
@@ -862,7 +1112,7 @@
     {
       "skill": "white-cobalt-md-to-pptx",
       "output": "white-cobalt-md-to-pptx/foundry.pptx",
-      "slides": 15,
+      "slides": 20,
       "input": "shared/foundry.md",
       "mode": "Markdown → own HTML templates → native text/tables/shapes; SVG and complex CSS decorations as images; entrance effects",
       "layouts": [
@@ -880,11 +1130,16 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "coverage": {
         "template": "skills/white-cobalt-md-to-pptx/deck.html",
-        "template_sha256": "e65d7e94bb6ff7d449504fefbf634610e7f7b50a5f5fa64b742b4af9ac54b3b0",
+        "template_sha256": "1eec762545b55f2f19f64438ddf9db782f33853f2f24b2b3a5c91bdd5cee41b7",
         "slides": [
           {
             "slide": 1,
@@ -972,9 +1227,39 @@
           },
           {
             "slide": 15,
+            "layout": "decision",
+            "template_sha256": "c0a127702ea0744c3042336e4e3eaf17856fcf79b61f347799461b596f42060e",
+            "chapter_sha256": "be0c5ef3462ce96d33cfb4ea04ada25340494e12c6a05f54fe2cbe087ba8de36"
+          },
+          {
+            "slide": 16,
+            "layout": "pyramid",
+            "template_sha256": "2bf05d30b24fc92f128c6b1677034d928211e18a5611a42cb6db300252953526",
+            "chapter_sha256": "2b9451755369d3bcee53a06dc4468fca3e21f4cd21609a585ea84c4ca5a1a2b3"
+          },
+          {
+            "slide": 17,
+            "layout": "funnel",
+            "template_sha256": "ef42b3302fe52d288934731a14528960b297632d564885448e83e4a67993669c",
+            "chapter_sha256": "097b3c0b535d4120689fa1f00c1f5b53ab2ea386fe82dba888d9c47056c60034"
+          },
+          {
+            "slide": 18,
+            "layout": "riskmap",
+            "template_sha256": "6e16958604ab4947142baec07e7629ee40a522880e180011ed1d441cddc4e0b3",
+            "chapter_sha256": "ebabd14487e94149a3114aa5e9b0422af0391c7b887ef560e82aa6dfba71fe7d"
+          },
+          {
+            "slide": 19,
+            "layout": "swimlane",
+            "template_sha256": "ce4e7961964572856a258f9fe8fc9d07a0ba9ec29d92e97d7f75c4173de5d89c",
+            "chapter_sha256": "0dc3555bdf13e8d7fa8853ea0043611f2c4b6f8a1497146101a7c5005b5bb658"
+          },
+          {
+            "slide": 20,
             "layout": "closing",
             "template_sha256": "9bcdf80e2aa94673f218f730d7aae93bf6ddfdfe417a9df4fc30f4bbaff2381f",
-            "chapter_sha256": "f55ee50b9da30012941dff50a0eb2cc114b101c3c20bdca14821601c2e776f7e"
+            "chapter_sha256": "57033dc52f07269ad0de62dbe97610a5c3866b6982d20faebc45f3dbe50402c2"
           }
         ]
       }
@@ -982,7 +1267,7 @@
     {
       "skill": "white-cobalt-pptx-to-html",
       "output": "white-cobalt-pptx-to-html/index.html",
-      "slides": 15,
+      "slides": 20,
       "input": "white-cobalt-html-to-pptx/foundry.pptx",
       "mode": "standalone HTML; static original render; embedded pages/assets; notes + transcript",
       "layouts": [
@@ -1000,11 +1285,16 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "coverage": {
         "template": "skills/white-cobalt-md-to-html/deck.html",
-        "template_sha256": "e65d7e94bb6ff7d449504fefbf634610e7f7b50a5f5fa64b742b4af9ac54b3b0",
+        "template_sha256": "1eec762545b55f2f19f64438ddf9db782f33853f2f24b2b3a5c91bdd5cee41b7",
         "slides": [
           {
             "slide": 1,
@@ -1092,9 +1382,39 @@
           },
           {
             "slide": 15,
+            "layout": "decision",
+            "template_sha256": "c0a127702ea0744c3042336e4e3eaf17856fcf79b61f347799461b596f42060e",
+            "chapter_sha256": "be0c5ef3462ce96d33cfb4ea04ada25340494e12c6a05f54fe2cbe087ba8de36"
+          },
+          {
+            "slide": 16,
+            "layout": "pyramid",
+            "template_sha256": "2bf05d30b24fc92f128c6b1677034d928211e18a5611a42cb6db300252953526",
+            "chapter_sha256": "2b9451755369d3bcee53a06dc4468fca3e21f4cd21609a585ea84c4ca5a1a2b3"
+          },
+          {
+            "slide": 17,
+            "layout": "funnel",
+            "template_sha256": "ef42b3302fe52d288934731a14528960b297632d564885448e83e4a67993669c",
+            "chapter_sha256": "097b3c0b535d4120689fa1f00c1f5b53ab2ea386fe82dba888d9c47056c60034"
+          },
+          {
+            "slide": 18,
+            "layout": "riskmap",
+            "template_sha256": "6e16958604ab4947142baec07e7629ee40a522880e180011ed1d441cddc4e0b3",
+            "chapter_sha256": "ebabd14487e94149a3114aa5e9b0422af0391c7b887ef560e82aa6dfba71fe7d"
+          },
+          {
+            "slide": 19,
+            "layout": "swimlane",
+            "template_sha256": "ce4e7961964572856a258f9fe8fc9d07a0ba9ec29d92e97d7f75c4173de5d89c",
+            "chapter_sha256": "0dc3555bdf13e8d7fa8853ea0043611f2c4b6f8a1497146101a7c5005b5bb658"
+          },
+          {
+            "slide": 20,
             "layout": "closing",
             "template_sha256": "9bcdf80e2aa94673f218f730d7aae93bf6ddfdfe417a9df4fc30f4bbaff2381f",
-            "chapter_sha256": "f55ee50b9da30012941dff50a0eb2cc114b101c3c20bdca14821601c2e776f7e"
+            "chapter_sha256": "57033dc52f07269ad0de62dbe97610a5c3866b6982d20faebc45f3dbe50402c2"
           }
         ]
       }
@@ -1102,7 +1422,7 @@
     {
       "skill": "white-cobalt-topic-to-html",
       "output": "white-cobalt-topic-to-html/topic.html",
-      "slides": 15,
+      "slides": 20,
       "input": "shared/topic-brief.md + shared/foundry.md",
       "mode": "researched standalone HTML; all actual templates",
       "layouts": [
@@ -1120,11 +1440,16 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "coverage": {
         "template": "skills/white-cobalt-topic-to-html/deck.html",
-        "template_sha256": "e65d7e94bb6ff7d449504fefbf634610e7f7b50a5f5fa64b742b4af9ac54b3b0",
+        "template_sha256": "1eec762545b55f2f19f64438ddf9db782f33853f2f24b2b3a5c91bdd5cee41b7",
         "slides": [
           {
             "slide": 1,
@@ -1212,9 +1537,39 @@
           },
           {
             "slide": 15,
+            "layout": "decision",
+            "template_sha256": "c0a127702ea0744c3042336e4e3eaf17856fcf79b61f347799461b596f42060e",
+            "chapter_sha256": "be0c5ef3462ce96d33cfb4ea04ada25340494e12c6a05f54fe2cbe087ba8de36"
+          },
+          {
+            "slide": 16,
+            "layout": "pyramid",
+            "template_sha256": "2bf05d30b24fc92f128c6b1677034d928211e18a5611a42cb6db300252953526",
+            "chapter_sha256": "2b9451755369d3bcee53a06dc4468fca3e21f4cd21609a585ea84c4ca5a1a2b3"
+          },
+          {
+            "slide": 17,
+            "layout": "funnel",
+            "template_sha256": "ef42b3302fe52d288934731a14528960b297632d564885448e83e4a67993669c",
+            "chapter_sha256": "097b3c0b535d4120689fa1f00c1f5b53ab2ea386fe82dba888d9c47056c60034"
+          },
+          {
+            "slide": 18,
+            "layout": "riskmap",
+            "template_sha256": "6e16958604ab4947142baec07e7629ee40a522880e180011ed1d441cddc4e0b3",
+            "chapter_sha256": "ebabd14487e94149a3114aa5e9b0422af0391c7b887ef560e82aa6dfba71fe7d"
+          },
+          {
+            "slide": 19,
+            "layout": "swimlane",
+            "template_sha256": "ce4e7961964572856a258f9fe8fc9d07a0ba9ec29d92e97d7f75c4173de5d89c",
+            "chapter_sha256": "0dc3555bdf13e8d7fa8853ea0043611f2c4b6f8a1497146101a7c5005b5bb658"
+          },
+          {
+            "slide": 20,
             "layout": "closing",
             "template_sha256": "9bcdf80e2aa94673f218f730d7aae93bf6ddfdfe417a9df4fc30f4bbaff2381f",
-            "chapter_sha256": "f55ee50b9da30012941dff50a0eb2cc114b101c3c20bdca14821601c2e776f7e"
+            "chapter_sha256": "57033dc52f07269ad0de62dbe97610a5c3866b6982d20faebc45f3dbe50402c2"
           }
         ]
       }

@@ -29,17 +29,17 @@ def main():
     markdown = (ROOT / "shared/foundry.md").read_text()
     sections = markdown.split("\n## ")[1:]
     specs = [json.loads(re.search(r"```json\n([\s\S]*?)\n```", s)[1]) for s in sections]
-    assert len(specs) == 15
+    assert len(specs) == 20
     layouts = [spec["kind"] for spec in specs]
     results = []
     for entry in catalog["samples"]:
-        assert entry["slides"] == 15 and entry["layouts"] == layouts, entry["skill"]
+        assert entry["slides"] == len(specs) and entry["layouts"] == layouts, entry["skill"]
         coverage = entry["coverage"]
         assert digest(ROOT.parent / coverage["template"]) == coverage["template_sha256"]
         assert [s["layout"] for s in coverage["slides"]] == layouts
         if entry["output"].endswith(".html"):
             document = html.fromstring((ROOT / entry["output"]).read_bytes(), parser=html.HTMLParser(huge_tree=True))
-            assert len(document.xpath('//*[@class="chapter"] | //article[contains(concat(" ",@class," ")," chapter ")]')) == 15
+            assert len(document.xpath('//*[@class="chapter"] | //article[contains(concat(" ",@class," ")," chapter ")]')) == len(specs)
             for spec in specs:
                 assert compact(spec["title"]) in compact(document.text_content()), (entry["skill"], spec["kind"])
             assert document.xpath('//script[@id="standalone-provenance"]')
@@ -70,6 +70,8 @@ def main():
                 for item in spec.get("items", []):
                     for value in item.values():
                         assert compact(value) in all_text, (file, index, value)
+                        if spec["kind"] in ("decision", "pyramid", "funnel", "riskmap"):
+                            assert compact(value) in compact(text), (file, index, "native item text", value)
                 for source in spec["sources"]:
                     assert source_map[source]["url"] in notes, (file, index, "source URL")
                 narrative = section.split("```\n", 2)[-1].strip().replace("### ", "")
@@ -130,7 +132,7 @@ def main():
     for font in json.loads((ROOT / "assets/fonts/provenance.json").read_text()):
         assert digest(ROOT / "assets/fonts" / font["file"]) == font["sha256"]
     (ROOT / "content-validation.json").write_text(json.dumps({
-        "template_coverage": {"samples": len(catalog["samples"]), "templates_per_sample": 15,
+        "template_coverage": {"samples": len(catalog["samples"]), "templates_per_sample": len(specs),
                               "source_template_hashes": "match"},
         "pptx": results, "source_preservation": "hashes/pages/notes/titles match",
         "font_provenance": "all hashes match", "powerpoint_playback": "not verified",

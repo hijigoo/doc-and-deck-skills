@@ -44,8 +44,8 @@ function htmlSample(skillName, slides, filename, sourceMd, standalone) {
   fs.writeFileSync(path.join(work, "chapters.fragment.html"), populated.html);
   const assembled = path.join(work, filename);
   run(PYTHON, [path.join(skill, "scripts/build_html.py"), path.join(work, "chapters.fragment.html"),
-    "--title", "Microsoft Foundry on Azure", "--subtitle", "15개 템플릿으로 읽는 모델·에이전트·운영 판단",
-    "--kicker", "OFFICIAL-SOURCE FIELD GUIDE", "--meta", "15 Chapters|한국어 기술 입문|2026-09-30",
+    "--title", "Microsoft Foundry on Azure", "--subtitle", `${LAYOUTS.length}개 템플릿으로 읽는 모델·에이전트·운영 판단`,
+    "--kicker", "OFFICIAL-SOURCE FIELD GUIDE", "--meta", `${LAYOUTS.length} Chapters|한국어 기술 입문|2026-09-30`,
     "--intro", "공식 문서 기반 설명 자료입니다. 개념 설계·가상 수치는 실제 배포·평가와 구분합니다.",
     "-o", assembled]);
   const fontBase = path.relative(work, path.join(ROOT, "assets/fonts")).split(path.sep).join("/") + "/";
@@ -62,7 +62,7 @@ function htmlSample(skillName, slides, filename, sourceMd, standalone) {
   return { final, coverage };
 }
 function entry(skill, output, input, mode, coverage) {
-  registry.push({ skill, output: `${skill}/${output}`, slides: 15, input, mode, layouts: LAYOUTS, coverage });
+  registry.push({ skill, output: `${skill}/${output}`, slides: LAYOUTS.length, input, mode, layouts: LAYOUTS, coverage });
 }
 async function main() {
   const slides = readSlides(manuscript);

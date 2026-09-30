@@ -2,7 +2,7 @@
 
 **주제와 Markdown 원고를 읽는 HTML 문서·PowerPoint로 만들고, 기존 결과물을 원본 우선으로
 옮기는 10개의 독립 에이전트 스킬**입니다.
-**Deep Navy 15종 + White Cobalt 15종, 총 30개의 HTML 레이아웃 예시**를 제공합니다.
+**Deep Navy 20종 + White Cobalt 20종, 총 40개의 HTML 레이아웃 예시**를 제공합니다.
 
 발표 슬라이드뿐 아니라 목차·상세 설명·발표 스크립트가 함께 있는 읽기 자료를 만들 때 사용합니다.
 스킬은 `SKILL.md` 지침, 디자인 템플릿, 실행 도구를 묶은 폴더입니다.
@@ -33,14 +33,14 @@
 | Deep Navy | 웜 페이퍼 `#F4F2ED`, 네이비 `#0E2340`, 코발트 `#2C6BED` | Manrope · Pretendard |
 | White Cobalt | 순백 `#FFFFFF`, 니어블랙 `#0E0E0E`, 코발트 `#0F62FE`, 각진 블록과 가는 선 | Archivo · IBM Plex Sans KR |
 
-두 계열은 색만 바꾼 같은 레이아웃이 아닙니다. 각 스킬에 15종 HTML 디자인 기준을 동봉하며,
+두 계열은 색만 바꾼 같은 레이아웃이 아닙니다. 각 스킬에 20종 HTML 디자인 기준을 동봉하며,
 내용에 맞는 배치가 없으면 같은 디자인 원칙으로 새 레이아웃을 작성합니다.
 HTML 읽기 UI는 좌측 목차, 세로 스크롤, 장별 설명·스크립트 접기, 키보드 조작, 모바일·인쇄를 제공합니다.
 
 **경로별 차이:** Deep Navy의 기본 MD→PPTX는 네이티브 재조판이고,
 White Cobalt MD→PPTX는 중간 HTML을 만든 뒤 포팅합니다.
 PPTX→HTML에서는 테마가 바깥 읽기 UI에만 적용되며 **원본 시트를 다시 디자인하지 않습니다.**
-이번 Deep Navy MD→PPTX 샘플은 15종 전체를 보여주기 위해 동봉 HTML 디자인을
+이번 Deep Navy MD→PPTX 샘플은 20종 전체를 보여주기 위해 동봉 HTML 디자인을
 측정하는 작업별 생성기를 사용했습니다. 기본 네이티브 생성기와는 별도 경로이며 정적 PPTX입니다.
 
 **모든 `*-to-html` 스킬의 기본 최종 전달물은 HTML 파일 하나입니다.**
@@ -51,7 +51,7 @@ PPTX→HTML에서는 테마가 바깥 읽기 UI에만 적용되며 **원본 시�
 
 **스킬 개수와 템플릿 개수는 다릅니다.**
 스킬 10개는 입출력 방식 5가지 × 디자인 계열 2가지이고,
-템플릿은 정보 구조 15가지 × 디자인 계열 2가지입니다.
+템플릿은 정보 구조 20가지 × 디자인 계열 2가지입니다.
 같은 계열의 여러 스킬에 디자인 기준을 동봉하므로, 파일 복사본을 별도 템플릿으로 세지는 않습니다.
 
 | 템플릿 키 | 용도 | 담는 내용 |
@@ -70,37 +70,42 @@ PPTX→HTML에서는 테마가 바깥 읽기 UI에만 적용되며 **원본 시�
 | `network` | 네트워크·접근 경계 | 구역, 접근 경로, 권한·허용·차단 |
 | `metrics` | 지표·차트 | 값, 단위, 기준선, 비례 비교 |
 | `walkthrough` | 코드·화면 해설 | 원본 코드 또는 화면과 번호별 설명 |
+| `decision` | 의사결정 트리 | 조건별 분기, 진행·중단·추가 확인 |
+| `pyramid` | 우선순위 피라미드 | 기반·검증·확장 사이의 의존 관계 |
+| `funnel` | 선정 퍼널 | 기준에 따른 후보 축소와 보류 이유 |
+| `riskmap` | 위험도 맵 | 영향·가능성의 두 축과 대응 우선순위 |
+| `swimlane` | 역할별 스윔레인 | 역할 × 단계별 행동·인계 책임 |
 | `closing` | 마무리 | 결론, 합의, 다음 행동 |
 
 전체 디자인은 동봉 HTML 갤러리에서 볼 수 있습니다. 아래 파일을 내려받아 브라우저에서 열면
-각 계열의 15개 템플릿을 목차로 이동하며 확인할 수 있습니다.
+각 계열의 20개 템플릿을 목차로 이동하며 확인할 수 있습니다.
 
-- [Deep Navy 전체 15종 갤러리](skills/deep-navy-md-to-html/deck.html)
-- [White Cobalt 전체 15종 갤러리](skills/white-cobalt-md-to-html/deck.html)
+- [Deep Navy 전체 20종 갤러리](skills/deep-navy-md-to-html/deck.html)
+- [White Cobalt 전체 20종 갤러리](skills/white-cobalt-md-to-html/deck.html)
 
-**Foundry 샘플 10개는 모두 15장입니다.** 각 계열의 실제 템플릿 15종을 위 순서대로 한 번씩
+**Foundry 샘플 10개는 모두 20장입니다.** 각 계열의 실제 템플릿 20종을 위 순서대로 한 번씩
 사용합니다. 이름만 붙인 동일 배치가 아니라 동봉 템플릿의 구조·도형 배치를 채웠습니다.
-PPTX→HTML은 15종을 사용한 원본 PPTX의 시트를 보존합니다.
+PPTX→HTML은 20종을 사용한 원본 PPTX의 시트를 보존합니다.
 위 목록은 HTML 디자인 기준이지 네이티브 PPTX 생성기의 자동 지원 `kind` 목록이 아닙니다.
-필요한 레이아웃은 작업별로 구현하며, **15종에 맞는 배치가 없으면 같은 스킨으로 새로 만들 수 있습니다.**
+필요한 레이아웃은 작업별로 구현하며, **20종에 맞는 배치가 없으면 같은 스킨으로 새로 만들 수 있습니다.**
 
 ## 스킬 목록
 
 스킬 이름은 사용 지침으로 연결됩니다. 모든 샘플은 **Microsoft Foundry on Azure**를 주제로
-만들었으며, **모든 경로가 15종 × 1장 = 15장**입니다.
+만들었으며, **모든 경로가 20종 × 1장 = 20장**입니다.
 
 | 스킬 | 입력 → 출력 | 샘플 결과 | 스크린샷 |
 |---|---|---|---|
-| [deep-navy-md-to-html](skills/deep-navy-md-to-html/SKILL.md) | Markdown → 단일 HTML | [HTML](samples/deep-navy-md-to-html/foundry.html) | [15장](samples/previews/deep-navy-md-to-html/overview.png) |
-| [deep-navy-topic-to-html](skills/deep-navy-topic-to-html/SKILL.md) | 주제 → 단일 HTML | [HTML](samples/deep-navy-topic-to-html/topic.html) | [15장](samples/previews/deep-navy-topic-to-html/overview.png) |
-| [deep-navy-md-to-pptx](skills/deep-navy-md-to-pptx/SKILL.md) | Markdown → PPTX | [PPTX](samples/deep-navy-md-to-pptx/foundry.pptx) | [15장](samples/previews/deep-navy-md-to-pptx/overview.png) |
-| [deep-navy-html-to-pptx](skills/deep-navy-html-to-pptx/SKILL.md) | HTML → PPTX | [PPTX](samples/deep-navy-html-to-pptx/foundry.pptx) | [15장](samples/previews/deep-navy-html-to-pptx/overview.png) |
-| [deep-navy-pptx-to-html](skills/deep-navy-pptx-to-html/SKILL.md) | PPTX → 단일 보존 HTML | [HTML](samples/deep-navy-pptx-to-html/index.html) | [15장](samples/previews/deep-navy-pptx-to-html/overview.png) |
-| [white-cobalt-md-to-html](skills/white-cobalt-md-to-html/SKILL.md) | Markdown → 단일 HTML | [HTML](samples/white-cobalt-md-to-html/foundry.html) | [15장](samples/previews/white-cobalt-md-to-html/overview.png) |
-| [white-cobalt-topic-to-html](skills/white-cobalt-topic-to-html/SKILL.md) | 주제 → 단일 HTML | [HTML](samples/white-cobalt-topic-to-html/topic.html) | [15장](samples/previews/white-cobalt-topic-to-html/overview.png) |
-| [white-cobalt-md-to-pptx](skills/white-cobalt-md-to-pptx/SKILL.md) | Markdown → HTML → PPTX | [PPTX](samples/white-cobalt-md-to-pptx/foundry.pptx) | [15장](samples/previews/white-cobalt-md-to-pptx/overview.png) |
-| [white-cobalt-html-to-pptx](skills/white-cobalt-html-to-pptx/SKILL.md) | HTML → PPTX | [PPTX](samples/white-cobalt-html-to-pptx/foundry.pptx) | [15장](samples/previews/white-cobalt-html-to-pptx/overview.png) |
-| [white-cobalt-pptx-to-html](skills/white-cobalt-pptx-to-html/SKILL.md) | PPTX → 단일 보존 HTML | [HTML](samples/white-cobalt-pptx-to-html/index.html) | [15장](samples/previews/white-cobalt-pptx-to-html/overview.png) |
+| [deep-navy-md-to-html](skills/deep-navy-md-to-html/SKILL.md) | Markdown → 단일 HTML | [HTML](samples/deep-navy-md-to-html/foundry.html) | [20장](samples/previews/deep-navy-md-to-html/overview.png) |
+| [deep-navy-topic-to-html](skills/deep-navy-topic-to-html/SKILL.md) | 주제 → 단일 HTML | [HTML](samples/deep-navy-topic-to-html/topic.html) | [20장](samples/previews/deep-navy-topic-to-html/overview.png) |
+| [deep-navy-md-to-pptx](skills/deep-navy-md-to-pptx/SKILL.md) | Markdown → PPTX | [PPTX](samples/deep-navy-md-to-pptx/foundry.pptx) | [20장](samples/previews/deep-navy-md-to-pptx/overview.png) |
+| [deep-navy-html-to-pptx](skills/deep-navy-html-to-pptx/SKILL.md) | HTML → PPTX | [PPTX](samples/deep-navy-html-to-pptx/foundry.pptx) | [20장](samples/previews/deep-navy-html-to-pptx/overview.png) |
+| [deep-navy-pptx-to-html](skills/deep-navy-pptx-to-html/SKILL.md) | PPTX → 단일 보존 HTML | [HTML](samples/deep-navy-pptx-to-html/index.html) | [20장](samples/previews/deep-navy-pptx-to-html/overview.png) |
+| [white-cobalt-md-to-html](skills/white-cobalt-md-to-html/SKILL.md) | Markdown → 단일 HTML | [HTML](samples/white-cobalt-md-to-html/foundry.html) | [20장](samples/previews/white-cobalt-md-to-html/overview.png) |
+| [white-cobalt-topic-to-html](skills/white-cobalt-topic-to-html/SKILL.md) | 주제 → 단일 HTML | [HTML](samples/white-cobalt-topic-to-html/topic.html) | [20장](samples/previews/white-cobalt-topic-to-html/overview.png) |
+| [white-cobalt-md-to-pptx](skills/white-cobalt-md-to-pptx/SKILL.md) | Markdown → HTML → PPTX | [PPTX](samples/white-cobalt-md-to-pptx/foundry.pptx) | [20장](samples/previews/white-cobalt-md-to-pptx/overview.png) |
+| [white-cobalt-html-to-pptx](skills/white-cobalt-html-to-pptx/SKILL.md) | HTML → PPTX | [PPTX](samples/white-cobalt-html-to-pptx/foundry.pptx) | [20장](samples/previews/white-cobalt-html-to-pptx/overview.png) |
+| [white-cobalt-pptx-to-html](skills/white-cobalt-pptx-to-html/SKILL.md) | PPTX → 단일 보존 HTML | [HTML](samples/white-cobalt-pptx-to-html/index.html) | [20장](samples/previews/white-cobalt-pptx-to-html/overview.png) |
 
 ## 설치와 호출
 
@@ -163,20 +168,20 @@ Copilot CLI의 대화 입력창에서 다음 명령으로 다시 불러오고 �
 ### deep-navy-md-to-html
 
 ```text
-/deep-navy-md-to-html samples/shared/foundry.md를 읽고 Microsoft Foundry on Azure를 소개하는 한국어 15장 읽는 HTML 문서를 만들어줘.
-스킬의 deck.html에 있는 15개 템플릿을 원래 순서대로 각각 한 번씩 모두 사용해줘.
+/deep-navy-md-to-html samples/shared/foundry.md를 읽고 Microsoft Foundry on Azure를 소개하는 한국어 20장 읽는 HTML 문서를 만들어줘.
+스킬의 deck.html에 있는 20개 템플릿을 원래 순서대로 각각 한 번씩 모두 사용해줘.
 Deep Navy 디자인을 사용하고 원고의 순서, 핵심 메시지, 표 전체, 상세 설명, 발표 스크립트와 공식 출처 URL을 보존해줘.
 좌측 목차, 세로 스크롤, 장별 노트 접기, 키보드 조작, 모바일 및 인쇄 기능을 유지해줘.
 폰트·스타일·스크립트·이미지를 내장해 samples/deep-navy-md-to-html/foundry.html 하나로 완성해줘.
 조각 HTML은 내부 작업 폴더에만 두고, 최종 파일만 빈 폴더로 복사해 오프라인에서도 확인해줘.
-15장 전체 미리보기는 실행 의존성과 분리해 samples/previews/deep-navy-md-to-html/overview.png에 저장해줘.
+20장 전체 미리보기는 실행 의존성과 분리해 samples/previews/deep-navy-md-to-html/overview.png에 저장해줘.
 ```
 
 ### deep-navy-topic-to-html
 
 ```text
-/deep-navy-topic-to-html Azure의 Microsoft Foundry를 주제로 개발자와 기술 의사결정자를 위한 한국어 입문 자료 15장을 만들어줘.
-스킬의 deck.html에 있는 15개 템플릿을 원래 순서대로 각각 한 번씩 모두 사용해줘.
+/deep-navy-topic-to-html Azure의 Microsoft Foundry를 주제로 개발자와 기술 의사결정자를 위한 한국어 입문 자료 20장을 만들어줘.
+스킬의 deck.html에 있는 20개 템플릿을 원래 순서대로 각각 한 번씩 모두 사용해줘.
 Microsoft Learn 공식 문서를 조사하고 현재 제품명, 모델·에이전트·도구의 역할, 구현 경로 비교, 평가·관측, GA/Preview와 도입 시 제약을 설명해줘.
 사내 문서 Q&A와 출시 판단 기준을 설명용 가상 사례로 포함하고 실제 배포 사실과 구분해줘. 실제 Azure 리소스는 만들지 마.
 장별 핵심 메시지, 상세 설명, 발표 스크립트, 출처 URL과 확인일을 포함한 원고를 먼저 작성한 뒤 Deep Navy 읽는 HTML로 만들어줘.
@@ -187,8 +192,8 @@ Microsoft Learn 공식 문서를 조사하고 현재 제품명, 모델·에이�
 ### deep-navy-md-to-pptx
 
 ```text
-/deep-navy-md-to-pptx samples/shared/foundry.md를 Deep Navy의 한국어 15장 PowerPoint로 만들어줘.
-기본 네이티브 배치만 반복하지 말고 스킬의 deck.html에 있는 15종을 순서대로 모두 구현해줘.
+/deep-navy-md-to-pptx samples/shared/foundry.md를 Deep Navy의 한국어 20장 PowerPoint로 만들어줘.
+기본 네이티브 배치만 반복하지 말고 스킬의 deck.html에 있는 20종을 순서대로 모두 구현해줘.
 중간 HTML을 구성·측정하고 작업별 PptxGenJS 생성기로 포팅해 원고의 메시지, 표의 모든 행과 열, 순서와 출처를 보존해줘. 이 샘플은 정적 PPTX로 만들어줘.
 텍스트·표·도형은 편집 가능한 객체로 만들고 상세 설명, 발표 스크립트와 출처 URL은 장별 발표자 노트에 넣어줘.
 복합 SVG와 CSS 장식만 개별 이미지 객체로 보존하고 전체 슬라이드를 이미지로 바꾸지 마.
@@ -199,10 +204,10 @@ samples/deep-navy-md-to-pptx/foundry.pptx에 저장하고 intermediate.html, 측
 ### deep-navy-html-to-pptx
 
 ```text
-/deep-navy-html-to-pptx samples/deep-navy-md-to-html/foundry.html을 원본 15장의 디자인과 등장 효과를 보존하는 PowerPoint로 포팅해줘.
+/deep-navy-html-to-pptx samples/deep-navy-md-to-html/foundry.html을 원본 20장의 디자인과 등장 효과를 보존하는 PowerPoint로 포팅해줘.
 실제 시트 좌표, 글꼴, 줄바꿈, 색, 표와 타이밍을 측정하고 편집 가능한 텍스트·표·도형으로 구현해줘. 전체 시트를 이미지로 바꾸거나 새 레이아웃으로 재조판하지 마.
 웹 목차와 버튼은 슬라이드에서 제외하고 상세 설명, 발표 스크립트와 출처 URL은 장별 발표자 노트에 보존해줘.
-15종 레이아웃을 모두 유지하고 복합 SVG와 CSS 장식만 개별 이미지 객체로 보존해줘.
+20종 레이아웃을 모두 유지하고 복합 SVG와 CSS 장식만 개별 이미지 객체로 보존해줘.
 samples/deep-navy-html-to-pptx/foundry.pptx에 저장하고 작업별 생성기, 측정값, 애니메이션 매니페스트와 PDF를 정리해줘.
 전체 미리보기는 samples/previews/deep-navy-html-to-pptx/overview.png에 저장해줘.
 실제 앱에서 확인하지 못한 열기·재생 동작은 미확인으로 밝혀줘.
@@ -212,7 +217,7 @@ samples/deep-navy-html-to-pptx/foundry.pptx에 저장하고 작업별 생성기,
 
 ```text
 /deep-navy-pptx-to-html samples/deep-navy-html-to-pptx/foundry.pptx를 원본 보존형 읽는 HTML로 만들어줘.
-15종 템플릿을 사용한 원본 15장의 순서, 제목, 본문, 표 전체, 배치, 원본 자산과 발표자 노트를 유지하고 Deep Navy는 바깥 목차·설명 UI에만 적용해줘.
+20종 템플릿을 사용한 원본 20장의 순서, 제목, 본문, 표 전체, 배치, 원본 자산과 발표자 노트를 유지하고 Deep Navy는 바깥 목차·설명 UI에만 적용해줘.
 LibreOffice로 PDF를 내보내 정적 시트 렌더를 사용하고, 복사 가능한 전사·출처·노트와 원본 및 자산 해시를 함께 보존해줘.
 페이지·폰트·이미지와 원본/PDF 다운로드·보존 기록을 HTML 내부에 내장해 samples/deep-navy-pptx-to-html/index.html 하나만 최종 전달해줘.
 추출 파일은 내부 작업용으로 두고 단일 파일 오프라인 확인 후 전체 미리보기는 samples/previews/deep-navy-pptx-to-html/overview.png에 저장해줘.
@@ -222,20 +227,20 @@ LibreOffice로 PDF를 내보내 정적 시트 렌더를 사용하고, 복사 가
 ### white-cobalt-md-to-html
 
 ```text
-/white-cobalt-md-to-html samples/shared/foundry.md를 읽고 Microsoft Foundry on Azure를 소개하는 한국어 15장 읽는 HTML 문서를 만들어줘.
-스킬의 deck.html에 있는 15개 템플릿을 원래 순서대로 각각 한 번씩 모두 사용해줘.
+/white-cobalt-md-to-html samples/shared/foundry.md를 읽고 Microsoft Foundry on Azure를 소개하는 한국어 20장 읽는 HTML 문서를 만들어줘.
+스킬의 deck.html에 있는 20개 템플릿을 원래 순서대로 각각 한 번씩 모두 사용해줘.
 White Cobalt의 순백·코발트, 각진 블록과 가는 선을 사용하고 원고의 순서, 핵심 메시지, 표 전체, 상세 설명, 발표 스크립트와 공식 출처 URL을 보존해줘.
 좌측 목차, 세로 스크롤, 장별 노트 접기, 키보드 조작, 모바일 및 인쇄 기능을 유지해줘.
 폰트·스타일·스크립트·이미지를 내장해 samples/white-cobalt-md-to-html/foundry.html 하나로 완성해줘.
 조각 HTML은 내부 작업 폴더에만 두고, 최종 파일만 빈 폴더로 복사해 오프라인에서도 확인해줘.
-15장 전체 미리보기는 실행 의존성과 분리해 samples/previews/white-cobalt-md-to-html/overview.png에 저장해줘.
+20장 전체 미리보기는 실행 의존성과 분리해 samples/previews/white-cobalt-md-to-html/overview.png에 저장해줘.
 ```
 
 ### white-cobalt-topic-to-html
 
 ```text
-/white-cobalt-topic-to-html Azure의 Microsoft Foundry를 주제로 개발자와 기술 의사결정자를 위한 한국어 입문 자료 15장을 만들어줘.
-스킬의 deck.html에 있는 15개 템플릿을 원래 순서대로 각각 한 번씩 모두 사용해줘.
+/white-cobalt-topic-to-html Azure의 Microsoft Foundry를 주제로 개발자와 기술 의사결정자를 위한 한국어 입문 자료 20장을 만들어줘.
+스킬의 deck.html에 있는 20개 템플릿을 원래 순서대로 각각 한 번씩 모두 사용해줘.
 Microsoft Learn 공식 문서를 조사하고 현재 제품명, 모델·에이전트·도구의 역할, 구현 경로 비교, 평가·관측, GA/Preview와 도입 시 제약을 설명해줘.
 사내 문서 Q&A와 출시 판단 기준을 설명용 가상 사례로 포함하고 실제 배포 사실과 구분해줘. 실제 Azure 리소스는 만들지 마.
 장별 핵심 메시지, 상세 설명, 발표 스크립트, 출처 URL과 확인일을 포함한 원고를 먼저 작성한 뒤 White Cobalt 읽는 HTML로 만들어줘.
@@ -246,8 +251,8 @@ Microsoft Learn 공식 문서를 조사하고 현재 제품명, 모델·에이�
 ### white-cobalt-md-to-pptx
 
 ```text
-/white-cobalt-md-to-pptx samples/shared/foundry.md를 한국어 15장 White Cobalt PowerPoint로 만들어줘.
-스킬의 deck.html에 있는 15개 템플릿을 원래 순서대로 각각 한 번씩 모두 사용해줘.
+/white-cobalt-md-to-pptx samples/shared/foundry.md를 한국어 20장 White Cobalt PowerPoint로 만들어줘.
+스킬의 deck.html에 있는 20개 템플릿을 원래 순서대로 각각 한 번씩 모두 사용해줘.
 이 스킬 안의 템플릿으로 intermediate.html을 먼저 만들고 실제 시트 좌표·글꼴·표와 등장 타이밍을 측정해 편집 가능한 PPTX로 포팅해줘.
 일반 네이티브 테마로 재조판하지 말고 중간 HTML의 디자인을 유지해줘. 웹 UI는 제외하고 상세 설명, 발표 스크립트와 출처 URL은 발표자 노트에 보존해줘.
 텍스트·표·기본 도형은 편집 가능하게 유지하고 복합 SVG와 CSS 장식만 개별 이미지로 보존해줘.
@@ -259,10 +264,10 @@ samples/white-cobalt-md-to-pptx/foundry.pptx에 저장하고 같은 폴더에 in
 ### white-cobalt-html-to-pptx
 
 ```text
-/white-cobalt-html-to-pptx samples/white-cobalt-md-to-html/foundry.html을 원본 15장의 디자인과 등장 효과를 보존하는 PowerPoint로 포팅해줘.
+/white-cobalt-html-to-pptx samples/white-cobalt-md-to-html/foundry.html을 원본 20장의 디자인과 등장 효과를 보존하는 PowerPoint로 포팅해줘.
 실제 시트 좌표, 글꼴, 줄바꿈, 색, 표와 타이밍을 측정하고 편집 가능한 텍스트·표·도형으로 구현해줘. 전체 시트를 이미지로 바꾸거나 새 레이아웃으로 재조판하지 마.
 웹 목차와 버튼은 슬라이드에서 제외하고 상세 설명, 발표 스크립트와 출처 URL은 장별 발표자 노트에 보존해줘.
-15종 레이아웃을 모두 유지하고 복합 SVG와 CSS 장식만 개별 이미지 객체로 보존해줘.
+20종 레이아웃을 모두 유지하고 복합 SVG와 CSS 장식만 개별 이미지 객체로 보존해줘.
 samples/white-cobalt-html-to-pptx/foundry.pptx에 저장하고 작업별 생성기, 측정값, 애니메이션 매니페스트와 PDF를 정리해줘.
 전체 미리보기는 samples/previews/white-cobalt-html-to-pptx/overview.png에 저장해줘.
 실제 앱에서 확인하지 못한 열기·재생 동작은 미확인으로 밝혀줘.
@@ -272,7 +277,7 @@ samples/white-cobalt-html-to-pptx/foundry.pptx에 저장하고 작업별 생성�
 
 ```text
 /white-cobalt-pptx-to-html samples/white-cobalt-html-to-pptx/foundry.pptx를 원본 보존형 읽는 HTML로 만들어줘.
-15종 템플릿을 사용한 원본 15장의 순서, 제목, 본문, 표 전체, 배치, 원본 자산과 발표자 노트를 유지하고 White Cobalt는 바깥 목차·설명 UI에만 적용해줘.
+20종 템플릿을 사용한 원본 20장의 순서, 제목, 본문, 표 전체, 배치, 원본 자산과 발표자 노트를 유지하고 White Cobalt는 바깥 목차·설명 UI에만 적용해줘.
 LibreOffice로 PDF를 내보내 정적 시트 렌더를 사용하고, 복사 가능한 전사·출처·노트와 원본 및 자산 해시를 함께 보존해줘.
 페이지·폰트·이미지와 원본/PDF 다운로드·보존 기록을 HTML 내부에 내장해 samples/white-cobalt-pptx-to-html/index.html 하나만 최종 전달해줘.
 추출 파일은 내부 작업용으로 두고 단일 파일 오프라인 확인 후 전체 미리보기는 samples/previews/white-cobalt-pptx-to-html/overview.png에 저장해줘.
@@ -287,16 +292,16 @@ LibreOffice로 PDF를 내보내 정적 시트 렌더를 사용하고, 복사 가
 
 ### Deep Navy · Markdown → HTML
 
-![Deep Navy Foundry 15종: 표지부터 구성도, 데이터 흐름, 시퀀스, 차트, 코드 해설과 마무리까지](samples/previews/deep-navy-md-to-html/overview.png)
+![Deep Navy Foundry 20종: 표지부터 구성도, 데이터 흐름, 시퀀스, 차트, 코드 해설과 마무리까지](samples/previews/deep-navy-md-to-html/overview.png)
 
 ### White Cobalt · Markdown → HTML
 
-![White Cobalt Foundry 15종: 각진 블록, 비교표, 경계도, 차트와 코드 해설](samples/previews/white-cobalt-md-to-html/overview.png)
+![White Cobalt Foundry 20종: 각진 블록, 비교표, 경계도, 차트와 코드 해설](samples/previews/white-cobalt-md-to-html/overview.png)
 
 <details>
-<summary>Deep Navy PowerPoint 15종 미리보기</summary>
+<summary>Deep Navy PowerPoint 20종 미리보기</summary>
 
-![Deep Navy 15종 디자인을 편집 가능한 기본 객체와 복합 다이어그램 이미지로 옮긴 정적 PowerPoint](samples/previews/deep-navy-md-to-pptx/overview.png)
+![Deep Navy 20종 디자인을 편집 가능한 기본 객체와 복합 다이어그램 이미지로 옮긴 정적 PowerPoint](samples/previews/deep-navy-md-to-pptx/overview.png)
 
 </details>
 
@@ -319,6 +324,7 @@ npm --prefix samples ci
 python3 -m venv samples/.venv
 samples/.venv/bin/python -m pip install -r samples/requirements.txt
 PYTHON="$PWD/samples/.venv/bin/python" npm --prefix samples run build
+npm --prefix samples test
 npm --prefix samples run verify
 samples/.venv/bin/python samples/scripts/check_content.py
 ```

@@ -4,7 +4,7 @@ const { pathToFileURL } = require("node:url");
 const { chromium } = require("playwright");
 const sharp = require("sharp");
 const { spawnSync } = require("node:child_process");
-const { LAYOUTS } = require("./layouts.cjs");
+const { LAYOUTS, offlineFonts } = require("./layouts.cjs");
 const ROOT = path.resolve(__dirname, ".."), REPO = path.dirname(ROOT);
 const catalog = JSON.parse(fs.readFileSync(path.join(ROOT, "catalog.json"), "utf8"));
 
@@ -18,8 +18,16 @@ async function montage(images, out) {
     channels: 3, background: "#D8DDE5" } }).composite(cells).png().toFile(out);
 }
 
+function verifyHtml(skill, file) {
+  const check = spawnSync(process.execPath, [path.join(REPO, "skills", skill, "scripts/verify.cjs"), file], {
+    encoding: "utf8", env: { ...process.env, NODE_PATH: path.join(ROOT, "node_modules") },
+  });
+  if (check.error || !check.stdout.trim()) throw check.error || new Error(check.stderr);
+  return JSON.parse(check.stdout);
+}
+
 async function main() {
-  const report = { checked: "2026-09-30", html: [], fontsBundled: true,
+  const report = { checked: "2026-09-30", html: [], templateGalleries: [], intermediateHtml: [], fontsBundled: true,
     powerpointOpenAndPlayback: "not performed", renderer: "LibreOffice", failures: [] };
   const directories = fs.readdirSync(path.join(REPO, "skills")).filter(name => fs.existsSync(path.join(REPO, "skills", name, "SKILL.md"))).sort();
   if (JSON.stringify(directories) !== JSON.stringify(catalog.samples.map(s => s.skill).sort())) {
@@ -31,16 +39,12 @@ async function main() {
       const previews = path.join(ROOT, "previews", entry.skill);
       fs.mkdirSync(previews, { recursive: true });
       if (!fs.existsSync(path.join(ROOT, entry.output))) throw new Error(`Missing result ${entry.output}`);
-      if (entry.slides !== 15 || JSON.stringify(entry.layouts) !== JSON.stringify(LAYOUTS)) {
+      if (entry.slides !== LAYOUTS.length || JSON.stringify(entry.layouts) !== JSON.stringify(LAYOUTS)) {
         throw new Error(`${entry.skill}: all-template coverage mismatch`);
       }
       const shots = [];
       if (entry.output.endsWith(".html")) {
-        const check = spawnSync(process.execPath, [path.join(REPO, "skills", entry.skill, "scripts/verify.cjs"), path.join(ROOT, entry.output)], {
-          encoding: "utf8", env: { ...process.env, NODE_PATH: path.join(ROOT, "node_modules") },
-        });
-        if (check.error || !check.stdout.trim()) throw check.error || new Error(check.stderr);
-        const result = JSON.parse(check.stdout);
+        const result = verifyHtml(entry.skill, path.join(ROOT, entry.output));
         result.file = entry.output;
         if (!result.ok || result.count !== entry.slides) report.failures.push(entry.skill);
         const isolated = path.join(ROOT, ".cache/isolated", entry.skill);
@@ -96,13 +100,37 @@ async function main() {
         }
         await context.close();
         report.html.push(result);
-        console.log(`${entry.skill}: ${result.ok && !overflow.length && !network.length && !errors.length ? "OK" : "FAIL"} (15 templates, offline single file)`);
+        console.log(`${entry.skill}: ${result.ok && !overflow.length && !network.length && !errors.length ? "OK" : "FAIL"} (${LAYOUTS.length} templates, offline single file)`);
       } else {
         for (let i = 1; i <= entry.slides; i++) shots.push(path.join(previews, `slide-${String(i).padStart(2, "0")}.png`));
       }
       await montage(shots, path.join(previews, "overview.png"));
       for (let start = 0; start < shots.length; start += 5) {
         await montage(shots.slice(start, start + 5), path.join(previews, `group-${start / 5 + 1}.png`));
+      }
+    }
+    const galleryDir = path.join(ROOT, ".cache/gallery-checks");
+    fs.mkdirSync(galleryDir, { recursive: true });
+    for (const skill of directories) {
+      const theme = skill.startsWith("deep-navy") ? "deep-navy" : "white-cobalt";
+      const template = path.join(REPO, "skills", skill, "deck.html");
+      const isolated = path.join(galleryDir, `${skill}.html`);
+      const fonts = pathToFileURL(path.join(ROOT, "assets/fonts/")).href + "/";
+      fs.writeFileSync(isolated, offlineFonts(fs.readFileSync(template, "utf8"), fonts));
+      const pack = spawnSync(process.env.PYTHON || "python3",
+        [path.join(REPO, "skills", `${theme}-md-to-html/scripts/standalone_html.py`), isolated, "--out", isolated],
+        { encoding: "utf8" });
+      if (pack.error || pack.status) throw pack.error || new Error(pack.stderr);
+      const result = verifyHtml(skill, isolated);
+      report.templateGalleries.push({ skill, count: result.count, checks: result.pages.length,
+        ok: result.ok, errors: result.errors, issues: result.pages.filter(page => page.issues.length) });
+      if (!result.ok || result.count !== LAYOUTS.length) report.failures.push(`${skill}: template gallery`);
+      console.log(`${skill}: gallery ${result.ok ? "OK" : "FAIL"} (${result.count} templates, 3 widths)`);
+      if (skill.endsWith("md-to-pptx")) {
+        const intermediate = verifyHtml(skill, path.join(ROOT, skill, "intermediate.html"));
+        report.intermediateHtml.push({ skill, count: intermediate.count, checks: intermediate.pages.length,
+          ok: intermediate.ok, errors: intermediate.errors, issues: intermediate.pages.filter(page => page.issues.length) });
+        if (!intermediate.ok || intermediate.count !== LAYOUTS.length) report.failures.push(`${skill}: intermediate HTML`);
       }
     }
   } finally { await browser.close(); }

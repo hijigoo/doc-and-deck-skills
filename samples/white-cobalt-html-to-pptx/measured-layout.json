@@ -69,7 +69,7 @@
       },
       {
         "kind": "text",
-        "x": 1713.375,
+        "x": 1704.609375,
         "y": 44,
         "w": 31.71875,
         "h": 36,
@@ -91,11 +91,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -808,7 +808,7 @@
         }
       }
     ],
-    "notes": "상세 설명\nFoundry는 모델, 에이전트, 도구와 관리 기능을 연결하는 플랫폼입니다.\n이 자료는 기능 관계와 도입 판단을 설명하며 실제 Azure 배포를 수행하지 않았습니다.\n\n발표 스크립트\n오늘은 제품 메뉴보다 업무의 질문을 먼저 보겠습니다.\n무엇을 만들지, 어떤 권한을 줄지, 어떤 근거로 출시할지를 연결하겠습니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nFOUNDRY / COVER\n01 / 15\n모델 실험에서 운영 판단까지\n01\n\nMicrosoft Foundry에서 모델·에이전트·도구와 평가를 함께 이해합니다.\n\n01\n역할을 구분합니다\n\n모델, 에이전트, 도구가 각각 무엇을 담당하는지 살펴봅니다.\n\n02\n구현 경로를 고릅니다\n\n직접 호출부터 코드 기반 에이전트까지 필요한 제어 수준으로 선택합니다.\n\n03\n근거로 출시를 판단합니다\n\n평가 결과와 실패 사례, 운영 책임을 연결해 진행 여부를 결정합니다.\n\n출발점\n\n좋은 답변 한 번보다 반복 가능한 업무 결과가 중요합니다. 해결할 문제와 허용할 행동부터 정합니다.\n\n읽는 방향\n\n기능을 고르기 전에 업무 범위, 통제 조건, 출시 근거를 연결합니다.\n\n범위\n\nAzure AI Foundry의 현재 브랜드는 Microsoft Foundry입니다. 모든 기능이 모든 리전에 제공되는 것은 아닙니다.\n"
+    "notes": "상세 설명\nFoundry는 모델, 에이전트, 도구와 관리 기능을 연결하는 플랫폼입니다.\n이 자료는 기능 관계와 도입 판단을 설명하며 실제 Azure 배포를 수행하지 않았습니다.\n\n발표 스크립트\n오늘은 제품 메뉴보다 업무의 질문을 먼저 보겠습니다.\n무엇을 만들지, 어떤 권한을 줄지, 어떤 근거로 출시할지를 연결하겠습니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nFOUNDRY / COVER\n01 / 20\n모델 실험에서 운영 판단까지\n01\n\nMicrosoft Foundry에서 모델·에이전트·도구와 평가를 함께 이해합니다.\n\n01\n역할을 구분합니다\n\n모델, 에이전트, 도구가 각각 무엇을 담당하는지 살펴봅니다.\n\n02\n구현 경로를 고릅니다\n\n직접 호출부터 코드 기반 에이전트까지 필요한 제어 수준으로 선택합니다.\n\n03\n근거로 출시를 판단합니다\n\n평가 결과와 실패 사례, 운영 책임을 연결해 진행 여부를 결정합니다.\n\n출발점\n\n좋은 답변 한 번보다 반복 가능한 업무 결과가 중요합니다. 해결할 문제와 허용할 행동부터 정합니다.\n\n읽는 방향\n\n기능을 고르기 전에 업무 범위, 통제 조건, 출시 근거를 연결합니다.\n\n범위\n\nAzure AI Foundry의 현재 브랜드는 Microsoft Foundry입니다. 모든 기능이 모든 리전에 제공되는 것은 아닙니다.\n"
   },
   {
     "layout": "contrast",
@@ -880,7 +880,7 @@
       },
       {
         "kind": "text",
-        "x": 1708.609375,
+        "x": 1699.84375,
         "y": 44,
         "w": 36.484375,
         "h": 36,
@@ -902,11 +902,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -1573,7 +1573,7 @@
         }
       }
     ],
-    "notes": "상세 설명\n평가와 관측은 개발 중 실험과 운영 중 확인에 서로 다른 근거를 제공합니다.\n실험 응답을 실제 서비스의 품질·안전·비용 보장으로 확대 해석하지 않습니다.\n\n발표 스크립트\n시연은 가능성을 보여줍니다. 운영 판단은 실패 상황에서도 무엇을 할지 묻습니다.\n이 차이를 먼저 합의하면 평가와 관측을 뒤늦게 붙이지 않을 수 있습니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / CONTRAST\n02 / 15\n좋은 시연과 운영 준비는 다릅니다\n\n같은 AI 응답도 실험과 업무 운영에서는 확인해야 할 조건이 달라집니다.\n\n01\n실험 · 가능한가\n\n짧은 입력으로 모델의 응답을 살펴보고 업무 가설을 좁힙니다.\n\n전환의 이유\n→\n\n실험은 가능성을 찾는 출발점입니다. 대표 사례 하나가 전체 사용자와 예외 상황을 대신하지는 않습니다.\n\n02\n운영 · 맡길 수 있는가\n\n대표 질문과 실패 조건, 허용 행동, 관측과 중단 책임을 함께 확인합니다.\n\n선택 기준\n\n실험을 버리는 대신 평가 데이터, 접근 통제, 추적 기록을 더해 반복 가능한 판단으로 발전시킵니다.\n\n주의할 해석\n\n아래 비교는 도입 관점의 제안입니다. Foundry를 선택했다는 사실만으로 운영 준비가 끝나지는 않습니다.\n"
+    "notes": "상세 설명\n평가와 관측은 개발 중 실험과 운영 중 확인에 서로 다른 근거를 제공합니다.\n실험 응답을 실제 서비스의 품질·안전·비용 보장으로 확대 해석하지 않습니다.\n\n발표 스크립트\n시연은 가능성을 보여줍니다. 운영 판단은 실패 상황에서도 무엇을 할지 묻습니다.\n이 차이를 먼저 합의하면 평가와 관측을 뒤늦게 붙이지 않을 수 있습니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / CONTRAST\n02 / 20\n좋은 시연과 운영 준비는 다릅니다\n\n같은 AI 응답도 실험과 업무 운영에서는 확인해야 할 조건이 달라집니다.\n\n01\n실험 · 가능한가\n\n짧은 입력으로 모델의 응답을 살펴보고 업무 가설을 좁힙니다.\n\n전환의 이유\n→\n\n실험은 가능성을 찾는 출발점입니다. 대표 사례 하나가 전체 사용자와 예외 상황을 대신하지는 않습니다.\n\n02\n운영 · 맡길 수 있는가\n\n대표 질문과 실패 조건, 허용 행동, 관측과 중단 책임을 함께 확인합니다.\n\n선택 기준\n\n실험을 버리는 대신 평가 데이터, 접근 통제, 추적 기록을 더해 반복 가능한 판단으로 발전시킵니다.\n\n주의할 해석\n\n아래 비교는 도입 관점의 제안입니다. Foundry를 선택했다는 사실만으로 운영 준비가 끝나지는 않습니다.\n"
   },
   {
     "layout": "architecture",
@@ -1645,7 +1645,7 @@
       },
       {
         "kind": "text",
-        "x": 1708.78125,
+        "x": 1700.015625,
         "y": 44,
         "w": 36.3125,
         "h": 36,
@@ -1667,11 +1667,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -2877,7 +2877,7 @@
         }
       }
     ],
-    "notes": "상세 설명\n에이전트가 도구를 호출할 수 있다는 사실과 데이터 접근 권한은 별개입니다.\nFoundry의 구성 개념을 조직의 보안 경계나 실제 배포 구조와 혼동하지 않습니다.\n\n발표 스크립트\n왼쪽은 사용할 재료와 기능, 가운데는 실행을 구성하는 역할, 오른쪽은 업무 경험입니다.\n이 그림은 역할 설명이며 검증된 네트워크 배포도가 아닙니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nFOUNDRY / ARCHITECTURE\n03 / 15\nFoundry의 역할을 세 층으로 읽습니다\n\n입력과 모델·도구, 에이전트 구성, 업무 응용을 잇는 개념도입니다.\n\n입력 / 기반 경계\n모델 · 도구 · 지식\n\n업무에 맞는 추론 모델과 사용할 수 있는 자료·기능을 고릅니다.\n\n기반 관계\n중심 플랫폼 경계\n에이전트 구성\n\n지침과 대화, 도구 사용을 구성하며 허용 행동을 분명히 합니다.\n\n의미 연결\n소비 / 응용 경계\n업무 응용\n\n응답과 근거를 사용자 작업에 연결하고 예외 처리 경로를 제공합니다.\n\n설계 맥락\n\nFoundry project는 관련 AI 자산과 구성을 조직하는 작업 단위입니다. 그림은 논리적 역할 구분입니다.\n\n운영 확인 · 설계 메모\n\n실선은 개념을 읽는 관계입니다. 실제 API 호출, VNet이나 데이터 이동 경로를 뜻하지 않습니다.\n\n검증 범위\n\n데이터 접근, 신원, 네트워크 조건과 기록 범위는 별도로 설계하고 검증합니다.\n\n"
+    "notes": "상세 설명\n에이전트가 도구를 호출할 수 있다는 사실과 데이터 접근 권한은 별개입니다.\nFoundry의 구성 개념을 조직의 보안 경계나 실제 배포 구조와 혼동하지 않습니다.\n\n발표 스크립트\n왼쪽은 사용할 재료와 기능, 가운데는 실행을 구성하는 역할, 오른쪽은 업무 경험입니다.\n이 그림은 역할 설명이며 검증된 네트워크 배포도가 아닙니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nFOUNDRY / ARCHITECTURE\n03 / 20\nFoundry의 역할을 세 층으로 읽습니다\n\n입력과 모델·도구, 에이전트 구성, 업무 응용을 잇는 개념도입니다.\n\n입력 / 기반 경계\n모델 · 도구 · 지식\n\n업무에 맞는 추론 모델과 사용할 수 있는 자료·기능을 고릅니다.\n\n기반 관계\n중심 플랫폼 경계\n에이전트 구성\n\n지침과 대화, 도구 사용을 구성하며 허용 행동을 분명히 합니다.\n\n의미 연결\n소비 / 응용 경계\n업무 응용\n\n응답과 근거를 사용자 작업에 연결하고 예외 처리 경로를 제공합니다.\n\n설계 맥락\n\nFoundry project는 관련 AI 자산과 구성을 조직하는 작업 단위입니다. 그림은 논리적 역할 구분입니다.\n\n운영 확인 · 설계 메모\n\n실선은 개념을 읽는 관계입니다. 실제 API 호출, VNet이나 데이터 이동 경로를 뜻하지 않습니다.\n\n검증 범위\n\n데이터 접근, 신원, 네트워크 조건과 기록 범위는 별도로 설계하고 검증합니다.\n\n"
   },
   {
     "layout": "process",
@@ -2949,7 +2949,7 @@
       },
       {
         "kind": "text",
-        "x": 1706.265625,
+        "x": 1697.5,
         "y": 44,
         "w": 38.828125,
         "h": 36,
@@ -2971,11 +2971,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -3881,7 +3881,7 @@
         }
       }
     ],
-    "notes": "상세 설명\n이는 공식 기능을 바탕으로 구성한 도입 제안이며 제품의 자동 승인 절차가 아닙니다.\n단계의 순서와 산출물은 업무의 위험도와 조직의 검토 절차에 맞게 조정합니다.\n\n발표 스크립트\n먼저 완료 기준을 정한 뒤 작게 만듭니다.\n평가에서 발견한 실패를 수정하고, 운영 책임이 준비되었는지 확인합니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / PROCESS\n04 / 15\n평가 기준부터 작은 실행을 연결합니다\n\n범위 → 구현 → 평가 → 운영 준비로 이어지는 네 단계 도입 제안입니다.\n\n01\n업무 범위\n\n사용자, 질문, 허용 행동과 제외할 상황을 합의합니다.\n\n↘\n02\n작은 구현\n\n모델과 구현 경로를 골라 제한된 데이터로 연결합니다.\n\n↗\n03\n평가와 수정\n\n대표 질문과 실패 사례에서 품질·안전·도구 동작을 확인합니다.\n\n↘\n04\n운영 준비\n\n추적, 오류 대응, 비용 확인과 중단 책임을 연결합니다.\n\n진행 단위\n\n대표 입력, 원하는 출력과 실패 조건을 먼저 적습니다. 그 기록을 다음 단계의 입력으로 사용합니다.\n\n완료 기준\n\n다음 단계에 넘길 산출물로 완료를 판단합니다. 구현 여부와 출시 가능 여부를 구분합니다.\n\n되돌아갈 조건\n\n품질·권한·기록 조건이 부족하면 이전 단계로 돌아갑니다. 실패 사례도 평가 자료에 남깁니다.\n"
+    "notes": "상세 설명\n이는 공식 기능을 바탕으로 구성한 도입 제안이며 제품의 자동 승인 절차가 아닙니다.\n단계의 순서와 산출물은 업무의 위험도와 조직의 검토 절차에 맞게 조정합니다.\n\n발표 스크립트\n먼저 완료 기준을 정한 뒤 작게 만듭니다.\n평가에서 발견한 실패를 수정하고, 운영 책임이 준비되었는지 확인합니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / PROCESS\n04 / 20\n평가 기준부터 작은 실행을 연결합니다\n\n범위 → 구현 → 평가 → 운영 준비로 이어지는 네 단계 도입 제안입니다.\n\n01\n업무 범위\n\n사용자, 질문, 허용 행동과 제외할 상황을 합의합니다.\n\n↘\n02\n작은 구현\n\n모델과 구현 경로를 골라 제한된 데이터로 연결합니다.\n\n↗\n03\n평가와 수정\n\n대표 질문과 실패 사례에서 품질·안전·도구 동작을 확인합니다.\n\n↘\n04\n운영 준비\n\n추적, 오류 대응, 비용 확인과 중단 책임을 연결합니다.\n\n진행 단위\n\n대표 입력, 원하는 출력과 실패 조건을 먼저 적습니다. 그 기록을 다음 단계의 입력으로 사용합니다.\n\n완료 기준\n\n다음 단계에 넘길 산출물로 완료를 판단합니다. 구현 여부와 출시 가능 여부를 구분합니다.\n\n되돌아갈 조건\n\n품질·권한·기록 조건이 부족하면 이전 단계로 돌아갑니다. 실패 사례도 평가 자료에 남깁니다.\n"
   },
   {
     "layout": "matrix",
@@ -3953,7 +3953,7 @@
       },
       {
         "kind": "text",
-        "x": 1708.75,
+        "x": 1699.984375,
         "y": 44,
         "w": 36.34375,
         "h": 36,
@@ -3975,11 +3975,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -4871,7 +4871,7 @@
         }
       }
     ],
-    "notes": "상세 설명\nPrompt agent는 지침과 모델·도구를 설정하는 선언형 경로입니다.\nHosted agent는 자체 코드와 프레임워크를 실행하며 코드·의존성에 대한 팀의 책임이 남습니다.\n\n발표 스크립트\n모든 업무가 에이전트를 필요로 하지는 않습니다.\n필요한 행동과 제어 수준을 먼저 정한 뒤 가장 단순한 구현 경로를 선택합니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nFOUNDRY / MATRIX\n05 / 15\n필요한 제어 수준으로 구현을 고릅니다\n\n직접 모델 호출, prompt agent, hosted agent는 서로 다른 시작점입니다.\n\n시작 경로\t직접 관리하는 것\t선택 기준\n모델 직접 호출\t애플리케이션 코드\t도구 없이 추론이 필요\nPrompt agent\t지침 · 모델 · 도구\t선언형 구성으로 시작\nHosted agent\t자체 코드와 의존성\t고유한 실행 로직 제어\n판단의 중심\n→\n\n도구가 필요하지 않다면 직접 호출부터 검토합니다. 고유한 코드가 필요한 경우에만 복잡도를 늘립니다.\n\n비교의 전제\n\n비교는 텍스트 중심 업무 범위입니다. 음성 기반 prompt agent는 이번 표에서 제외합니다.\n\n해석의 한계\n\n직접 호출은 에이전트 유형이 아닙니다. 실제 지원 모델·도구·리전과 출시 상태를 별도로 확인합니다.\n"
+    "notes": "상세 설명\nPrompt agent는 지침과 모델·도구를 설정하는 선언형 경로입니다.\nHosted agent는 자체 코드와 프레임워크를 실행하며 코드·의존성에 대한 팀의 책임이 남습니다.\n\n발표 스크립트\n모든 업무가 에이전트를 필요로 하지는 않습니다.\n필요한 행동과 제어 수준을 먼저 정한 뒤 가장 단순한 구현 경로를 선택합니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nFOUNDRY / MATRIX\n05 / 20\n필요한 제어 수준으로 구현을 고릅니다\n\n직접 모델 호출, prompt agent, hosted agent는 서로 다른 시작점입니다.\n\n시작 경로\t직접 관리하는 것\t선택 기준\n모델 직접 호출\t애플리케이션 코드\t도구 없이 추론이 필요\nPrompt agent\t지침 · 모델 · 도구\t선언형 구성으로 시작\nHosted agent\t자체 코드와 의존성\t고유한 실행 로직 제어\n판단의 중심\n→\n\n도구가 필요하지 않다면 직접 호출부터 검토합니다. 고유한 코드가 필요한 경우에만 복잡도를 늘립니다.\n\n비교의 전제\n\n비교는 텍스트 중심 업무 범위입니다. 음성 기반 prompt agent는 이번 표에서 제외합니다.\n\n해석의 한계\n\n직접 호출은 에이전트 유형이 아닙니다. 실제 지원 모델·도구·리전과 출시 상태를 별도로 확인합니다.\n"
   },
   {
     "layout": "scenario",
@@ -4943,7 +4943,7 @@
       },
       {
         "kind": "text",
-        "x": 1706.71875,
+        "x": 1697.953125,
         "y": 44,
         "w": 38.375,
         "h": 36,
@@ -4965,11 +4965,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -5997,7 +5997,7 @@
         }
       }
     ],
-    "notes": "상세 설명\n실제 문서나 사용자 데이터를 사용하지 않은 설명용 시나리오입니다.\n권한 필터, 근거 부족 시 행동과 사람에게 넘기는 경로를 별도 구현·검증해야 합니다.\n\n발표 스크립트\n답변을 빨리 만드는 것보다 어떤 근거를 볼 수 있는지 먼저 확인합니다.\n모델의 지침만으로 접근 권한을 통제했다고 판단하지 않습니다.\n\n출처\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / SCENARIO\n06 / 15\n사내 문서 Q&A는 근거부터 확인합니다\n\n질문, 접근 확인, 근거 검토, 답변을 잇는 가상 업무 시나리오입니다.\n\n01\n사용자 · 질문\n\n업무 맥락과 필요한 답변을 제공하며 민감한 입력을 최소화합니다.\n\n→\n02\n응용 · 접근 확인\n\n신원과 허용 자료 범위를 확인한 뒤 검색 요청을 구성합니다.\n\n↓\n03\n에이전트 · 근거 검토\n\n검색된 자료가 질문에 답하는지 확인하고 출처를 연결합니다.\n\n←\n04\n사용자 · 답변 확인\n\n답변과 근거를 검토하고 불확실한 내용은 담당자에게 넘깁니다.\n\n장면의 연결\n\n직원이 허용된 사내 문서를 질문합니다. 확인할 근거가 없으면 답을 꾸며내지 않고 추가 확인을 요청합니다.\n\n인계의 품질\n\n단계 사이에는 질문만 아니라 접근 범위와 근거가 함께 전달되어야 합니다.\n\n예외의 처리\n\n검색·권한·거부 처리는 설계 요구사항입니다. 이 그림이 제품의 자동 차단을 보장하지 않습니다.\n"
+    "notes": "상세 설명\n실제 문서나 사용자 데이터를 사용하지 않은 설명용 시나리오입니다.\n권한 필터, 근거 부족 시 행동과 사람에게 넘기는 경로를 별도 구현·검증해야 합니다.\n\n발표 스크립트\n답변을 빨리 만드는 것보다 어떤 근거를 볼 수 있는지 먼저 확인합니다.\n모델의 지침만으로 접근 권한을 통제했다고 판단하지 않습니다.\n\n출처\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / SCENARIO\n06 / 20\n사내 문서 Q&A는 근거부터 확인합니다\n\n질문, 접근 확인, 근거 검토, 답변을 잇는 가상 업무 시나리오입니다.\n\n01\n사용자 · 질문\n\n업무 맥락과 필요한 답변을 제공하며 민감한 입력을 최소화합니다.\n\n→\n02\n응용 · 접근 확인\n\n신원과 허용 자료 범위를 확인한 뒤 검색 요청을 구성합니다.\n\n↓\n03\n에이전트 · 근거 검토\n\n검색된 자료가 질문에 답하는지 확인하고 출처를 연결합니다.\n\n←\n04\n사용자 · 답변 확인\n\n답변과 근거를 검토하고 불확실한 내용은 담당자에게 넘깁니다.\n\n장면의 연결\n\n직원이 허용된 사내 문서를 질문합니다. 확인할 근거가 없으면 답을 꾸며내지 않고 추가 확인을 요청합니다.\n\n인계의 품질\n\n단계 사이에는 질문만 아니라 접근 범위와 근거가 함께 전달되어야 합니다.\n\n예외의 처리\n\n검색·권한·거부 처리는 설계 요구사항입니다. 이 그림이 제품의 자동 차단을 보장하지 않습니다.\n"
   },
   {
     "layout": "checklist",
@@ -6069,7 +6069,7 @@
       },
       {
         "kind": "text",
-        "x": 1709.359375,
+        "x": 1700.59375,
         "y": 44,
         "w": 35.734375,
         "h": 36,
@@ -6091,11 +6091,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -7054,7 +7054,7 @@
         }
       }
     ],
-    "notes": "상세 설명\n출시 기준은 팀이 정하는 검토 기준이며 Foundry가 대신 승인해 주는 절차가 아닙니다.\n제품의 출시 상태와 실제 업무에 대한 검증 근거는 각각 확인해야 합니다.\n\n발표 스크립트\n네 개의 체크를 채우는 것이 목적은 아닙니다.\n각 답변을 뒷받침하는 기록과 책임자가 있는지를 보겠습니다.\n\n출처\nMicrosoft Foundry portal general availability overview · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/general-availability\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nFOUNDRY / CHECKLIST\n07 / 15\n출시 전 네 가지 근거를 확인합니다\n\n체크 기호는 검토 대상이지 실제 승인이나 충족 상태가 아닙니다.\n\n업무 적합성\n\n대표 질문과 실패 사례에서 원하는 결과를 설명할 수 있습니까?\n\n접근과 허용 행동\n\n누가 어떤 자료와 도구를 사용할 수 있는지 검증했습니까?\n\n기능별 준비 상태\n\nGA/Preview, 대상 리전과 모델·도구 조건을 확인했습니까?\n\n운영과 중단 책임\n\n오류·비용·기록을 확인하고 필요하면 중단할 담당자가 있습니까?\n\n검토 방식\n\n기능·모델·도구 또는 데이터 범위가 바뀌면 같은 질문으로 다시 검토합니다.\n\n통과의 의미\n\n필수 조건을 뒷받침할 기록이 있을 때 제한된 적용을 검토합니다.\n\n보류의 가치\n\n미확인 조건은 완료로 표시하지 않습니다. 책임자와 다음 확인 시점을 남깁니다.\n"
+    "notes": "상세 설명\n출시 기준은 팀이 정하는 검토 기준이며 Foundry가 대신 승인해 주는 절차가 아닙니다.\n제품의 출시 상태와 실제 업무에 대한 검증 근거는 각각 확인해야 합니다.\n\n발표 스크립트\n네 개의 체크를 채우는 것이 목적은 아닙니다.\n각 답변을 뒷받침하는 기록과 책임자가 있는지를 보겠습니다.\n\n출처\nMicrosoft Foundry portal general availability overview · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/general-availability\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nFOUNDRY / CHECKLIST\n07 / 20\n출시 전 네 가지 근거를 확인합니다\n\n체크 기호는 검토 대상이지 실제 승인이나 충족 상태가 아닙니다.\n\n업무 적합성\n\n대표 질문과 실패 사례에서 원하는 결과를 설명할 수 있습니까?\n\n접근과 허용 행동\n\n누가 어떤 자료와 도구를 사용할 수 있는지 검증했습니까?\n\n기능별 준비 상태\n\nGA/Preview, 대상 리전과 모델·도구 조건을 확인했습니까?\n\n운영과 중단 책임\n\n오류·비용·기록을 확인하고 필요하면 중단할 담당자가 있습니까?\n\n검토 방식\n\n기능·모델·도구 또는 데이터 범위가 바뀌면 같은 질문으로 다시 검토합니다.\n\n통과의 의미\n\n필수 조건을 뒷받침할 기록이 있을 때 제한된 적용을 검토합니다.\n\n보류의 가치\n\n미확인 조건은 완료로 표시하지 않습니다. 책임자와 다음 확인 시점을 남깁니다.\n"
   },
   {
     "layout": "evidence",
@@ -7126,7 +7126,7 @@
       },
       {
         "kind": "text",
-        "x": 1706.265625,
+        "x": 1697.5,
         "y": 44,
         "w": 38.828125,
         "h": 36,
@@ -7148,11 +7148,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -8016,7 +8016,7 @@
         }
       }
     ],
-    "notes": "상세 설명\n공식 상태는 문서에서 확인한 사실이고, 이를 우리 업무에 적용할지는 별도의 판단입니다.\n기능별·경험별 범위를 생략해 Foundry 전체가 동일한 출시 상태라고 표현하지 않습니다.\n\n발표 스크립트\n상태 표를 읽을 때는 무엇에 대한 GA인지 확인해야 합니다.\n공식 문서의 범위와 우리 조직의 도입 조건을 섞지 않겠습니다.\n\n출처\nMicrosoft Foundry portal general availability overview · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/general-availability\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / EVIDENCE\n08 / 15\n공식 상태와 도입 판단을 분리합니다\n\n포털의 GA와 개별 기능의 GA는 같은 범위가 아닙니다.\n\n↳\n근거의 범위\n\n공식 GA 개요를 2026-09-30에 확인했습니다. 상태는 이후 바뀔 수 있습니다.\n\n01\nAgents 핵심 기능 · GA\n\n에이전트의 세부 유형, 연결 도구와 모델 조건까지 한꺼번에 보장하는 표기는 아닙니다.\n\n02\nEvaluations · GA / 일부 Preview\n\n평가 기능 안에서도 평가자와 세부 기능의 출시 상태를 나눠 확인합니다.\n\n03\nMonitoring · Memory · Preview\n\n운영 적용 정책과 데이터 보관·사용 조건을 기능별로 검토합니다.\n\n해석\n\n기능별 상태를 기록한 다음 업무 검증, 대상 리전과 운영 조건을 별도로 판단합니다.\n\n한계\n\nGA는 모든 하위 기능·모델·리전의 보장이 아닙니다. 실제 채택 시 최신 표를 다시 확인합니다.\n"
+    "notes": "상세 설명\n공식 상태는 문서에서 확인한 사실이고, 이를 우리 업무에 적용할지는 별도의 판단입니다.\n기능별·경험별 범위를 생략해 Foundry 전체가 동일한 출시 상태라고 표현하지 않습니다.\n\n발표 스크립트\n상태 표를 읽을 때는 무엇에 대한 GA인지 확인해야 합니다.\n공식 문서의 범위와 우리 조직의 도입 조건을 섞지 않겠습니다.\n\n출처\nMicrosoft Foundry portal general availability overview · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/general-availability\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / EVIDENCE\n08 / 20\n공식 상태와 도입 판단을 분리합니다\n\n포털의 GA와 개별 기능의 GA는 같은 범위가 아닙니다.\n\n↳\n근거의 범위\n\n공식 GA 개요를 2026-09-30에 확인했습니다. 상태는 이후 바뀔 수 있습니다.\n\n01\nAgents 핵심 기능 · GA\n\n에이전트의 세부 유형, 연결 도구와 모델 조건까지 한꺼번에 보장하는 표기는 아닙니다.\n\n02\nEvaluations · GA / 일부 Preview\n\n평가 기능 안에서도 평가자와 세부 기능의 출시 상태를 나눠 확인합니다.\n\n03\nMonitoring · Memory · Preview\n\n운영 적용 정책과 데이터 보관·사용 조건을 기능별로 검토합니다.\n\n해석\n\n기능별 상태를 기록한 다음 업무 검증, 대상 리전과 운영 조건을 별도로 판단합니다.\n\n한계\n\nGA는 모든 하위 기능·모델·리전의 보장이 아닙니다. 실제 채택 시 최신 표를 다시 확인합니다.\n"
   },
   {
     "layout": "roadmap",
@@ -8088,7 +8088,7 @@
       },
       {
         "kind": "text",
-        "x": 1706.859375,
+        "x": 1698.09375,
         "y": 44,
         "w": 38.234375,
         "h": 36,
@@ -8110,11 +8110,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -9043,7 +9043,7 @@
         }
       }
     ],
-    "notes": "상세 설명\n세 단계는 프로젝트 관리 제안으로 Microsoft의 납기나 성능 약속이 아닙니다.\n각 단계에서 필요한 검토와 산출물은 조직 정책에 맞춰 조정합니다.\n\n발표 스크립트\n날짜를 채우기 전에 어떤 근거가 있으면 다음 단계로 갈지 정합니다.\n범위를 넓힐수록 검증 기록과 책임도 함께 확장해야 합니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / ROADMAP\n09 / 15\n일정보다 단계별 통과 조건을 정합니다\n\n탐색, 제한 검증, 운영 준비의 산출물을 연결하는 도입 로드맵 제안입니다.\n\n실행 묶음\n준비\n실행\n검토\n탐색 · 업무 가설\n\n문제 정의, 대표 질문, 제외 조건과 기대 결과를 문서로 남깁니다.\n\n검증 · 실패 근거\n\n제한된 데이터로 구현하고 평가 기록·권한 시험·수정 이력을 남깁니다.\n\n준비 · 운영 책임\n\n관측, 오류 대응, 비용 확인과 중단 계획을 합의합니다.\n\n단계의 의미\n\n날짜와 소요 기간을 보장하지 않습니다. 업무 난도와 데이터·권한 준비 상태에 따라 달라집니다.\n\n이어지는 책임\n\n다음 단계로 넘어갈 때 이전 단계의 실패 사례와 가정을 함께 넘깁니다.\n\n계획의 한계\n\n질문·데이터 범위가 달라지면 검증을 다시 설계합니다. 작은 시연만으로 확대 적용하지 않습니다.\n\n\n"
+    "notes": "상세 설명\n세 단계는 프로젝트 관리 제안으로 Microsoft의 납기나 성능 약속이 아닙니다.\n각 단계에서 필요한 검토와 산출물은 조직 정책에 맞춰 조정합니다.\n\n발표 스크립트\n날짜를 채우기 전에 어떤 근거가 있으면 다음 단계로 갈지 정합니다.\n범위를 넓힐수록 검증 기록과 책임도 함께 확장해야 합니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / ROADMAP\n09 / 20\n일정보다 단계별 통과 조건을 정합니다\n\n탐색, 제한 검증, 운영 준비의 산출물을 연결하는 도입 로드맵 제안입니다.\n\n실행 묶음\n준비\n실행\n검토\n탐색 · 업무 가설\n\n문제 정의, 대표 질문, 제외 조건과 기대 결과를 문서로 남깁니다.\n\n검증 · 실패 근거\n\n제한된 데이터로 구현하고 평가 기록·권한 시험·수정 이력을 남깁니다.\n\n준비 · 운영 책임\n\n관측, 오류 대응, 비용 확인과 중단 계획을 합의합니다.\n\n단계의 의미\n\n날짜와 소요 기간을 보장하지 않습니다. 업무 난도와 데이터·권한 준비 상태에 따라 달라집니다.\n\n이어지는 책임\n\n다음 단계로 넘어갈 때 이전 단계의 실패 사례와 가정을 함께 넘깁니다.\n\n계획의 한계\n\n질문·데이터 범위가 달라지면 검증을 다시 설계합니다. 작은 시연만으로 확대 적용하지 않습니다.\n\n\n"
   },
   {
     "layout": "dataflow",
@@ -9115,7 +9115,7 @@
       },
       {
         "kind": "text",
-        "x": 1713.078125,
+        "x": 1704.3125,
         "y": 44,
         "w": 32.015625,
         "h": 36,
@@ -9137,11 +9137,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -9502,7 +9502,7 @@
         }
       }
     ],
-    "notes": "상세 설명\n이 그림은 Q&A를 설계할 때 고려할 데이터 준비와 소비 관계의 예시입니다.\n어떤 검색 도구와 저장소를 선택할지, 삭제·갱신·권한 변경을 어떻게 반영할지는 별도 설계합니다.\n\n발표 스크립트\n문서를 넣었다는 사실보다 어떤 조각이 누구에게 보이는지가 중요합니다.\n답변과 평가에 같은 근거를 연결해 실패 원인을 되짚을 수 있도록 합니다.\n\n출처\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nDATAFLOW · 가상 흐름\n10 / 15\n허용 문서를 검색 근거로 연결합니다\n\n문서 → 정제 → 검색 자료 → 답변·검토로 분기하는 가상 데이터 흐름입니다.\n\n01 / 원천\n허용 문서\n본문 · 문서 ID\n접근 범위\n02 / 처리\n문서 정제\n본문 분할 · 형식 정리\n문서 ID 보존\n03 / 저장\n검색 자료\n04 / 소비\n답변\n검토 기록\n원문\n문서 조각\n근거\n참조\n실선 = 데이터 전달\n가상 설계 · 배포 아님\n변환\n\n문서 식별자와 접근 범위를 유지하며 조각을 준비합니다. 형식 오류와 권한 검사는 별도 설계합니다.\n\n분기\n\n답변에는 관련 근거를, 평가에는 검토 기록을 연결합니다. 저장했다고 답변 품질이 보장되지는 않습니다.\n\n가정\n\n실선은 제안한 데이터 전달입니다. 실제 Foundry 내부 구조나 자동 수집·동기화를 뜻하지 않습니다.\n01 / 원천\n허용 문서\n본문 · 문서 ID\n접근 범위\n02 / 처리\n문서 정제\n본문 분할 · 형식 정리\n문서 ID 보존\n03 / 저장\n검색 자료\n04 / 소비\n답변\n검토 기록\n원문\n문서 조각\n근거\n참조\n실선 = 데이터 전달\n가상 설계 · 배포 아님"
+    "notes": "상세 설명\n이 그림은 Q&A를 설계할 때 고려할 데이터 준비와 소비 관계의 예시입니다.\n어떤 검색 도구와 저장소를 선택할지, 삭제·갱신·권한 변경을 어떻게 반영할지는 별도 설계합니다.\n\n발표 스크립트\n문서를 넣었다는 사실보다 어떤 조각이 누구에게 보이는지가 중요합니다.\n답변과 평가에 같은 근거를 연결해 실패 원인을 되짚을 수 있도록 합니다.\n\n출처\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nDATAFLOW · 가상 흐름\n10 / 20\n허용 문서를 검색 근거로 연결합니다\n\n문서 → 정제 → 검색 자료 → 답변·검토로 분기하는 가상 데이터 흐름입니다.\n\n01 / 원천\n허용 문서\n본문 · 문서 ID\n접근 범위\n02 / 처리\n문서 정제\n본문 분할 · 형식 정리\n문서 ID 보존\n03 / 저장\n검색 자료\n04 / 소비\n답변\n검토 기록\n원문\n문서 조각\n근거\n참조\n실선 = 데이터 전달\n가상 설계 · 배포 아님\n변환\n\n문서 식별자와 접근 범위를 유지하며 조각을 준비합니다. 형식 오류와 권한 검사는 별도 설계합니다.\n\n분기\n\n답변에는 관련 근거를, 평가에는 검토 기록을 연결합니다. 저장했다고 답변 품질이 보장되지는 않습니다.\n\n가정\n\n실선은 제안한 데이터 전달입니다. 실제 Foundry 내부 구조나 자동 수집·동기화를 뜻하지 않습니다.\n01 / 원천\n허용 문서\n본문 · 문서 ID\n접근 범위\n02 / 처리\n문서 정제\n본문 분할 · 형식 정리\n문서 ID 보존\n03 / 저장\n검색 자료\n04 / 소비\n답변\n검토 기록\n원문\n문서 조각\n근거\n참조\n실선 = 데이터 전달\n가상 설계 · 배포 아님"
   },
   {
     "layout": "sequence",
@@ -9574,7 +9574,7 @@
       },
       {
         "kind": "text",
-        "x": 1721.53125,
+        "x": 1712.765625,
         "y": 44,
         "w": 23.5625,
         "h": 36,
@@ -9596,11 +9596,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -9961,7 +9961,7 @@
         }
       }
     ],
-    "notes": "상세 설명\n세 참여자와 네 메시지는 책임과 반환 방향을 설명하기 위한 축약입니다.\n실제 에이전트 실행에서는 모델 판단과 추가 도구 호출 등 다른 단계가 포함될 수 있습니다.\n\n발표 스크립트\n요청과 응답의 방향을 분리해 읽겠습니다.\n검색 결과가 곧 답변은 아니며, 근거를 받은 뒤 답변을 구성하는 단계가 필요합니다.\n\n출처\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nSEQUENCE · 가상 상호작용\n11 / 15\n검색 요청과 근거 반환을 구분합니다\n\n응용 → 에이전트 → 검색 도구의 정상 경로를 단순화한 가상 시퀀스입니다.\n\n응용\n에이전트\n검색 도구\n1 · 질문 요청 / 업무 질문\n2 · 근거 검색 / 허용 범위\n3 · 검색 응답 / 관련 근거\n4 · 답변 반환 / 근거 참조\n실선 = 요청\n점선 = 응답\n세로 가는 선 = 생명선\n순서\n\n응용은 질문을 보내고 에이전트는 도구로 근거를 요청합니다. 도구는 허용된 검색 결과를 반환합니다.\n\n책임\n\n검색 근거를 받은 뒤 답변을 구성합니다. 세로 간격과 화살표 길이는 지연 시간을 뜻하지 않습니다.\n\n범위\n\n실제 모델 호출·추가 도구·승인·오류·재시도는 생략했습니다. 특정 SDK 호출 순서를 보장하지 않습니다.\n응용\n에이전트\n검색 도구\n1 · 질문 요청 / 업무 질문\n2 · 근거 검색 / 허용 범위\n3 · 검색 응답 / 관련 근거\n4 · 답변 반환 / 근거 참조\n실선 = 요청\n점선 = 응답\n세로 가는 선 = 생명선"
+    "notes": "상세 설명\n세 참여자와 네 메시지는 책임과 반환 방향을 설명하기 위한 축약입니다.\n실제 에이전트 실행에서는 모델 판단과 추가 도구 호출 등 다른 단계가 포함될 수 있습니다.\n\n발표 스크립트\n요청과 응답의 방향을 분리해 읽겠습니다.\n검색 결과가 곧 답변은 아니며, 근거를 받은 뒤 답변을 구성하는 단계가 필요합니다.\n\n출처\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nSEQUENCE · 가상 상호작용\n11 / 20\n검색 요청과 근거 반환을 구분합니다\n\n응용 → 에이전트 → 검색 도구의 정상 경로를 단순화한 가상 시퀀스입니다.\n\n응용\n에이전트\n검색 도구\n1 · 질문 요청 / 업무 질문\n2 · 근거 검색 / 허용 범위\n3 · 검색 응답 / 관련 근거\n4 · 답변 반환 / 근거 참조\n실선 = 요청\n점선 = 응답\n세로 가는 선 = 생명선\n순서\n\n응용은 질문을 보내고 에이전트는 도구로 근거를 요청합니다. 도구는 허용된 검색 결과를 반환합니다.\n\n책임\n\n검색 근거를 받은 뒤 답변을 구성합니다. 세로 간격과 화살표 길이는 지연 시간을 뜻하지 않습니다.\n\n범위\n\n실제 모델 호출·추가 도구·승인·오류·재시도는 생략했습니다. 특정 SDK 호출 순서를 보장하지 않습니다.\n응용\n에이전트\n검색 도구\n1 · 질문 요청 / 업무 질문\n2 · 근거 검색 / 허용 범위\n3 · 검색 응답 / 관련 근거\n4 · 답변 반환 / 근거 참조\n실선 = 요청\n점선 = 응답\n세로 가는 선 = 생명선"
   },
   {
     "layout": "network",
@@ -10033,7 +10033,7 @@
       },
       {
         "kind": "text",
-        "x": 1716.5625,
+        "x": 1707.796875,
         "y": 44,
         "w": 28.53125,
         "h": 36,
@@ -10055,11 +10055,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -10398,7 +10398,7 @@
         }
       }
     ],
-    "notes": "상세 설명\n서비스 간 실제 지원 연결 방식이나 인증 전달은 이 개념도에서 검증하지 않았습니다.\nFoundry의 관리 경로와 실행 경로, 연결 도구의 권한 체계는 실제 설계에서 따로 확인해야 합니다.\n\n발표 스크립트\n선 하나로 보안이 완성되는 것은 아닙니다.\n네트워크 경계와 데이터 접근 권한을 각각 검증해야 한다는 점을 보여주는 그림입니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nNETWORK · 가상 논리 구역\n12 / 15\n접근 경로와 작업 권한은 별개입니다\n\nQ&A 응용의 가상 접근 경계입니다. 실제 Azure 배포도나 사설 연결 보장이 아닙니다.\n\n직원\n서비스 논리 구역 · 가상\n게이트웨이\n진입점\n응용 구역\nQ&A 응용\n진입 경로 제한\n데이터 구역\n허용 문서\n조회 경로 제한\n요청\n전달\n조회\n직접 접근 차단\n실선 = 허용 경로\n점선 × = 차단 경로\nID / 작업 정책 · 별도 검사\n경계\n\n사용자, 진입점, 업무 응용과 문서 자료를 논리적 구역으로 나눴습니다.\n\nID와 정책\n\n경로가 열려 있어도 신원과 작업 권한은 따로 확인합니다. 관리 경로와 정책 전파는 생략했습니다.\n\n검증 전 설계\n\n차단 표시는 의도입니다. 실제 네트워크·RBAC·데이터 접근 설정과 시험으로 검증해야 합니다.\n직원\n서비스 논리 구역 · 가상\n게이트웨이\n진입점\n응용 구역\nQ&A 응용\n진입 경로 제한\n데이터 구역\n허용 문서\n조회 경로 제한\n요청\n전달\n조회\n직접 접근 차단\n실선 = 허용 경로\n점선 × = 차단 경로\nID / 작업 정책 · 별도 검사"
+    "notes": "상세 설명\n서비스 간 실제 지원 연결 방식이나 인증 전달은 이 개념도에서 검증하지 않았습니다.\nFoundry의 관리 경로와 실행 경로, 연결 도구의 권한 체계는 실제 설계에서 따로 확인해야 합니다.\n\n발표 스크립트\n선 하나로 보안이 완성되는 것은 아닙니다.\n네트워크 경계와 데이터 접근 권한을 각각 검증해야 한다는 점을 보여주는 그림입니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nNETWORK · 가상 논리 구역\n12 / 20\n접근 경로와 작업 권한은 별개입니다\n\nQ&A 응용의 가상 접근 경계입니다. 실제 Azure 배포도나 사설 연결 보장이 아닙니다.\n\n직원\n서비스 논리 구역 · 가상\n게이트웨이\n진입점\n응용 구역\nQ&A 응용\n진입 경로 제한\n데이터 구역\n허용 문서\n조회 경로 제한\n요청\n전달\n조회\n직접 접근 차단\n실선 = 허용 경로\n점선 × = 차단 경로\nID / 작업 정책 · 별도 검사\n경계\n\n사용자, 진입점, 업무 응용과 문서 자료를 논리적 구역으로 나눴습니다.\n\nID와 정책\n\n경로가 열려 있어도 신원과 작업 권한은 따로 확인합니다. 관리 경로와 정책 전파는 생략했습니다.\n\n검증 전 설계\n\n차단 표시는 의도입니다. 실제 네트워크·RBAC·데이터 접근 설정과 시험으로 검증해야 합니다.\n직원\n서비스 논리 구역 · 가상\n게이트웨이\n진입점\n응용 구역\nQ&A 응용\n진입 경로 제한\n데이터 구역\n허용 문서\n조회 경로 제한\n요청\n전달\n조회\n직접 접근 차단\n실선 = 허용 경로\n점선 × = 차단 경로\nID / 작업 정책 · 별도 검사"
   },
   {
     "layout": "metrics",
@@ -10470,7 +10470,7 @@
       },
       {
         "kind": "text",
-        "x": 1716.5625,
+        "x": 1707.796875,
         "y": 44,
         "w": 28.53125,
         "h": 36,
@@ -10492,11 +10492,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -11241,7 +11241,7 @@
         }
       }
     ],
-    "notes": "상세 설명\n숫자는 차트의 축·막대 비례·라벨·값 표를 대조하는 템플릿 예시입니다.\n관측 문서는 평가와 신호의 역할을 설명하는 출처이며 이 가상 숫자의 출처는 아닙니다.\n실제 평가 보고에는 데이터셋, 기간, 평가 정의, 실패 사례와 측정 환경을 함께 기록해야 합니다.\n\n발표 스크립트\n막대가 높다는 이유만으로 좋은 모델이라고 판단하면 안 됩니다.\n여기서는 질문을 몇 건 검토했는지만 보여주며, 모든 수치는 설명용입니다.\n\n출처\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nMETRICS · 가상 수치\n13 / 15\n평가 차트는 단위와 표본부터 읽습니다\n\n가상 검토 건수 40·65·85건을 0~100건 축에 표시합니다. 실측 성능이 아닙니다.\n\n가상 예시 · 실측 아님\n건\n100\n50\n0\n40건\n세트 A\n65건\n세트 B\n85건\n세트 C\n차트와 같은 값 · 단위: 건\n질문 세트\t검토 건수\n세트 A\t40건\n세트 B\t65건\n세트 C\t85건\n정의 / 검토 건수\n\n차트 정의는 검토한 질문 수입니다. 정답률, 처리 속도나 비용 절감률이 아닙니다.\n\n해석 / 규모 차이\n\n표본 C의 수가 더 많아도 품질 우위를 뜻하지 않습니다. 기간·입력량·질문 구성을 함께 봅니다.\n\n표본 / 실측 아님\n\n레이아웃 설명용 가상 데이터입니다. 실제 평가·고객 성과·모델 벤치마크로 인용하지 않습니다.\n건\n100\n50\n0\n40건\n세트 A\n65건\n세트 B\n85건\n세트 C"
+    "notes": "상세 설명\n숫자는 차트의 축·막대 비례·라벨·값 표를 대조하는 템플릿 예시입니다.\n관측 문서는 평가와 신호의 역할을 설명하는 출처이며 이 가상 숫자의 출처는 아닙니다.\n실제 평가 보고에는 데이터셋, 기간, 평가 정의, 실패 사례와 측정 환경을 함께 기록해야 합니다.\n\n발표 스크립트\n막대가 높다는 이유만으로 좋은 모델이라고 판단하면 안 됩니다.\n여기서는 질문을 몇 건 검토했는지만 보여주며, 모든 수치는 설명용입니다.\n\n출처\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nMETRICS · 가상 수치\n13 / 20\n평가 차트는 단위와 표본부터 읽습니다\n\n가상 검토 건수 40·65·85건을 0~100건 축에 표시합니다. 실측 성능이 아닙니다.\n\n가상 예시 · 실측 아님\n건\n100\n50\n0\n40건\n세트 A\n65건\n세트 B\n85건\n세트 C\n차트와 같은 값 · 단위: 건\n질문 세트\t검토 건수\n세트 A\t40건\n세트 B\t65건\n세트 C\t85건\n정의 / 검토 건수\n\n차트 정의는 검토한 질문 수입니다. 정답률, 처리 속도나 비용 절감률이 아닙니다.\n\n해석 / 규모 차이\n\n표본 C의 수가 더 많아도 품질 우위를 뜻하지 않습니다. 기간·입력량·질문 구성을 함께 봅니다.\n\n표본 / 실측 아님\n\n레이아웃 설명용 가상 데이터입니다. 실제 평가·고객 성과·모델 벤치마크로 인용하지 않습니다.\n건\n100\n50\n0\n40건\n세트 A\n65건\n세트 B\n85건\n세트 C"
   },
   {
     "layout": "walkthrough",
@@ -11313,7 +11313,7 @@
       },
       {
         "kind": "text",
-        "x": 1714.578125,
+        "x": 1705.8125,
         "y": 44,
         "w": 30.515625,
         "h": 36,
@@ -11335,11 +11335,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -12423,7 +12423,4549 @@
         }
       }
     ],
-    "notes": "상세 설명\nauthorize, search, compose, record_refs는 흐름 설명을 위한 가상 함수 이름입니다.\n실제 API, 오류 처리, 인증 토큰 전달, 기록의 보관 정책을 구현한 코드가 아닙니다.\n\n발표 스크립트\n코드의 길이보다 확인 지점을 보겠습니다.\n권한 확인, 근거가 없을 때의 행동, 기록 범위가 서로 다른 책임이라는 점을 짚습니다.\n\n출처\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nWALKTHROUGH · 예시 의사 코드\n14 / 15\n근거 확인 지점을 코드로 설명합니다\n\n권한, 검색, 근거 부족 시 행동을 읽는 의사 코드입니다. 실행 가능한 SDK 예제가 아닙니다.\n\n예시 의사 코드 · 실행 불가 / 제품 화면 아님\n01 INPUT question, user\n02 scope = authorize(user)\n03 evidence = search(question, scope)\n04 IF empty(evidence): ASK HUMAN\n05 answer = compose(question, evidence)\n06 record_refs(answer, evidence)\n07 RETURN answer\n2\n02행 · 권한 확인\n\n2행은 허용 자료 범위를 확인하는 설계 지점입니다. 모델 지침만으로 권한을 통제하지 않습니다.\n\n4\n04행 · 근거 부족\n\n4행은 근거가 없을 때 추가 확인을 요청하는 분기입니다. 빈 결과를 성공으로 숨기지 않습니다.\n\n6\n06행 · 참조 기록\n\n6행은 근거와 응답 기록을 연결하는 지점입니다. 민감한 원문은 무조건 기록하지 않습니다.\n\n범위\n\n2행은 허용 자료 범위를 확인하는 설계 지점입니다. 모델 지침만으로 권한을 통제하지 않습니다.\n\n판단\n\n4행은 근거가 없을 때 추가 확인을 요청하는 분기입니다. 빈 결과를 성공으로 숨기지 않습니다.\n\n원본 교체\n\n6행은 근거와 응답 기록을 연결하는 지점입니다. 민감한 원문은 무조건 기록하지 않습니다.\n"
+    "notes": "상세 설명\nauthorize, search, compose, record_refs는 흐름 설명을 위한 가상 함수 이름입니다.\n실제 API, 오류 처리, 인증 토큰 전달, 기록의 보관 정책을 구현한 코드가 아닙니다.\n\n발표 스크립트\n코드의 길이보다 확인 지점을 보겠습니다.\n권한 확인, 근거가 없을 때의 행동, 기록 범위가 서로 다른 책임이라는 점을 짚습니다.\n\n출처\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nWALKTHROUGH · 예시 의사 코드\n14 / 20\n근거 확인 지점을 코드로 설명합니다\n\n권한, 검색, 근거 부족 시 행동을 읽는 의사 코드입니다. 실행 가능한 SDK 예제가 아닙니다.\n\n예시 의사 코드 · 실행 불가 / 제품 화면 아님\n01 INPUT question, user\n02 scope = authorize(user)\n03 evidence = search(question, scope)\n04 IF empty(evidence): ASK HUMAN\n05 answer = compose(question, evidence)\n06 record_refs(answer, evidence)\n07 RETURN answer\n2\n02행 · 권한 확인\n\n2행은 허용 자료 범위를 확인하는 설계 지점입니다. 모델 지침만으로 권한을 통제하지 않습니다.\n\n4\n04행 · 근거 부족\n\n4행은 근거가 없을 때 추가 확인을 요청하는 분기입니다. 빈 결과를 성공으로 숨기지 않습니다.\n\n6\n06행 · 참조 기록\n\n6행은 근거와 응답 기록을 연결하는 지점입니다. 민감한 원문은 무조건 기록하지 않습니다.\n\n범위\n\n2행은 허용 자료 범위를 확인하는 설계 지점입니다. 모델 지침만으로 권한을 통제하지 않습니다.\n\n판단\n\n4행은 근거가 없을 때 추가 확인을 요청하는 분기입니다. 빈 결과를 성공으로 숨기지 않습니다.\n\n원본 교체\n\n6행은 근거와 응답 기록을 연결하는 지점입니다. 민감한 원문은 무조건 기록하지 않습니다.\n"
+  },
+  {
+    "layout": "decision",
+    "title": "허용 범위와 근거로 응답을 분기합니다",
+    "background": "FFFFFF",
+    "objects": [
+      {
+        "x": 120,
+        "y": 44,
+        "w": 1680,
+        "h": 54,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 2,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 52,
+        "w": 20,
+        "h": 20,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "rect",
+        "fill": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "ellipse": false,
+        "stroke": null
+      },
+      {
+        "kind": "text",
+        "x": 156,
+        "y": 46.5,
+        "w": 241.234375,
+        "h": 31,
+        "value": "FOUNDRY / DECISION",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 13,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": -0.13,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1708.296875,
+        "y": 44,
+        "w": 28.03125,
+        "h": 36,
+        "value": "15",
+        "role": "body",
+        "fontFace": "Archivo",
+        "fontSize": 15,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0.3,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1736.328125,
+        "y": 44,
+        "w": 63.671875,
+        "h": 36,
+        "value": " / 20",
+        "role": "body",
+        "fontFace": "Archivo",
+        "fontSize": 15,
+        "color": "AFAFAF",
+        "bold": false,
+        "italic": false,
+        "spacing": 0.3,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 110,
+        "w": 908.296875,
+        "h": 77,
+        "value": "허용 범위와 근거로 응답을 분기합니다",
+        "role": "title",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 32,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": -1.12,
+        "effect": {
+          "fx": "fade",
+          "d": 200,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 321,
+        "w": 1089.1875,
+        "h": 39,
+        "value": "가상 Q&A 설계입니다. 자료 접근 허용 여부와 검색 근거의 충분함은 서로 다른 판단입니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 16,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": -0.288,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 241.9375,
+        "y": 434,
+        "w": 772.265625,
+        "h": 110,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "rect",
+        "fill": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "ellipse": false,
+        "stroke": null
+      },
+      {
+        "kind": "text",
+        "x": 476.15625,
+        "y": 451,
+        "w": 303.8125,
+        "h": 35,
+        "value": "접근이 허용된 자료인가요?",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "FFFFFF",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 436.265625,
+        "y": 497.21875,
+        "w": 383.59375,
+        "h": 29,
+        "value": "사용자와 자료의 허용 범위를 확인합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "FFFFFF",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 329.609375,
+        "y": 565.5,
+        "w": 81.828125,
+        "h": 29,
+        "value": "아니오 ↓",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 865.453125,
+        "y": 565.5,
+        "w": 40.296875,
+        "h": 29,
+        "value": "예 ↓",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 120,
+        "y": 616,
+        "w": 501.0625,
+        "h": 128,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 142,
+        "y": 636,
+        "w": 208.3125,
+        "h": 35,
+        "value": "접근을 중단합니다",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 142,
+        "y": 682.21875,
+        "w": 431.4375,
+        "h": 29,
+        "value": "권한을 우회하지 않고 거절 이유를 안내합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 635.0625,
+        "y": 616,
+        "w": 501.078125,
+        "h": 128,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "rect",
+        "fill": {
+          "color": "EDF5FF",
+          "transparency": 0
+        },
+        "ellipse": false,
+        "stroke": null
+      },
+      {
+        "x": 635.0625,
+        "y": 616,
+        "w": 501.078125,
+        "h": 128,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "width": 1.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 657.0625,
+        "y": 636,
+        "w": 278.734375,
+        "h": 35,
+        "value": "답변 근거가 충분한가요?",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 657.0625,
+        "y": 682.21875,
+        "w": 362.84375,
+        "h": 29,
+        "value": "관련 문서와 질문의 대응을 확인합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 736.671875,
+        "y": 763.5,
+        "w": 40.296875,
+        "h": 29,
+        "value": "예 ↓",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 973.453125,
+        "y": 763.5,
+        "w": 81.828125,
+        "h": 29,
+        "value": "아니오 ↓",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 635.0625,
+        "y": 812,
+        "w": 243.53125,
+        "h": 142,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "rect",
+        "fill": {
+          "color": "EDF5FF",
+          "transparency": 0
+        },
+        "ellipse": false,
+        "stroke": null
+      },
+      {
+        "x": 635.0625,
+        "y": 812,
+        "w": 243.53125,
+        "h": 142,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "width": 1.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 651.0625,
+        "y": 830,
+        "w": 119.296875,
+        "h": 31,
+        "value": "근거와 답변",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 13,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 651.0625,
+        "y": 871.671875,
+        "w": 206.859375,
+        "h": 27,
+        "value": "참조를 남겨 검토합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 11,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 892.59375,
+        "y": 812,
+        "w": 243.546875,
+        "h": 142,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 908.59375,
+        "y": 830,
+        "w": 96.8125,
+        "h": 31,
+        "value": "추가 확인",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 13,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 908.59375,
+        "y": 871.671875,
+        "w": 119.96875,
+        "h": 27,
+        "value": "정보나 검토를",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 11,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 908.59375,
+        "y": 900.265625,
+        "w": 100.125,
+        "h": 27,
+        "value": "요청합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 11,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1184.140625,
+        "y": 408,
+        "w": 615.859375,
+        "h": 178.65625,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "width": 3,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 432,
+        "w": 93.078125,
+        "h": 31,
+        "value": "판단 기준",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 473.75,
+        "w": 449.40625,
+        "h": 31,
+        "value": "접근 허용은 응용의 통제 지점에서 확인합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 506.75,
+        "w": 421.203125,
+        "h": 31,
+        "value": "모델의 답변 지침만으로 대신하지 않습니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1184.140625,
+        "y": 604.65625,
+        "w": 615.859375,
+        "h": 178.671875,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 623.65625,
+        "w": 93.078125,
+        "h": 31,
+        "value": "읽는 관점",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 665.40625,
+        "w": 378.875,
+        "h": 31,
+        "value": "허용된 자료라도 답변 근거가 부족할 수",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 698.40625,
+        "w": 433.4375,
+        "h": 31,
+        "value": "있습니다. 두 조건의 실패 경로를 구분합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1184.140625,
+        "y": 801.328125,
+        "w": 615.859375,
+        "h": 178.671875,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 820.328125,
+        "w": 114.703125,
+        "h": 31,
+        "value": "범위와 한계",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 862.078125,
+        "w": 429.78125,
+        "h": 31,
+        "value": "설명용 분기입니다. 실제 인증·오류·재시도와",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 895.078125,
+        "w": 406.15625,
+        "h": 31,
+        "value": "사람 검토 절차는 별도 구현이 필요합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      }
+    ],
+    "notes": "상세 설명\n이 의사결정 트리는 구현할 수 있는 통제 흐름을 설명하기 위한 가상 설계입니다.\nFoundry가 모든 응용의 권한과 답변 근거를 자동 판정한다는 제품 보장이 아닙니다.\n각 조건에는 실패 사유와 담당자에게 전달할 정보가 필요합니다.\n\n발표 스크립트\n접근할 수 있는 자료인지와 그 자료로 답할 수 있는지는 다른 질문입니다.\n왼쪽의 중단과 오른쪽의 추가 확인을 같은 오류로 묶지 않겠습니다.\n\n출처\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / DECISION\n15 / 20\n허용 범위와 근거로 응답을 분기합니다\n\n가상 Q&A 설계입니다. 자료 접근 허용 여부와 검색 근거의 충분함은 서로 다른 판단입니다.\n\n접근이 허용된 자료인가요?\n\n사용자와 자료의 허용 범위를 확인합니다.\n\n아니오 ↓\n\n예 ↓\n\n접근을 중단합니다\n\n권한을 우회하지 않고 거절 이유를 안내합니다.\n\n답변 근거가 충분한가요?\n\n관련 문서와 질문의 대응을 확인합니다.\n\n예 ↓\n\n아니오 ↓\n\n근거와 답변\n\n참조를 남겨 검토합니다.\n\n추가 확인\n\n정보나 검토를 요청합니다.\n\n판단 기준\n\n접근 허용은 응용의 통제 지점에서 확인합니다. 모델의 답변 지침만으로 대신하지 않습니다.\n\n읽는 관점\n\n허용된 자료라도 답변 근거가 부족할 수 있습니다. 두 조건의 실패 경로를 구분합니다.\n\n범위와 한계\n\n설명용 분기입니다. 실제 인증·오류·재시도와 사람 검토 절차는 별도 구현이 필요합니다.\n"
+  },
+  {
+    "layout": "pyramid",
+    "title": "확장보다 업무와 통제의 기반을 먼저 놓습니다",
+    "background": "FFFFFF",
+    "objects": [
+      {
+        "x": 120,
+        "y": 44,
+        "w": 1680,
+        "h": 54,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 2,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 52,
+        "w": 20,
+        "h": 20,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "rect",
+        "fill": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "ellipse": false,
+        "stroke": null
+      },
+      {
+        "kind": "text",
+        "x": 156,
+        "y": 46.5,
+        "w": 239.265625,
+        "h": 31,
+        "value": "FOUNDRY / PYRAMID",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 13,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": -0.13,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1706.265625,
+        "y": 44,
+        "w": 30.0625,
+        "h": 36,
+        "value": "16",
+        "role": "body",
+        "fontFace": "Archivo",
+        "fontSize": 15,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0.3,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1736.328125,
+        "y": 44,
+        "w": 63.671875,
+        "h": 36,
+        "value": " / 20",
+        "role": "body",
+        "fontFace": "Archivo",
+        "fontSize": 15,
+        "color": "AFAFAF",
+        "bold": false,
+        "italic": false,
+        "spacing": 0.3,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 110,
+        "w": 1082.25,
+        "h": 77,
+        "value": "확장보다 업무와 통제의 기반을 먼저 놓습니다",
+        "role": "title",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 32,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": -1.12,
+        "effect": {
+          "fx": "fade",
+          "d": 200,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 321,
+        "w": 1210.4375,
+        "h": 39,
+        "value": "가상 도입 원칙을 기반·검증·확장의 세 층으로 읽습니다. 공식 제품 계층이나 성숙도 점수가 아닙니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 16,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": -0.288,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 384.203125,
+        "y": 455.34375,
+        "w": 487.734375,
+        "h": 134,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "rect",
+        "fill": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "ellipse": false,
+        "stroke": null
+      },
+      {
+        "kind": "text",
+        "x": 545.21875,
+        "y": 480.34375,
+        "w": 165.6875,
+        "h": 35,
+        "value": "03 · 범위 확장",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "FFFFFF",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 480.9375,
+        "y": 526.5625,
+        "w": 294.25,
+        "h": 29,
+        "value": "새 업무와 사용자를 검토합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "FFFFFF",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 262.265625,
+        "y": 601.34375,
+        "w": 731.609375,
+        "h": 134,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "rect",
+        "fill": {
+          "color": "EDF5FF",
+          "transparency": 0
+        },
+        "ellipse": false,
+        "stroke": null
+      },
+      {
+        "kind": "text",
+        "x": 532.609375,
+        "y": 626.34375,
+        "w": 190.921875,
+        "h": 35,
+        "value": "02 · 평가와 검토",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 418.609375,
+        "y": 672.5625,
+        "w": 418.90625,
+        "h": 29,
+        "value": "대표 질문·실패 조건·운영 신호를 확인합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 120,
+        "y": 747.34375,
+        "w": 1016.140625,
+        "h": 134,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 747.34375,
+        "w": 1016.140625,
+        "h": 134,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 1,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 747.34375,
+        "w": 1016.140625,
+        "h": 134,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 2,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 747.34375,
+        "w": 1016.140625,
+        "h": 134,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 3,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 534.859375,
+        "y": 774.34375,
+        "w": 186.421875,
+        "h": 35,
+        "value": "01 · 업무와 통제",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 418.609375,
+        "y": 820.5625,
+        "w": 418.90625,
+        "h": 29,
+        "value": "업무 범위·접근 조건·담당 책임을 합의합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 384.8125,
+        "y": 906.34375,
+        "w": 486.515625,
+        "h": 25,
+        "value": "아래 기반부터 위 확장으로 · 면적은 정량 데이터가 아닙니다",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 10.5,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1184.140625,
+        "y": 408,
+        "w": 615.859375,
+        "h": 178.65625,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "width": 3,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 432,
+        "w": 93.078125,
+        "h": 31,
+        "value": "판단 기준",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 473.75,
+        "w": 412.734375,
+        "h": 31,
+        "value": "기반에는 업무 범위, 자료 접근 조건과 허용",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 506.75,
+        "w": 433.4375,
+        "h": 31,
+        "value": "행동을 둡니다. 기능 수보다 먼저 합의합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1184.140625,
+        "y": 604.65625,
+        "w": 615.859375,
+        "h": 178.671875,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 623.65625,
+        "w": 93.078125,
+        "h": 31,
+        "value": "읽는 관점",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 665.40625,
+        "w": 407.078125,
+        "h": 31,
+        "value": "대표 질문과 실패 조건을 검증한 뒤 범위를",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 698.40625,
+        "w": 483.25,
+        "h": 31,
+        "value": "넓힙니다. 평가 기록을 다음 단계의 근거로 씁니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1184.140625,
+        "y": 801.328125,
+        "w": 615.859375,
+        "h": 178.671875,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 820.328125,
+        "w": 114.703125,
+        "h": 31,
+        "value": "범위와 한계",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 862.078125,
+        "w": 406.15625,
+        "h": 31,
+        "value": "층의 면적과 높이는 수치가 아닙니다. 실제",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 895.078125,
+        "w": 442.828125,
+        "h": 31,
+        "value": "도입에서는 병렬 작업과 재검토가 가능합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      }
+    ],
+    "notes": "상세 설명\n피라미드는 설계 판단의 의존 관계를 표현합니다. 서비스의 과금 계층이나 기능 제공 단계가 아닙니다.\n아래층은 상위 기능을 사용하기 전에 정해야 할 조건을 강조하며, 일방향 일정표를 뜻하지 않습니다.\n\n발표 스크립트\n모델이나 에이전트 기능을 늘리는 것보다 바닥의 조건이 무엇인지 먼저 보겠습니다.\n검증 기록 없이 확장하면 남은 질문의 범위도 함께 커집니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / PYRAMID\n16 / 20\n확장보다 업무와 통제의 기반을 먼저 놓습니다\n\n가상 도입 원칙을 기반·검증·확장의 세 층으로 읽습니다. 공식 제품 계층이나 성숙도 점수가 아닙니다.\n\n03 · 범위 확장\n\n새 업무와 사용자를 검토합니다.\n\n02 · 평가와 검토\n\n대표 질문·실패 조건·운영 신호를 확인합니다.\n\n01 · 업무와 통제\n\n업무 범위·접근 조건·담당 책임을 합의합니다.\n\n아래 기반부터 위 확장으로 · 면적은 정량 데이터가 아닙니다\n\n판단 기준\n\n기반에는 업무 범위, 자료 접근 조건과 허용 행동을 둡니다. 기능 수보다 먼저 합의합니다.\n\n읽는 관점\n\n대표 질문과 실패 조건을 검증한 뒤 범위를 넓힙니다. 평가 기록을 다음 단계의 근거로 씁니다.\n\n범위와 한계\n\n층의 면적과 높이는 수치가 아닙니다. 실제 도입에서는 병렬 작업과 재검토가 가능합니다.\n"
+  },
+  {
+    "layout": "funnel",
+    "title": "업무 후보를 검증 가능한 작은 범위로 좁힙니다",
+    "background": "FFFFFF",
+    "objects": [
+      {
+        "x": 120,
+        "y": 44,
+        "w": 1680,
+        "h": 54,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 2,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 52,
+        "w": 20,
+        "h": 20,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "rect",
+        "fill": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "ellipse": false,
+        "stroke": null
+      },
+      {
+        "kind": "text",
+        "x": 156,
+        "y": 46.5,
+        "w": 226.59375,
+        "h": 31,
+        "value": "FOUNDRY / FUNNEL",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 13,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": -0.13,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1708.09375,
+        "y": 44,
+        "w": 28.234375,
+        "h": 36,
+        "value": "17",
+        "role": "body",
+        "fontFace": "Archivo",
+        "fontSize": 15,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0.3,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1736.328125,
+        "y": 44,
+        "w": 63.671875,
+        "h": 36,
+        "value": " / 20",
+        "role": "body",
+        "fontFace": "Archivo",
+        "fontSize": 15,
+        "color": "AFAFAF",
+        "bold": false,
+        "italic": false,
+        "spacing": 0.3,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 110,
+        "w": 1096.84375,
+        "h": 77,
+        "value": "업무 후보를 검증 가능한 작은 범위로 좁힙니다",
+        "role": "title",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 32,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": -1.12,
+        "effect": {
+          "fx": "fade",
+          "d": 200,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 321,
+        "w": 1024.296875,
+        "h": 39,
+        "value": "가상 업무 선정 흐름입니다. 도입 사례의 수량·전환율·성과를 측정한 퍼널이 아닙니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 16,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": -0.288,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 120,
+        "y": 426.34375,
+        "w": 1016.140625,
+        "h": 114,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "image",
+        "imageId": "1",
+        "reason": "CSS decoration",
+        "text": "",
+        "decoration": true
+      },
+      {
+        "kind": "text",
+        "x": 574.078125,
+        "y": 440.34375,
+        "w": 107.96875,
+        "h": 35,
+        "value": "업무 후보",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "FFFFFF",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 457.03125,
+        "y": 486.5625,
+        "w": 342.078125,
+        "h": 29,
+        "value": "반복 질문과 자료 위치를 살펴봅니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "FFFFFF",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 206.375,
+        "y": 550.34375,
+        "w": 843.390625,
+        "h": 114,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "image",
+        "imageId": "2",
+        "reason": "CSS decoration",
+        "text": "",
+        "decoration": true
+      },
+      {
+        "kind": "text",
+        "x": 574.078125,
+        "y": 564.34375,
+        "w": 107.96875,
+        "h": 35,
+        "value": "자료 확인",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 457.03125,
+        "y": 610.5625,
+        "w": 342.078125,
+        "h": 29,
+        "value": "접근 범위와 이용 조건을 확인합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 292.75,
+        "y": 674.34375,
+        "w": 670.640625,
+        "h": 114,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "image",
+        "imageId": "3",
+        "reason": "CSS decoration",
+        "text": "",
+        "decoration": true
+      },
+      {
+        "kind": "text",
+        "x": 574.078125,
+        "y": 688.34375,
+        "w": 107.96875,
+        "h": 35,
+        "value": "제한 실험",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "FFFFFF",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 457.03125,
+        "y": 734.5625,
+        "w": 342.078125,
+        "h": 29,
+        "value": "대표 질문과 실패 조건을 검토합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "FFFFFF",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 379.109375,
+        "y": 798.34375,
+        "w": 497.90625,
+        "h": 114,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "image",
+        "imageId": "4",
+        "reason": "CSS decoration",
+        "text": "",
+        "decoration": true
+      },
+      {
+        "kind": "text",
+        "x": 574.078125,
+        "y": 812.34375,
+        "w": 107.96875,
+        "h": 35,
+        "value": "범위 합의",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 480.9375,
+        "y": 858.5625,
+        "w": 294.25,
+        "h": 29,
+        "value": "담당자와 남은 질문을 남깁니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 375.734375,
+        "y": 935.34375,
+        "w": 504.671875,
+        "h": 25,
+        "value": "선정 기준으로 범위를 좁힙니다 · 폭은 실제 전환율이 아닙니다",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 10.5,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1184.140625,
+        "y": 408,
+        "w": 615.859375,
+        "h": 178.65625,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "width": 3,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 432,
+        "w": 93.078125,
+        "h": 31,
+        "value": "판단 기준",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 473.75,
+        "w": 471.953125,
+        "h": 31,
+        "value": "반복 질문과 자료 위치가 명확한 업무부터 후보로",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 506.75,
+        "w": 433.4375,
+        "h": 31,
+        "value": "모읍니다. 자료 이용 조건을 함께 확인합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1184.140625,
+        "y": 604.65625,
+        "w": 615.859375,
+        "h": 178.671875,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 623.65625,
+        "w": 93.078125,
+        "h": 31,
+        "value": "읽는 관점",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 665.40625,
+        "w": 422.125,
+        "h": 31,
+        "value": "작은 실험에서 확인할 질문과 제외할 행동을",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 698.40625,
+        "w": 405.234375,
+        "h": 31,
+        "value": "명확히 합니다. 보류한 이유도 기록합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1184.140625,
+        "y": 801.328125,
+        "w": 615.859375,
+        "h": 178.671875,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 820.328125,
+        "w": 114.703125,
+        "h": 31,
+        "value": "범위와 한계",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 862.078125,
+        "w": 427.78125,
+        "h": 31,
+        "value": "폭은 정성적인 범위 축소만 나타냅니다. 고객",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 895.078125,
+        "w": 492.65625,
+        "h": 31,
+        "value": "도입률이나 실제 검증 성공률로 인용하지 않습니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      }
+    ],
+    "notes": "상세 설명\n각 단계는 숫자로 연결된 고객 획득 퍼널이 아니라 업무 후보를 검토하는 제안입니다.\n후보를 제외하거나 보류하는 조건은 조직의 자료 이용 정책과 검증 결과에 따라 달라집니다.\n\n발표 스크립트\n많은 후보를 곧바로 배포하지 않고, 확인 가능한 업무 하나로 좁히겠습니다.\n줄어드는 폭이 실제 수량을 표현한 것은 아니라는 점도 함께 밝힙니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / FUNNEL\n17 / 20\n업무 후보를 검증 가능한 작은 범위로 좁힙니다\n\n가상 업무 선정 흐름입니다. 도입 사례의 수량·전환율·성과를 측정한 퍼널이 아닙니다.\n\n업무 후보\n\n반복 질문과 자료 위치를 살펴봅니다.\n\n자료 확인\n\n접근 범위와 이용 조건을 확인합니다.\n\n제한 실험\n\n대표 질문과 실패 조건을 검토합니다.\n\n범위 합의\n\n담당자와 남은 질문을 남깁니다.\n\n선정 기준으로 범위를 좁힙니다 · 폭은 실제 전환율이 아닙니다\n\n판단 기준\n\n반복 질문과 자료 위치가 명확한 업무부터 후보로 모읍니다. 자료 이용 조건을 함께 확인합니다.\n\n읽는 관점\n\n작은 실험에서 확인할 질문과 제외할 행동을 명확히 합니다. 보류한 이유도 기록합니다.\n\n범위와 한계\n\n폭은 정성적인 범위 축소만 나타냅니다. 고객 도입률이나 실제 검증 성공률로 인용하지 않습니다.\n\n\n\n"
+  },
+  {
+    "layout": "riskmap",
+    "title": "영향과 가능성을 나누어 대응 순서를 정합니다",
+    "background": "FFFFFF",
+    "objects": [
+      {
+        "x": 120,
+        "y": 44,
+        "w": 1680,
+        "h": 54,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 2,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 52,
+        "w": 20,
+        "h": 20,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "rect",
+        "fill": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "ellipse": false,
+        "stroke": null
+      },
+      {
+        "kind": "text",
+        "x": 156,
+        "y": 46.5,
+        "w": 236.109375,
+        "h": 31,
+        "value": "FOUNDRY / RISKMAP",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 13,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": -0.13,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1705.8125,
+        "y": 44,
+        "w": 30.515625,
+        "h": 36,
+        "value": "18",
+        "role": "body",
+        "fontFace": "Archivo",
+        "fontSize": 15,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0.3,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1736.328125,
+        "y": 44,
+        "w": 63.671875,
+        "h": 36,
+        "value": " / 20",
+        "role": "body",
+        "fontFace": "Archivo",
+        "fontSize": 15,
+        "color": "AFAFAF",
+        "bold": false,
+        "italic": false,
+        "spacing": 0.3,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 110,
+        "w": 1082.25,
+        "h": 77,
+        "value": "영향과 가능성을 나누어 대응 순서를 정합니다",
+        "role": "title",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 32,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": -1.12,
+        "effect": {
+          "fx": "fade",
+          "d": 200,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 321,
+        "w": 1138.5,
+        "h": 39,
+        "value": "가상의 검토 연습입니다. 구역 배치는 실제 시스템의 위험 평가나 발생 확률을 뜻하지 않습니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 16,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": -0.288,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 408,
+        "w": 58.515625,
+        "h": 28,
+        "value": "영향 ↑",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 11.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 922.71875,
+        "y": 948,
+        "w": 213.421875,
+        "h": 28,
+        "value": "가능성 → 낮음에서 높음",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 11.5,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 120,
+        "y": 450,
+        "w": 501.0625,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1.5,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 450,
+        "w": 501.0625,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 1,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 450,
+        "w": 501.0625,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 2,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 450,
+        "w": 501.0625,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 3,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 141,
+        "y": 473,
+        "w": 191.953125,
+        "h": 25,
+        "value": "높은 영향 · 낮은 가능성",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 10.5,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 141,
+        "y": 517,
+        "w": 198.484375,
+        "h": 35,
+        "value": "권한 밖 자료 노출",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 141,
+        "y": 563.21875,
+        "w": 240.984375,
+        "h": 29,
+        "value": "낮은 가능성으로 가정해도",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 141,
+        "y": 594.40625,
+        "w": 252.734375,
+        "h": 29,
+        "value": "접근 통제와 점검을 둡니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 635.0625,
+        "y": 450,
+        "w": 501.078125,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "rect",
+        "fill": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "ellipse": false,
+        "stroke": null
+      },
+      {
+        "x": 635.0625,
+        "y": 450,
+        "w": 501.078125,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "width": 1.5,
+        "dash": false
+      },
+      {
+        "x": 635.0625,
+        "y": 450,
+        "w": 501.078125,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 1,
+        "color": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "x": 635.0625,
+        "y": 450,
+        "w": 501.078125,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 2,
+        "color": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "x": 635.0625,
+        "y": 450,
+        "w": 501.078125,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 3,
+        "color": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 656.0625,
+        "y": 473,
+        "w": 191.953125,
+        "h": 25,
+        "value": "높은 영향 · 높은 가능성",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 10.5,
+        "color": "FFFFFF",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 656.0625,
+        "y": 517,
+        "w": 223.5625,
+        "h": 35,
+        "value": "근거 없는 중요 답변",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "FFFFFF",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 656.0625,
+        "y": 563.21875,
+        "w": 452.1875,
+        "h": 29,
+        "value": "높은 영향과 가능성을 가정하고 우선 확인합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "FFFFFF",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 120,
+        "y": 697,
+        "w": 501.0625,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1.5,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 697,
+        "w": 501.0625,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 1,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 697,
+        "w": 501.0625,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 2,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 697,
+        "w": 501.0625,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 3,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 141,
+        "y": 720,
+        "w": 191.953125,
+        "h": 25,
+        "value": "낮은 영향 · 낮은 가능성",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 10.5,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 141,
+        "y": 764,
+        "w": 165.765625,
+        "h": 35,
+        "value": "드문 표시 오류",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 141,
+        "y": 810.21875,
+        "w": 452.1875,
+        "h": 29,
+        "value": "낮은 영향으로 가정하고 변화 신호를 살펴봅니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 635.0625,
+        "y": 697,
+        "w": 501.078125,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "rect",
+        "fill": {
+          "color": "EDF5FF",
+          "transparency": 0
+        },
+        "ellipse": false,
+        "stroke": null
+      },
+      {
+        "x": 635.0625,
+        "y": 697,
+        "w": 501.078125,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1.5,
+        "dash": false
+      },
+      {
+        "x": 635.0625,
+        "y": 697,
+        "w": 501.078125,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 1,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "x": 635.0625,
+        "y": 697,
+        "w": 501.078125,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 2,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "x": 635.0625,
+        "y": 697,
+        "w": 501.078125,
+        "h": 233,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 3,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 656.0625,
+        "y": 720,
+        "w": 191.953125,
+        "h": 25,
+        "value": "낮은 영향 · 높은 가능성",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 10.5,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 656.0625,
+        "y": 764,
+        "w": 165.765625,
+        "h": 35,
+        "value": "반복 형식 오류",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 14.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 656.0625,
+        "y": 810.21875,
+        "w": 247.296875,
+        "h": 29,
+        "value": "작은 실패가 반복되지 않게",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 656.0625,
+        "y": 841.40625,
+        "w": 226.609375,
+        "h": 29,
+        "value": "입력·출력을 점검합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1184.140625,
+        "y": 408,
+        "w": 615.859375,
+        "h": 178.65625,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "width": 3,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 432,
+        "w": 93.078125,
+        "h": 31,
+        "value": "판단 기준",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 473.75,
+        "w": 426.859375,
+        "h": 31,
+        "value": "영향은 위로, 가능성은 오른쪽으로 커집니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 506.75,
+        "w": 362.90625,
+        "h": 31,
+        "value": "두 축의 판단 기준을 먼저 합의합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1184.140625,
+        "y": 604.65625,
+        "w": 615.859375,
+        "h": 178.671875,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 623.65625,
+        "w": 93.078125,
+        "h": 31,
+        "value": "읽는 관점",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 665.40625,
+        "w": 407.078125,
+        "h": 31,
+        "value": "같은 문제도 입력 자료와 허용 행동에 따라",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 698.40625,
+        "w": 476.6875,
+        "h": 31,
+        "value": "위치가 달라집니다. 증거에 따라 다시 분류합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1184.140625,
+        "y": 801.328125,
+        "w": 615.859375,
+        "h": 178.671875,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "E7E7E7",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 820.328125,
+        "w": 114.703125,
+        "h": 31,
+        "value": "범위와 한계",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 862.078125,
+        "w": 477.609375,
+        "h": 31,
+        "value": "표시한 위치는 설명용 가정입니다. 실제 위험 수용",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1184.140625,
+        "y": 895.078125,
+        "w": 407.15625,
+        "h": 31,
+        "value": "·출시 승인은 담당자의 검토가 필요합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      }
+    ],
+    "notes": "상세 설명\n네 사례와 구역 배치는 템플릿을 읽는 방법을 설명하기 위해 설정한 가정입니다.\n실제 데이터, 발생 빈도, 공격 가능성 또는 고객 환경을 평가하지 않았습니다.\n위험도 맵만으로 대응 수준을 결정하지 않고 구체적인 증거와 책임자를 연결해야 합니다.\n\n발표 스크립트\n확률을 측정한 그림이 아니라 두 질문을 분리하는 연습입니다.\n가능성이 낮다고 가정한 문제라도 영향이 크면 대비와 확인이 필요합니다.\n\n출처\nObservability in Generative AI · 확인 2026-09-30\nWhat is Microsoft Foundry Agent Service? · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\nhttps://learn.microsoft.com/en-us/azure/foundry/agents/overview\n\n시트 전사\nFOUNDRY / RISKMAP\n18 / 20\n영향과 가능성을 나누어 대응 순서를 정합니다\n\n가상의 검토 연습입니다. 구역 배치는 실제 시스템의 위험 평가나 발생 확률을 뜻하지 않습니다.\n\n영향 ↑\n\n가능성 → 낮음에서 높음\n\n높은 영향 · 낮은 가능성\n권한 밖 자료 노출\n\n낮은 가능성으로 가정해도 접근 통제와 점검을 둡니다.\n\n높은 영향 · 높은 가능성\n근거 없는 중요 답변\n\n높은 영향과 가능성을 가정하고 우선 확인합니다.\n\n낮은 영향 · 낮은 가능성\n드문 표시 오류\n\n낮은 영향으로 가정하고 변화 신호를 살펴봅니다.\n\n낮은 영향 · 높은 가능성\n반복 형식 오류\n\n작은 실패가 반복되지 않게 입력·출력을 점검합니다.\n\n판단 기준\n\n영향은 위로, 가능성은 오른쪽으로 커집니다. 두 축의 판단 기준을 먼저 합의합니다.\n\n읽는 관점\n\n같은 문제도 입력 자료와 허용 행동에 따라 위치가 달라집니다. 증거에 따라 다시 분류합니다.\n\n범위와 한계\n\n표시한 위치는 설명용 가정입니다. 실제 위험 수용·출시 승인은 담당자의 검토가 필요합니다.\n"
+  },
+  {
+    "layout": "swimlane",
+    "title": "단계마다 맡을 일과 넘길 근거를 연결합니다",
+    "background": "FFFFFF",
+    "objects": [
+      {
+        "x": 120,
+        "y": 44,
+        "w": 1680,
+        "h": 54,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 2,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 1,
+        "dash": false
+      },
+      {
+        "x": 120,
+        "y": 52,
+        "w": 20,
+        "h": 20,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "rect",
+        "fill": {
+          "color": "0F62FE",
+          "transparency": 0
+        },
+        "ellipse": false,
+        "stroke": null
+      },
+      {
+        "kind": "text",
+        "x": 156,
+        "y": 46.5,
+        "w": 257.984375,
+        "h": 31,
+        "value": "FOUNDRY / SWIMLANE",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 13,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": -0.13,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1706.265625,
+        "y": 44,
+        "w": 30.0625,
+        "h": 36,
+        "value": "19",
+        "role": "body",
+        "fontFace": "Archivo",
+        "fontSize": 15,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0.3,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1736.328125,
+        "y": 44,
+        "w": 63.671875,
+        "h": 36,
+        "value": " / 20",
+        "role": "body",
+        "fontFace": "Archivo",
+        "fontSize": 15,
+        "color": "AFAFAF",
+        "bold": false,
+        "italic": false,
+        "spacing": 0.3,
+        "effect": {
+          "fx": "fade",
+          "d": 80,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 110,
+        "w": 1029.125,
+        "h": 77,
+        "value": "단계마다 맡을 일과 넘길 근거를 연결합니다",
+        "role": "title",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 32,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": -1.12,
+        "effect": {
+          "fx": "fade",
+          "d": 200,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 321,
+        "w": 1180.6875,
+        "h": 39,
+        "value": "가상의 협업 예시입니다. 행은 담당 역할, 열은 단계이며 실제 조직의 역할 배정을 뜻하지 않습니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 16,
+        "color": "0E0E0E",
+        "bold": false,
+        "italic": false,
+        "spacing": -0.288,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 120,
+        "y": 408,
+        "w": 1680,
+        "h": 337.5,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "table",
+        "rows": [
+          [
+            {
+              "text": "역할",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": true,
+                "color": "FFFFFF",
+                "fill": "0F62FE",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            },
+            {
+              "text": "범위·근거",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": true,
+                "color": "FFFFFF",
+                "fill": "0F62FE",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            },
+            {
+              "text": "구현·평가",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": true,
+                "color": "FFFFFF",
+                "fill": "0F62FE",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            },
+            {
+              "text": "출시·운영",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": true,
+                "color": "FFFFFF",
+                "fill": "0F62FE",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            }
+          ],
+          [
+            {
+              "text": "업무 담당",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": true,
+                "color": "0E0E0E",
+                "fill": "FFFFFF",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            },
+            {
+              "text": "업무·대표 질문 정의",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": false,
+                "color": "0E0E0E",
+                "fill": "FFFFFF",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            },
+            {
+              "text": "답변 검토 기준 제공",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": false,
+                "color": "0E0E0E",
+                "fill": "FFFFFF",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            },
+            {
+              "text": "사용 범위와 보류 조건 확인",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": false,
+                "color": "0E0E0E",
+                "fill": "EDF5FF",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            }
+          ],
+          [
+            {
+              "text": "개발 담당",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": true,
+                "color": "0E0E0E",
+                "fill": "FFFFFF",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            },
+            {
+              "text": "자료 접근 조건 확인",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": false,
+                "color": "0E0E0E",
+                "fill": "FFFFFF",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            },
+            {
+              "text": "응용 구현·실패 사례 기록",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": false,
+                "color": "0E0E0E",
+                "fill": "FFFFFF",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            },
+            {
+              "text": "릴리스 근거·남은 문제 인계",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": false,
+                "color": "0E0E0E",
+                "fill": "EDF5FF",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            }
+          ],
+          [
+            {
+              "text": "운영 담당",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": true,
+                "color": "0E0E0E",
+                "fill": "FFFFFF",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            },
+            {
+              "text": "관측·기록 범위 합의",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": false,
+                "color": "0E0E0E",
+                "fill": "FFFFFF",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            },
+            {
+              "text": "신호·대응 절차 검토",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": false,
+                "color": "0E0E0E",
+                "fill": "FFFFFF",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            },
+            {
+              "text": "상태 확인·재검토 연결",
+              "options": {
+                "fontFace": "IBM Plex Sans KR",
+                "fontSize": 12.5,
+                "bold": false,
+                "color": "0E0E0E",
+                "fill": "EDF5FF",
+                "margin": [
+                  7,
+                  10,
+                  7,
+                  10
+                ],
+                "align": "left",
+                "border": [
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  },
+                  {
+                    "type": "solid",
+                    "color": "D8DDE5",
+                    "pt": 0.5
+                  }
+                ],
+                "valign": "middle",
+                "_lineIdx": 0
+              }
+            }
+          ]
+        ],
+        "colW": [
+          1.6666666666666667,
+          3.3333333333333335,
+          3.3333333333333335,
+          3.3333333333333335
+        ],
+        "rowH": [
+          0.4322916666666667,
+          0.6371527777777778,
+          0.6371527777777778,
+          0.6371527777777778
+        ]
+      },
+      {
+        "x": 120,
+        "y": 766,
+        "w": 544,
+        "h": 214,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 779,
+        "w": 93.078125,
+        "h": 31,
+        "value": "판단 기준",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 820.75,
+        "w": 393.5625,
+        "h": 28,
+        "value": "셀은 해당 역할의 행동과 전달할 근거입니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 11.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 120,
+        "y": 851.109375,
+        "w": 459.296875,
+        "h": 28,
+        "value": "색상은 권한이나 승인 완료 상태를 뜻하지 않습니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 11.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 688,
+        "y": 766,
+        "w": 544,
+        "h": 214,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 688,
+        "y": 779,
+        "w": 93.078125,
+        "h": 31,
+        "value": "읽는 관점",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 688,
+        "y": 820.75,
+        "w": 393.5625,
+        "h": 28,
+        "value": "각 인계에는 조건과 담당자를 남깁니다. 개발",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 11.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 688,
+        "y": 851.109375,
+        "w": 387.515625,
+        "h": 28,
+        "value": "완료만으로 출시 승인을 대신하지 않습니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 11.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "x": 1256,
+        "y": 766,
+        "w": 544,
+        "h": 214,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        },
+        "kind": "line",
+        "side": 0,
+        "color": {
+          "color": "0E0E0E",
+          "transparency": 0
+        },
+        "width": 0.5,
+        "dash": false
+      },
+      {
+        "kind": "text",
+        "x": 1256,
+        "y": 779,
+        "w": 114.703125,
+        "h": 31,
+        "value": "범위와 한계",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 12.5,
+        "color": "0E0E0E",
+        "bold": true,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1256,
+        "y": 820.75,
+        "w": 447.28125,
+        "h": 28,
+        "value": "실제 팀의 책임·승인·운영 절차는 별도 합의합니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 11.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      },
+      {
+        "kind": "text",
+        "x": 1256,
+        "y": 851.109375,
+        "w": 379.671875,
+        "h": 28,
+        "value": "이 표는 조직별 RACI를 대체하지 않습니다.",
+        "role": "body",
+        "fontFace": "IBM Plex Sans KR",
+        "fontSize": 11.5,
+        "color": "6B6B6B",
+        "bold": false,
+        "italic": false,
+        "spacing": 0,
+        "effect": {
+          "fx": "fade",
+          "d": 320,
+          "dur": 700,
+          "axis": "y",
+          "off": 0.027777777777777776
+        }
+      }
+    ],
+    "notes": "상세 설명\n역할과 단계의 교차표는 단일 담당자에게 모든 책임을 모으지 않도록 돕는 설계 예시입니다.\n어떤 승인과 기록이 필요한지는 실제 조직 정책과 업무의 위험에 따라 달라집니다.\n평가 기록과 운영 신호가 다음 단계의 담당자에게 전달되는 지점을 확인합니다.\n\n발표 스크립트\n행을 따라가면 담당자의 일이 보이고, 열을 따라가면 같은 단계의 협업이 보입니다.\n셀을 완료 표시로 채우기 전에 무엇을 근거로 넘길지 합의하겠습니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\n\n시트 전사\nFOUNDRY / SWIMLANE\n19 / 20\n단계마다 맡을 일과 넘길 근거를 연결합니다\n\n가상의 협업 예시입니다. 행은 담당 역할, 열은 단계이며 실제 조직의 역할 배정을 뜻하지 않습니다.\n\n역할\t범위·근거\t구현·평가\t출시·운영\n업무 담당\t업무·대표 질문 정의\t답변 검토 기준 제공\t사용 범위와 보류 조건 확인\n개발 담당\t자료 접근 조건 확인\t응용 구현·실패 사례 기록\t릴리스 근거·남은 문제 인계\n운영 담당\t관측·기록 범위 합의\t신호·대응 절차 검토\t상태 확인·재검토 연결\n판단 기준\n\n셀은 해당 역할의 행동과 전달할 근거입니다. 색상은 권한이나 승인 완료 상태를 뜻하지 않습니다.\n\n읽는 관점\n\n각 인계에는 조건과 담당자를 남깁니다. 개발 완료만으로 출시 승인을 대신하지 않습니다.\n\n범위와 한계\n\n실제 팀의 책임·승인·운영 절차는 별도 합의합니다. 이 표는 조직별 RACI를 대체하지 않습니다.\n"
   },
   {
     "layout": "closing",
@@ -12495,11 +17037,11 @@
       },
       {
         "kind": "text",
-        "x": 1717.0625,
+        "x": 1699.625,
         "y": 44,
-        "w": 28.03125,
+        "w": 36.703125,
         "h": 36,
-        "value": "15",
+        "value": "20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -12517,11 +17059,11 @@
       },
       {
         "kind": "text",
-        "x": 1745.09375,
+        "x": 1736.328125,
         "y": 44,
-        "w": 54.90625,
+        "w": 63.671875,
         "h": 36,
-        "value": " / 15",
+        "value": " / 20",
         "role": "body",
         "fontFace": "Archivo",
         "fontSize": 15,
@@ -13234,6 +17776,6 @@
         }
       }
     ],
-    "notes": "상세 설명\n15종 템플릿은 동일한 주제를 여러 정보 구조로 설명하는 예시입니다.\n실제 도입에서는 모든 템플릿을 채우기보다 판단에 필요한 구조를 선택합니다.\n\n발표 스크립트\n첫 업무 하나, 확인할 근거, 검토할 사람을 남기겠습니다.\n그 세 가지가 합의되면 작은 실행으로 다음 질문을 확인할 수 있습니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\nMicrosoft Foundry portal general availability overview · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/general-availability\n\n시트 전사\nFOUNDRY / CLOSING\n15 / 15\n작은 업무와 명확한 출시 근거를 남깁니다\n→\n\nFoundry 도입은 기능 목록보다 업무·통제·검증을 연결하는 일입니다.\n\n이제 정할 것\n\n모델과 도구, 에이전트의 역할을 구분한 뒤 필요한 구현 범위를 선택합니다.\n\n01\n첫 업무를 고릅니다\n\n질문·데이터·허용 행동이 명확한 사례 하나로 범위를 좁힙니다.\n\n02\n필요한 증거를 정합니다\n\n대표 질문, 실패 조건과 출시·보류 기준을 합의합니다.\n\n03\n검토 책임을 연결합니다\n\n담당자, 남은 질문과 다음 확인 시점을 기록합니다.\n\n남길 합의\n\n작게 시작하되 접근 조건과 평가 기록, 운영 책임은 처음부터 함께 설계합니다.\n\n남길 질문\n\n미확인 기능·리전·비용과 남은 실패 사례를 숨기지 않습니다. 이 자료는 실제 배포 보고서가 아닙니다.\n"
+    "notes": "상세 설명\n20종 템플릿은 동일한 주제를 여러 정보 구조로 설명하는 예시입니다.\n실제 도입에서는 모든 템플릿을 채우기보다 판단에 필요한 구조를 선택합니다.\n\n발표 스크립트\n첫 업무 하나, 확인할 근거, 검토할 사람을 남기겠습니다.\n그 세 가지가 합의되면 작은 실행으로 다음 질문을 확인할 수 있습니다.\n\n출처\nWhat is Microsoft Foundry? · 확인 2026-09-30\nObservability in Generative AI · 확인 2026-09-30\nMicrosoft Foundry portal general availability overview · 확인 2026-09-30\n\n출처 URL\nhttps://learn.microsoft.com/en-us/azure/foundry/what-is-foundry\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/observability\nhttps://learn.microsoft.com/en-us/azure/foundry/concepts/general-availability\n\n시트 전사\nFOUNDRY / CLOSING\n20 / 20\n작은 업무와 명확한 출시 근거를 남깁니다\n→\n\nFoundry 도입은 기능 목록보다 업무·통제·검증을 연결하는 일입니다.\n\n이제 정할 것\n\n모델과 도구, 에이전트의 역할을 구분한 뒤 필요한 구현 범위를 선택합니다.\n\n01\n첫 업무를 고릅니다\n\n질문·데이터·허용 행동이 명확한 사례 하나로 범위를 좁힙니다.\n\n02\n필요한 증거를 정합니다\n\n대표 질문, 실패 조건과 출시·보류 기준을 합의합니다.\n\n03\n검토 책임을 연결합니다\n\n담당자, 남은 질문과 다음 확인 시점을 기록합니다.\n\n남길 합의\n\n작게 시작하되 접근 조건과 평가 기록, 운영 책임은 처음부터 함께 설계합니다.\n\n남길 질문\n\n미확인 기능·리전·비용과 남은 실패 사례를 숨기지 않습니다. 이 자료는 실제 배포 보고서가 아닙니다.\n"
   }
 ]

@@ -49,7 +49,7 @@ node "$SKILL_DIR/scripts/build_pptx.js" deck.data.cjs \
 | `bullets` | `title`, `bullets: [text]` | 1–6개 |
 
 지원 `kind`는 생성기 한계이지 스킬의 레이아웃 한계가 아니다. **맞는 템플릿이 없으면
-같은 스킨의 새 레이아웃을 만들어 사용한다.** 동봉 `deck.html`의 15종을 참고하고
+같은 스킨의 새 레이아웃을 만들어 사용한다.** 동봉 `deck.html`의 20종을 참고하고
 구성도·시퀀스·차트·코드 설명을 단순 카드로 축약하지 않는다.
 
 ## 새 레이아웃과 HTML 포팅

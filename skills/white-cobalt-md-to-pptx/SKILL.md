@@ -1,6 +1,6 @@
 ---
 name: white-cobalt-md-to-pptx
-description: Markdown을 White Cobalt HTML로 구성한 뒤 편집 가능한 PowerPoint로 옮깁니다. 폴더 안의 15종 템플릿·작성 지침·네이티브 예제·노트/애니메이션 도구만 사용합니다.
+description: Markdown을 White Cobalt HTML로 구성한 뒤 편집 가능한 PowerPoint로 옮깁니다. 폴더 안의 20종 템플릿·작성 지침·네이티브 예제·노트/애니메이션 도구만 사용합니다.
 ---
 
 # Markdown → White Cobalt PowerPoint

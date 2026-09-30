@@ -3,7 +3,7 @@
   "html": [
     {
       "file": "deep-navy-md-to-html/foundry.html",
-      "count": 15,
+      "count": 20,
       "reading": true,
       "errors": [],
       "pages": [
@@ -83,6 +83,31 @@
           "issues": []
         },
         {
+          "width": 1600,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 20,
+          "issues": []
+        },
+        {
           "width": 768,
           "slide": 1,
           "issues": []
@@ -158,6 +183,31 @@
           "issues": []
         },
         {
+          "width": 768,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 20,
+          "issues": []
+        },
+        {
           "width": 390,
           "slide": 1,
           "issues": []
@@ -230,6 +280,31 @@
         {
           "width": 390,
           "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 20,
           "issues": []
         }
       ],
@@ -251,6 +326,11 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "isolatedOffline": {
@@ -263,7 +343,7 @@
     },
     {
       "file": "deep-navy-pptx-to-html/index.html",
-      "count": 15,
+      "count": 20,
       "reading": true,
       "errors": [],
       "pages": [
@@ -343,6 +423,31 @@
           "issues": []
         },
         {
+          "width": 1600,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 20,
+          "issues": []
+        },
+        {
           "width": 768,
           "slide": 1,
           "issues": []
@@ -418,6 +523,31 @@
           "issues": []
         },
         {
+          "width": 768,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 20,
+          "issues": []
+        },
+        {
           "width": 390,
           "slide": 1,
           "issues": []
@@ -490,6 +620,31 @@
         {
           "width": 390,
           "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 20,
           "issues": []
         }
       ],
@@ -511,6 +666,11 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "isolatedOffline": {
@@ -524,7 +684,7 @@
     },
     {
       "file": "deep-navy-topic-to-html/topic.html",
-      "count": 15,
+      "count": 20,
       "reading": true,
       "errors": [],
       "pages": [
@@ -604,6 +764,31 @@
           "issues": []
         },
         {
+          "width": 1600,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 20,
+          "issues": []
+        },
+        {
           "width": 768,
           "slide": 1,
           "issues": []
@@ -679,6 +864,31 @@
           "issues": []
         },
         {
+          "width": 768,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 20,
+          "issues": []
+        },
+        {
           "width": 390,
           "slide": 1,
           "issues": []
@@ -751,6 +961,31 @@
         {
           "width": 390,
           "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 20,
           "issues": []
         }
       ],
@@ -772,6 +1007,11 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "isolatedOffline": {
@@ -784,7 +1024,7 @@
     },
     {
       "file": "white-cobalt-md-to-html/foundry.html",
-      "count": 15,
+      "count": 20,
       "reading": true,
       "errors": [],
       "pages": [
@@ -864,6 +1104,31 @@
           "issues": []
         },
         {
+          "width": 1600,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 20,
+          "issues": []
+        },
+        {
           "width": 768,
           "slide": 1,
           "issues": []
@@ -939,6 +1204,31 @@
           "issues": []
         },
         {
+          "width": 768,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 20,
+          "issues": []
+        },
+        {
           "width": 390,
           "slide": 1,
           "issues": []
@@ -1011,6 +1301,31 @@
         {
           "width": 390,
           "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 20,
           "issues": []
         }
       ],
@@ -1032,6 +1347,11 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "isolatedOffline": {
@@ -1044,7 +1364,7 @@
     },
     {
       "file": "white-cobalt-pptx-to-html/index.html",
-      "count": 15,
+      "count": 20,
       "reading": true,
       "errors": [],
       "pages": [
@@ -1124,6 +1444,31 @@
           "issues": []
         },
         {
+          "width": 1600,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 20,
+          "issues": []
+        },
+        {
           "width": 768,
           "slide": 1,
           "issues": []
@@ -1199,6 +1544,31 @@
           "issues": []
         },
         {
+          "width": 768,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 20,
+          "issues": []
+        },
+        {
           "width": 390,
           "slide": 1,
           "issues": []
@@ -1271,6 +1641,31 @@
         {
           "width": 390,
           "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 20,
           "issues": []
         }
       ],
@@ -1292,6 +1687,11 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "isolatedOffline": {
@@ -1305,7 +1705,7 @@
     },
     {
       "file": "white-cobalt-topic-to-html/topic.html",
-      "count": 15,
+      "count": 20,
       "reading": true,
       "errors": [],
       "pages": [
@@ -1385,6 +1785,31 @@
           "issues": []
         },
         {
+          "width": 1600,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 20,
+          "issues": []
+        },
+        {
           "width": 768,
           "slide": 1,
           "issues": []
@@ -1460,6 +1885,31 @@
           "issues": []
         },
         {
+          "width": 768,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 20,
+          "issues": []
+        },
+        {
           "width": 390,
           "slide": 1,
           "issues": []
@@ -1532,6 +1982,31 @@
         {
           "width": 390,
           "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 16,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 17,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 18,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 19,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 20,
           "issues": []
         }
       ],
@@ -1553,6 +2028,11 @@
         "network",
         "metrics",
         "walkthrough",
+        "decision",
+        "pyramid",
+        "funnel",
+        "riskmap",
+        "swimlane",
         "closing"
       ],
       "isolatedOffline": {
@@ -1562,6 +2042,106 @@
       },
       "noteToggle": true,
       "printVisible": true
+    }
+  ],
+  "templateGalleries": [
+    {
+      "skill": "deep-navy-html-to-pptx",
+      "count": 20,
+      "checks": 60,
+      "ok": true,
+      "errors": [],
+      "issues": []
+    },
+    {
+      "skill": "deep-navy-md-to-html",
+      "count": 20,
+      "checks": 60,
+      "ok": true,
+      "errors": [],
+      "issues": []
+    },
+    {
+      "skill": "deep-navy-md-to-pptx",
+      "count": 20,
+      "checks": 60,
+      "ok": true,
+      "errors": [],
+      "issues": []
+    },
+    {
+      "skill": "deep-navy-pptx-to-html",
+      "count": 20,
+      "checks": 60,
+      "ok": true,
+      "errors": [],
+      "issues": []
+    },
+    {
+      "skill": "deep-navy-topic-to-html",
+      "count": 20,
+      "checks": 60,
+      "ok": true,
+      "errors": [],
+      "issues": []
+    },
+    {
+      "skill": "white-cobalt-html-to-pptx",
+      "count": 20,
+      "checks": 60,
+      "ok": true,
+      "errors": [],
+      "issues": []
+    },
+    {
+      "skill": "white-cobalt-md-to-html",
+      "count": 20,
+      "checks": 60,
+      "ok": true,
+      "errors": [],
+      "issues": []
+    },
+    {
+      "skill": "white-cobalt-md-to-pptx",
+      "count": 20,
+      "checks": 60,
+      "ok": true,
+      "errors": [],
+      "issues": []
+    },
+    {
+      "skill": "white-cobalt-pptx-to-html",
+      "count": 20,
+      "checks": 60,
+      "ok": true,
+      "errors": [],
+      "issues": []
+    },
+    {
+      "skill": "white-cobalt-topic-to-html",
+      "count": 20,
+      "checks": 60,
+      "ok": true,
+      "errors": [],
+      "issues": []
+    }
+  ],
+  "intermediateHtml": [
+    {
+      "skill": "deep-navy-md-to-pptx",
+      "count": 20,
+      "checks": 60,
+      "ok": true,
+      "errors": [],
+      "issues": []
+    },
+    {
+      "skill": "white-cobalt-md-to-pptx",
+      "count": 20,
+      "checks": 60,
+      "ok": true,
+      "errors": [],
+      "issues": []
     }
   ],
   "fontsBundled": true,

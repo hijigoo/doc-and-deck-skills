@@ -7,7 +7,7 @@ description: Deep Navy HTML의 시트 디자인과 등장 효과를 PowerPoint�
 
 **이 폴더 하나로 사용한다.** 원래 레포·형제 스킬·별도 `pptx` 스킬은 필수가 아니다.
 [독립 사용 규칙](references/guide.md)과 [포팅/검증 절차](references/pptx.md)를 읽는다.
-[deck.html](deck.html)은 Deep Navy의 15종 디자인 기준이며, 실제 입력 HTML이 우선이다.
+[deck.html](deck.html)은 Deep Navy의 20종 디자인 기준이며, 실제 입력 HTML이 우선이다.
 `SKILL_DIR`은 이 폴더의 절대 경로다.
 
 ## 기본 작업
@@ -42,7 +42,7 @@ python3 -m venv .venv
 노트를 이미 올바르게 쓴 생성기에는 센티널 보정이 필요하지 않다. 원본이 정적이면
 매니페스트는 전부 `0`으로 두며, 후처리도 효과를 추가하지 않는다.
 동봉 `scripts/reference.cjs`는 매니페스트·노트·편집 가능한 객체의 **2장짜리 API 예제**다.
-임의 HTML 자동 변환기나 `deck.html` 15장의 완성 포팅본이 아니다.
+임의 HTML 자동 변환기나 `deck.html` 20장의 완성 포팅본이 아니다.
 
 ## 보존 기준과 중단 조건
 
