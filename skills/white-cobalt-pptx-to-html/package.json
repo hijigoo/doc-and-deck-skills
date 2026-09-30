@@ -1,0 +1,13 @@
+{
+  "description": "Standalone white-cobalt-pptx-to-html tools; install only the dependencies needed for your workflow.",
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "name": "white-cobalt-pptx-to-html",
+  "private": true,
+  "type": "commonjs",
+  "version": "1.0.0"
+}

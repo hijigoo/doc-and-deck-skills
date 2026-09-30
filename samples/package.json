@@ -1,0 +1,19 @@
+{
+  "name": "foundry-skill-samples",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Reproducible Microsoft Foundry samples for the ten local presentation skills.",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "verify": "node scripts/verify.cjs"
+  },
+  "dependencies": {
+    "playwright": "1.62.1",
+    "pptxgenjs": "4.0.1",
+    "sharp": "0.35.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

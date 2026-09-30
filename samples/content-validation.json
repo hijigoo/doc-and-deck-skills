@@ -1,0 +1,44 @@
+{
+  "template_coverage": {
+    "samples": 10,
+    "templates_per_sample": 15,
+    "source_template_hashes": "match"
+  },
+  "pptx": [
+    {
+      "file": "deep-navy-html-to-pptx/foundry.pptx",
+      "slides": 15,
+      "animations": 664,
+      "native_tables": 2,
+      "notes_and_sources": "preserved",
+      "pdf_headlines": "present"
+    },
+    {
+      "file": "deep-navy-md-to-pptx/foundry.pptx",
+      "slides": 15,
+      "animations": 0,
+      "native_tables": 2,
+      "notes_and_sources": "preserved",
+      "pdf_headlines": "present"
+    },
+    {
+      "file": "white-cobalt-html-to-pptx/foundry.pptx",
+      "slides": 15,
+      "animations": 570,
+      "native_tables": 2,
+      "notes_and_sources": "preserved",
+      "pdf_headlines": "present"
+    },
+    {
+      "file": "white-cobalt-md-to-pptx/foundry.pptx",
+      "slides": 15,
+      "animations": 570,
+      "native_tables": 2,
+      "notes_and_sources": "preserved",
+      "pdf_headlines": "present"
+    }
+  ],
+  "source_preservation": "hashes/pages/notes/titles match",
+  "font_provenance": "all hashes match",
+  "powerpoint_playback": "not verified"
+}

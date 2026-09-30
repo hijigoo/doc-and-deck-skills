@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>White Cobalt — 읽는 문서</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap">
+<style>
+:root{
+    --paper:#FFFFFF;
+    --panel:#F5F4F1;
+    --panel-2:#EDECE8;
+    --ink:#0E0E0E;
+    --ink-soft:#6B6B6B;
+    --ink-faint:#AFAFAF;
+    --accent:#0F62FE;
+    --accent-tint:#EDF5FF;
+    --rule:#E7E7E7;
+    --stage-bg:#131313;
+    --slide-bg:#FFFFFF;
+    --font-display:'IBM Plex Sans KR', sans-serif;
+    --font-body:'IBM Plex Sans KR', sans-serif;
+    --font-latin:'Archivo', sans-serif;
+    --font-mono:'IBM Plex Mono', monospace;
+    --h1-size:168px;
+    --statement-size:80px;
+    --h2-size:70px;
+    --body-size:30px;
+    --pad-x:120px;
+    --pad-y:92px;
+    --ease:cubic-bezier(0.16,1,0.3,1);
+    --dur:0.7s;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:100%;height:100%;margin:0;overflow:hidden;background:var(--stage-bg,#000);}
+.deck-viewport{position:fixed;inset:0;overflow:hidden;background:var(--stage-bg,#000);}
+.deck-stage{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:hidden;transform-origin:0 0;background:var(--slide-bg,#fff);}
+.slide{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;display:block;visibility:hidden;opacity:0;pointer-events:none;background:var(--slide-bg,#fff);}
+.slide.active,.slide.visible{visibility:visible;opacity:1;pointer-events:auto;z-index:1;}
+img,video,canvas,svg{max-width:100%;max-height:100%;}
+.deck-controls{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:1000;}
+@media print{
+    html,body{width:1920px;height:auto;overflow:visible;background:#fff;}
+    .deck-viewport{position:static;overflow:visible;background:#fff;}
+    .deck-stage{position:static;width:auto;height:auto;transform:none !important;background:none;}
+    .slide{position:relative;display:block !important;visibility:visible !important;opacity:1 !important;pointer-events:auto !important;width:1920px;height:1080px;break-after:page;page-break-after:always;}
+    .slide:last-child{break-after:auto;page-break-after:auto;}
+    .deck-controls{display:none !important;}
+}
+@media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.2s !important;}
+}
+.slide{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--font-body);
+    padding:var(--pad-y) var(--pad-x);
+    display:flex;flex-direction:column;
+    word-break:keep-all;
+}
+.topbar{
+    position:relative;z-index:2;flex:0 0 auto;
+    display:flex;justify-content:space-between;align-items:center;
+    padding-bottom:26px;border-bottom:2px solid var(--ink);
+}
+.sec{display:flex;align-items:center;gap:16px;font-size:26px;font-weight:600;letter-spacing:-0.01em;}
+.sq{width:20px;height:20px;background:var(--accent);flex:0 0 auto;}
+.chrome{display:flex;align-items:center;gap:34px;}
+.stages{display:flex;gap:9px;}
+.stages i{
+    width:34px;height:34px;border-radius:50%;border:2px solid var(--rule);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--font-latin);font-style:normal;font-weight:600;font-size:17px;color:var(--ink-faint);
+}
+.stages i.on{background:var(--accent);border-color:var(--accent);color:#fff;}
+.pg{font-family:var(--font-latin);font-weight:800;font-size:30px;letter-spacing:0.02em;}
+.pg em{font-style:normal;font-weight:500;color:var(--ink-faint);}
+.body{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2;padding-top:56px;}
+h2{font-size:var(--h2-size);font-weight:600;line-height:1.24;letter-spacing:-0.03em;}
+h2 .rd{color:var(--accent);}
+.subtitle{font-size:32px;font-weight:400;color:var(--ink-soft);margin-top:16px;letter-spacing:-0.01em;}
+.slide p,.slide li,.slide h2,.slide h4,
+.stat,.claim,.tag,.node span,.crow span,
+.change .from,.change .aside,.change .to,
+.band,.band .muted,.attrib{
+    text-wrap:balance;
+}
+.nb{white-space:nowrap;}
+.label{
+    font-family:var(--font-body);font-size:22px;font-weight:600;
+    letter-spacing:0.1em;color:var(--ink-soft);
+}
+.label.rd{color:var(--accent);}
+.lede{font-size:var(--body-size);line-height:1.62;color:var(--ink-soft);}
+.band{
+    background:var(--accent-tint);border-left:10px solid var(--accent);
+    padding:30px 40px;font-size:34px;font-weight:600;line-height:1.45;letter-spacing:-0.01em;
+}
+.band .muted{display:block;font-size:27px;font-weight:400;color:var(--ink-soft);margin-top:10px;}
+.flow{display:flex;align-items:center;gap:18px;flex-wrap:nowrap;}
+.chip{
+    font-family:var(--font-body);font-size:25px;font-weight:500;
+    border:2px solid var(--ink);padding:18px 24px;white-space:nowrap;
+}
+.chip.soft{border-color:var(--rule);background:var(--panel);color:var(--ink-soft);}
+.arrow{font-family:var(--font-latin);font-weight:800;font-size:26px;color:var(--accent);flex:0 0 auto;}
+.progress{position:absolute;left:0;bottom:0;height:6px;background:var(--accent);width:0;z-index:5;transition:width 0.45s var(--ease);}
+.title-slide{justify-content:space-between;padding-top:96px;padding-bottom:96px;}
+.title-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:2;}
+.mark{display:flex;align-items:center;gap:18px;}
+.mark-text{font-family:var(--font-latin);font-weight:600;font-size:22px;letter-spacing:0.24em;text-transform:uppercase;}
+.title-hero{position:relative;z-index:2;margin-top:-24px;}
+.title-hero h1{font-family:var(--font-display);font-weight:700;font-size:var(--h1-size);line-height:1.08;letter-spacing:-0.045em;}
+.title-hero h1 .l2{display:block;}
+.hl{position:relative;display:inline-block;z-index:1;}
+.hl::after{
+    content:"";position:absolute;left:-4px;right:-4px;bottom:2px;height:16px;
+    background:var(--accent);z-index:-1;transform:scaleX(0);transform-origin:0 50%;
+}
+.slide.visible .hl::after{animation:wipe 0.7s var(--ease) 0.85s forwards;}
+@keyframes wipe{to{transform:scaleX(1);}}
+.rule-accent{height:10px;background:var(--accent);margin:50px 0 30px;transform:scaleX(0);transform-origin:0 50%;}
+.slide.visible .rule-accent{animation:wipe 0.9s var(--ease) 0.5s forwards;}
+.latin-title{font-family:var(--font-latin);font-weight:800;font-size:40px;letter-spacing:0.02em;text-transform:uppercase;}
+.title-foot{display:flex;justify-content:space-between;align-items:flex-end;position:relative;z-index:2;}
+.meta{display:flex;gap:56px;font-size:23px;color:var(--ink-soft);}
+.meta b{display:block;color:var(--ink);font-weight:600;font-size:26px;margin-top:6px;letter-spacing:-0.01em;}
+.byline{font-size:23px;color:var(--ink-faint);}
+.pageno{font-family:var(--font-latin);font-weight:800;font-size:112px;line-height:0.8;color:var(--accent);}
+.statement-slide .body{justify-content:center;}
+.statement{
+    font-family:var(--font-display);font-weight:700;font-size:var(--statement-size);
+    line-height:1.42;letter-spacing:-0.04em;margin-top:34px;
+}
+.statement .rd{color:var(--accent);}
+.attrib{font-family:var(--font-body);font-size:26px;color:var(--ink-soft);margin-top:46px;letter-spacing:-0.01em;}
+.cols{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;margin-top:52px;align-items:start;}
+.col-faded{opacity:0.42;}
+.col h3{font-size:28px;font-weight:600;color:var(--ink-soft);margin-bottom:22px;letter-spacing:-0.01em;}
+.col-faded .quote-lite{font-size:34px;line-height:1.5;color:var(--ink);border-left:6px solid var(--rule);padding-left:26px;}
+.claim{font-size:38px;font-weight:600;line-height:1.42;letter-spacing:-0.02em;}
+.claim .rd{color:var(--accent);}
+.tags{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
+.tag{background:var(--panel);color:var(--ink-soft);font-size:24px;padding:12px 20px;}
+.warn{margin-top:56px;}
+.axis{display:grid;grid-template-columns:repeat(4,1fr);margin-top:54px;position:relative;}
+.axis::before{content:"";position:absolute;left:0;right:0;top:13px;height:2px;background:var(--rule);}
+.axis .tick{position:relative;padding-top:38px;font-family:var(--font-latin);font-weight:600;font-size:24px;color:var(--ink-soft);}
+.axis .tick::before{content:"";position:absolute;left:0;top:6px;width:16px;height:16px;border-radius:50%;background:var(--ink-faint);}
+.axis .tick.hot{color:var(--ink);}
+.axis .tick.hot::before{background:var(--accent);}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:26px;}
+.step{border-top:6px solid var(--rule);padding-top:24px;}
+.step.hot{border-top-color:var(--accent);}
+.step .n{font-family:var(--font-latin);font-weight:800;font-size:34px;color:var(--ink-faint);}
+.step.hot .n{color:var(--accent);}
+.step h4{font-size:32px;font-weight:600;margin:10px 0 12px;letter-spacing:-0.02em;}
+.step p{font-size:24px;line-height:1.55;color:var(--ink-soft);}
+.step .dur{display:inline-block;margin-top:14px;font-family:var(--font-body);font-size:21px;color:var(--ink-faint);}
+.changes{display:flex;flex-direction:column;margin-top:40px;}
+.change{
+    display:grid;grid-template-columns:210px 1fr 52px 1.2fr;align-items:center;gap:20px;
+    padding:20px 0;border-bottom:1px solid var(--rule);
+}
+.change:last-child{border-bottom:0;}
+.change .area{font-size:24px;font-weight:600;color:var(--ink);}
+.change .from{font-size:25px;line-height:1.45;color:var(--ink-faint);}
+.change .to{font-size:28px;font-weight:600;line-height:1.4;color:var(--ink);letter-spacing:-0.01em;}
+.change .to em{font-style:normal;color:var(--accent);}
+.change .arw{font-family:var(--font-latin);font-weight:800;font-size:26px;color:var(--accent);text-align:center;}
+.lexicon{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:34px;}
+.lexicon .lx{background:var(--panel);color:var(--ink-soft);font-size:23px;padding:11px 20px;}
+.words{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px;}
+.word{
+    border:2px solid var(--ink);padding:34px 32px;
+    font-size:40px;font-weight:600;letter-spacing:-0.02em;
+}
+.word span{display:block;font-family:var(--font-mono);font-size:19px;font-weight:400;color:var(--ink-soft);margin-bottom:14px;letter-spacing:0.14em;text-transform:uppercase;}
+.word.small{font-size:32px;}
+.accel{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;margin-top:44px;align-items:start;}
+.acc-list{display:flex;flex-direction:column;gap:18px;margin-top:22px;}
+.acc-item{display:flex;gap:20px;align-items:baseline;border-bottom:1px solid var(--rule);padding-bottom:16px;}
+.acc-item:last-child{border-bottom:0;}
+.acc-item .n{font-family:var(--font-latin);font-weight:800;font-size:24px;color:var(--accent);flex:0 0 auto;}
+.acc-item b{font-size:30px;font-weight:600;letter-spacing:-0.01em;}
+.acc-item p{font-size:23px;color:var(--ink-soft);margin-top:6px;line-height:1.5;}
+.acc-box{border:3px solid var(--accent);padding:34px 36px;margin-top:22px;}
+.acc-box p{font-size:31px;line-height:1.5;font-weight:500;letter-spacing:-0.01em;}
+.acc-box p + p{margin-top:14px;font-size:25px;font-weight:400;color:var(--ink-soft);}
+.loop{display:flex;align-items:center;gap:16px;margin-top:34px;}
+.stat{font-family:var(--font-body);font-size:24px;color:var(--ink-soft);margin-top:26px;}
+.stat b{color:var(--ink);font-weight:500;}
+.stack{display:flex;flex-direction:column;gap:38px;margin-top:52px;}
+.stack .row .label{margin-bottom:18px;display:block;}
+.inputs{display:flex;flex-wrap:wrap;gap:12px;}
+.pill{background:var(--panel);font-size:24px;padding:13px 22px;color:var(--ink-soft);}
+.blocks{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:52px;}
+.block{background:var(--panel);padding:40px 40px 36px;}
+.block .n{font-family:var(--font-latin);font-weight:800;font-size:26px;color:var(--accent);}
+.block h4{font-size:36px;font-weight:600;margin:12px 0 18px;letter-spacing:-0.02em;line-height:1.3;}
+.block p{font-size:25px;line-height:1.55;color:var(--ink-soft);}
+.fix{display:flex;gap:14px;align-items:flex-start;margin-top:24px;padding-top:22px;border-top:2px solid var(--rule);}
+.fix .arrow{font-size:24px;line-height:1.4;}
+.fix b{font-size:29px;font-weight:600;line-height:1.42;letter-spacing:-0.01em;}
+.outcome{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:44px;align-items:start;}
+.quote{border-left:10px solid var(--accent);padding:8px 0 8px 34px;}
+.quote p{font-size:38px;font-weight:600;line-height:1.45;letter-spacing:-0.02em;}
+.quote .rd{color:var(--accent);}
+.quote cite{display:block;font-style:normal;font-family:var(--font-body);font-size:23px;color:var(--ink-soft);margin-top:20px;}
+.after{display:flex;flex-direction:column;gap:16px;}
+.after li{
+    list-style:none;position:relative;padding-left:34px;
+    font-size:27px;line-height:1.55;border-bottom:1px solid var(--rule);padding-bottom:16px;
+}
+.after li::before{content:"";position:absolute;left:0;top:14px;width:12px;height:12px;background:var(--accent);}
+.after li:last-child{border-bottom:0;}
+.after li b{font-weight:600;}
+.reflect{display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:52px;}
+.ref .n{font-family:var(--font-latin);font-weight:800;font-size:64px;color:var(--accent);line-height:1;}
+.ref h4{font-size:33px;font-weight:600;line-height:1.38;margin:20px 0 16px;letter-spacing:-0.02em;}
+.ref p{font-size:24px;line-height:1.6;color:var(--ink-soft);}
+.ref{border-top:6px solid var(--ink);padding-top:26px;}
+.closing-note{margin-top:52px;font-size:26px;color:var(--ink-soft);}
+.thanks{display:flex;align-items:center;gap:26px;margin-top:56px;font-size:34px;font-weight:600;}
+.thanks .sq{width:26px;height:26px;}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity var(--dur) var(--ease), transform var(--dur) var(--ease);}
+.slide.visible .reveal{opacity:1;transform:translateY(0);}
+.slide.visible .r1{transition-delay:0.08s;}
+.slide.visible .r2{transition-delay:0.20s;}
+.slide.visible .r3{transition-delay:0.32s;}
+.slide.visible .r4{transition-delay:0.44s;}
+.slide.visible .r5{transition-delay:0.56s;}
+.slide.visible .r6{transition-delay:0.68s;}
+/* Rich White Cobalt sheets; legacy components and the reading shell stay intact. */
+.layout-sheet .topbar{position:absolute;top:44px;left:120px;right:120px;padding-bottom:16px}
+.layout-sheet .layout-title{position:absolute;top:116px;left:120px;right:120px;font-size:64px;line-height:1.04;letter-spacing:-.035em;font-weight:600;text-wrap:pretty}
+.layout-sheet .layout-body{position:absolute;top:320px;left:120px;width:1680px;height:660px;display:grid;gap:12px}
+.layout-sheet .layout-body *{min-width:0}
+.layout-sheet .layout-lead{font-size:32px;line-height:1.3;font-weight:500;letter-spacing:-.018em;text-wrap:pretty}
+.layout-sheet .layout-copy,.layout-sheet .layout-item-body{font-size:25px;line-height:1.3;font-weight:400;color:var(--ink-soft);text-wrap:pretty;overflow-wrap:break-word}
+.layout-sheet .layout-item-title{font-size:32px;line-height:1.15;font-weight:600;letter-spacing:-.025em;text-wrap:pretty}
+.layout-sheet .layout-label{display:block;font-size:25px;line-height:1.15;font-weight:600;margin-bottom:10px}
+.layout-sheet .layout-index{font-family:var(--font-latin);font-weight:800;color:var(--accent);line-height:1}
+.layout-sheet .layout-annotation{border-top:1px solid var(--ink);padding-top:14px}
+.layout-sheet .layout-annotations{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.layout-sheet .layout-annotations.layout-pair{grid-template-columns:repeat(2,minmax(0,1fr))}
+.layout-sheet .layout-accent{background:var(--accent);color:var(--paper)}
+.layout-sheet .layout-accent .layout-copy,.layout-sheet .layout-accent .layout-item-body{color:var(--paper)}
+.layout-sheet .layout-accent .layout-index{color:var(--paper)}
+.layout-sheet .layout-tint{background:var(--accent-tint)}
+.layout-sheet .layout-rule{border-top:1px solid var(--rule)}
+.layout-cover .layout-title{font-size:76px;line-height:1.02;font-weight:700}
+.layout-cover .layout-body{grid-template-columns:430px 1fr;grid-template-rows:412px 236px;gap:12px 40px}
+.layout-cover .layout-opening{border-left:10px solid var(--accent);padding-left:28px;display:flex;flex-direction:column;gap:24px}
+.layout-cover .layout-opening .layout-index{font-size:112px;letter-spacing:-.06em}
+.layout-cover .layout-contents{display:grid;grid-template-rows:repeat(3,1fr);border-top:2px solid var(--ink)}
+.layout-cover .layout-content-row{display:grid;grid-template-columns:64px 1fr;gap:16px;align-content:center;border-bottom:1px solid var(--rule)}
+.layout-cover .layout-content-row .layout-index{font-size:36px;padding-top:4px}
+.layout-cover .layout-content-row .layout-item-body{margin-top:8px}
+.layout-cover .layout-annotations{grid-column:1/-1}
+.layout-contrast .layout-body{grid-template-rows:70px 370px 196px}
+.layout-contrast .layout-theses{display:grid;grid-template-columns:1fr 400px 1fr;gap:24px}
+.layout-contrast .layout-thesis{border:1px solid var(--ink);padding:26px 28px;display:flex;flex-direction:column;gap:16px}
+.layout-contrast .layout-thesis .layout-index{font-size:44px}
+.layout-contrast .layout-thesis:last-child{border:0;border-top:8px solid var(--accent);background:var(--accent-tint)}
+.layout-contrast .layout-cause{padding:18px 8px 0;border-top:1px solid var(--ink)}
+.layout-contrast .layout-cause .layout-label{display:flex;justify-content:space-between}
+.layout-contrast .layout-cause .layout-label span{color:var(--accent);font-family:var(--font-latin)}
+.layout-architecture .layout-body{grid-template-rows:70px 358px 208px}
+.layout-architecture .layout-diagram{display:grid;grid-template-columns:450px 120px 540px 120px 450px;position:relative}
+.layout-architecture .layout-domain{border:1px solid var(--ink);padding:16px;display:grid;grid-template-rows:30px 1fr;gap:12px}
+.layout-architecture .layout-domain .layout-label{margin:0}
+.layout-architecture .layout-platform{border:2px solid var(--accent);background:var(--accent-tint)}
+.layout-architecture .layout-component{padding:12px;background:var(--paper);border:1px solid var(--rule)}
+.layout-architecture .layout-component .layout-item-title{margin-bottom:16px}
+.layout-architecture .layout-domain:last-child .layout-component{border-top:5px solid var(--accent)}
+.layout-architecture .layout-relation{align-self:center;display:flex;flex-direction:column;align-items:center;gap:12px;font-size:25px;line-height:1.2;color:var(--accent)}
+.layout-architecture .layout-relation svg{width:120px;height:24px;max-height:none}
+.layout-architecture .layout-control-rail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;border-top:2px dashed var(--accent);padding-top:12px}
+.layout-architecture .layout-control-rail .layout-annotation{border:0;padding:0}
+.layout-process .layout-body{grid-template-rows:70px 346px 220px}
+.layout-process .layout-route{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;position:relative}
+.layout-process .layout-route-step{position:relative;align-self:start;height:310px;padding:14px 22px 0;border-top:4px solid var(--accent);border-left:1px solid var(--rule)}
+.layout-process .layout-route-step:nth-child(even){margin-top:34px;background:var(--accent-tint);border-left:0}
+.layout-process .layout-route-step:not(:last-child)::after{content:"↘";position:absolute;right:-27px;top:4px;font-family:var(--font-latin);font-size:28px;color:var(--accent)}
+.layout-process .layout-route-step:nth-child(even):not(:last-child)::after{content:"↗";top:-25px}
+.layout-process .layout-route-step .layout-index{font-size:34px;display:block;margin-bottom:8px}
+.layout-process .layout-route-step .layout-item-title{margin-bottom:8px}
+.layout-matrix .layout-body{grid-template-rows:70px 382px 184px}
+.layout-matrix .layout-decision{display:grid;grid-template-columns:1140px 1fr;gap:30px}
+.layout-matrix .layout-table{width:100%;height:382px;border-collapse:collapse;table-layout:fixed;border:1px solid var(--ink)}
+.layout-matrix .layout-table th,.layout-matrix .layout-table td{border:1px solid var(--rule);padding:14px 20px;text-align:left;vertical-align:top;font-size:25px;line-height:1.3;font-weight:400;overflow-wrap:break-word;text-wrap:pretty}
+.layout-matrix .layout-table th{height:58px;border-bottom:2px solid var(--ink);font-weight:600}
+.layout-matrix .layout-table td:first-child{font-weight:600}
+.layout-matrix .layout-table td:last-child{background:var(--accent-tint)}
+.layout-matrix .layout-verdict{padding:20px 30px;display:flex;flex-direction:column;gap:10px}
+.layout-matrix .layout-verdict .layout-index{font-size:62px}
+.layout-matrix .layout-verdict .layout-copy{font-size:28px;line-height:1.3}
+.layout-scenario .layout-body{grid-template-rows:70px 358px 208px}
+.layout-scenario .layout-storyboard{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:18px 40px;position:relative}
+.layout-scenario .layout-scene{padding:16px 22px;border:1px solid var(--ink);position:relative}
+.layout-scenario .layout-scene:nth-child(2),.layout-scenario .layout-scene:nth-child(3){background:var(--accent-tint);border-color:var(--accent-tint)}
+.layout-scenario .layout-scene:nth-child(3){grid-column:2;grid-row:2}
+.layout-scenario .layout-scene:nth-child(4){grid-column:1;grid-row:2}
+.layout-scenario .layout-scene h3{display:flex;gap:16px;align-items:baseline;margin-bottom:10px;font-size:30px}
+.layout-scenario .layout-scene .layout-index{font-size:25px}
+.layout-scenario .layout-scene:nth-child(1)::after,.layout-scenario .layout-scene:nth-child(3)::after{position:absolute;right:-32px;top:68px;content:"→";font-size:28px;color:var(--accent)}
+.layout-scenario .layout-scene:nth-child(3)::after{right:auto;left:-32px;content:"←"}
+.layout-scenario .layout-scene:nth-child(2)::after{position:absolute;right:30px;bottom:-27px;content:"↓";font-size:28px;color:var(--accent);z-index:1}
+.layout-checklist .layout-body{grid-template-rows:70px 578px}
+.layout-checklist .layout-review{display:grid;grid-template-columns:1010px 1fr;gap:32px}
+.layout-checklist .layout-criteria{display:grid;grid-template-rows:repeat(4,1fr);border-top:2px solid var(--ink)}
+.layout-checklist .layout-criterion{display:grid;grid-template-columns:40px 260px 1fr;gap:18px;align-items:center;border-bottom:1px solid var(--rule);padding:12px 0}
+.layout-checklist .layout-check{width:30px;height:30px;border:2px solid var(--accent);align-self:center}
+.layout-checklist .layout-review-aside{display:grid;grid-template-rows:repeat(3,1fr);gap:10px}
+.layout-checklist .layout-review-aside .layout-annotation{padding:10px 16px 0}
+.layout-checklist .layout-review-aside .layout-copy{line-height:1.28}
+.layout-checklist .layout-review-aside .layout-label{margin-bottom:8px}
+.layout-evidence .layout-body{grid-template-rows:70px 578px}
+.layout-evidence .layout-board{display:grid;grid-template-columns:312px 1fr;gap:32px}
+.layout-evidence .layout-source{border-left:6px solid var(--accent);padding:18px 22px 0 24px}
+.layout-evidence .layout-source .layout-index{font-size:54px;display:block;margin-bottom:22px}
+.layout-evidence .layout-findings{display:grid;grid-template-rows:354px 208px;gap:16px}
+.layout-evidence .layout-records{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.layout-evidence .layout-record{padding:20px 20px 0;border-top:2px solid var(--ink);border-bottom:1px solid var(--rule)}
+.layout-evidence .layout-record:nth-child(2){background:var(--accent-tint);border-top-color:var(--accent)}
+.layout-evidence .layout-record .layout-index{display:block;font-size:28px;margin-bottom:22px}
+.layout-evidence .layout-record .layout-item-title{margin-bottom:16px}
+.layout-roadmap .layout-body{grid-template-rows:70px 358px 208px}
+.layout-roadmap .layout-lanes{display:grid;grid-template-rows:40px repeat(3,1fr)}
+.layout-roadmap .layout-phase-head{display:grid;grid-template-columns:330px repeat(3,1fr);font-size:25px;font-weight:600;border-bottom:2px solid var(--ink)}
+.layout-roadmap .layout-phase-head span:not(:first-child){padding-left:22px;border-left:1px solid var(--rule)}
+.layout-roadmap .layout-lane{display:grid;grid-template-columns:330px repeat(3,1fr);border-bottom:1px solid var(--rule);align-items:stretch;position:relative}
+.layout-roadmap .layout-lane::before{content:"";position:absolute;inset:0 0 0 330px;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(33.333% - 1px),var(--rule) calc(33.333% - 1px),var(--rule) 33.333%);pointer-events:none}
+.layout-roadmap .layout-lane .layout-item-title{align-self:center;padding-right:24px;font-size:30px}
+.layout-roadmap .layout-road-bar{grid-column:2/4;align-self:center;position:relative;border-left:6px solid var(--accent);padding:6px 22px;background:var(--accent-tint)}
+.layout-roadmap .layout-lane:nth-child(3) .layout-road-bar{grid-column:3/5;background:var(--accent)}
+.layout-roadmap .layout-lane:nth-child(3) .layout-item-body{color:var(--paper)}
+.layout-roadmap .layout-lane:nth-child(4) .layout-road-bar{grid-column:2/5;background:var(--paper);border:1px solid var(--ink);border-left:6px solid var(--ink)}
+.layout-closing .layout-body{grid-template-columns:530px 1fr;gap:40px}
+.layout-closing .layout-final-thesis{border-top:8px solid var(--accent);padding-top:20px;display:flex;flex-direction:column;gap:24px}
+.layout-closing .layout-final-thesis .layout-index{font-size:82px}
+.layout-closing .layout-final-thesis .layout-lead{font-size:36px}
+.layout-closing .layout-final-thesis .layout-annotation{margin-top:auto}
+.layout-closing .layout-action-board{display:grid;grid-template-rows:396px 248px;gap:16px}
+.layout-closing .layout-actions{display:grid;grid-template-rows:repeat(3,1fr);border-top:2px solid var(--ink)}
+.layout-closing .layout-action{display:grid;grid-template-columns:44px 280px 1fr;gap:18px;align-items:center;border-bottom:1px solid var(--rule);padding:10px 0}
+.layout-closing .layout-action .layout-index{font-size:28px}
+:root{--sb-w:314px;--page-bg:#E9E5DC;--page-bg-2:#DFDACF}
+html,body{width:auto;height:auto;overflow:visible;background:var(--page-bg)}
+body{font-family:var(--f-body);color:var(--ink);
+  -webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){body{scroll-behavior:auto}}
+.top-prog{position:fixed;left:0;right:0;top:0;height:3px;background:rgba(14,35,64,.12);z-index:80}
+.top-prog span{display:block;height:100%;width:0;background:var(--cobalt)}
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:var(--sb-w);z-index:70;
+  background:linear-gradient(170deg,var(--navy) 0%,var(--navy-2) 62%,var(--navy-3) 100%);
+  display:flex;flex-direction:column;color:var(--on-dark);
+  transition:transform .3s var(--ease)}
+body.sb-collapsed .sidebar{transform:translateX(-100%)}
+.sb-head{position:relative;padding:30px 26px 20px;flex:0 0 auto}
+.sb-close{position:absolute;right:14px;top:16px;width:30px;height:30px;border-radius:2px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#A9BBD1;
+  font-size:12px;line-height:1;cursor:pointer;transition:color .2s,border-color .2s,background .2s}
+.sb-close:hover{color:#fff;border-color:var(--cobalt);background:rgba(44,107,237,.32)}
+.sb-brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.sb-sq{width:13px;height:13px;background:var(--cobalt);transform:rotate(45deg);flex:0 0 auto}
+.sb-kick{font-family:var(--f-mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--cobalt-soft)}
+.sb-title{font-family:var(--f-display);font-size:26px;font-weight:800;letter-spacing:-.035em;
+  color:#fff;line-height:1.14}
+.sb-sub{margin-top:9px;font-size:12.5px;line-height:1.55;color:var(--on-dark-dim);letter-spacing:-.01em}
+.sb-tools{padding:0 26px 18px;flex:0 0 auto}
+.sb-btns{display:flex;gap:7px}
+.sb-btn{flex:1;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:#A9BBD1;
+  padding:8px 6px;border-radius:2px;cursor:pointer;transition:color .2s,border-color .2s,background .2s;
+  text-align:center;text-decoration:none;line-height:1.3}
+.sb-btn:hover{color:#fff;border-color:var(--cobalt)}
+.sb-btn.on{color:#fff;border-color:var(--cobalt);background:rgba(44,107,237,.34)}
+.sb-nav{flex:1;min-height:0;overflow-y:auto;padding:6px 14px 30px}
+.sb-nav::-webkit-scrollbar{width:8px}
+.sb-nav::-webkit-scrollbar-thumb{background:#2B3B54;border-radius:6px}
+.nav-group{margin-bottom:16px}
+.nav-kicker{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--cobalt-soft);padding:0 12px;margin-bottom:3px}
+.nav-label{font-size:13.5px;font-weight:700;color:#fff;padding:0 12px 8px;letter-spacing:-.02em;
+  border-bottom:1px solid rgba(255,255,255,.10);margin-bottom:5px}
+.nav-list{list-style:none;margin:0;padding:0}
+.nav-link{display:flex;gap:10px;align-items:baseline;padding:6px 12px;border-radius:2px;
+  text-decoration:none;transition:background .18s,color .18s}
+.nav-link:hover{background:rgba(255,255,255,.07)}
+.nav-n{font-family:var(--f-mono);font-size:10.5px;color:#69809C;flex:0 0 auto;letter-spacing:.06em}
+.nav-t{font-size:13px;line-height:1.42;color:#B4C4D8;letter-spacing:-.012em;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.nav-link.active{background:rgba(44,107,237,.24)}
+.nav-link.active .nav-t{color:#fff;font-weight:700}
+.nav-link.active .nav-n{color:var(--cobalt-soft)}
+.main{margin-left:var(--sb-w);padding:56px 56px 120px;max-width:1580px;
+  transition:margin-left .3s var(--ease),max-width .3s var(--ease)}
+body.sb-collapsed .main{margin-left:auto;margin-right:auto;max-width:1760px;padding:56px 76px 120px}
+.intro{margin-bottom:52px;padding-bottom:36px;border-bottom:2px solid rgba(14,35,64,.16)}
+.intro .ik{font-family:var(--f-mono);font-size:13px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--cobalt);margin-bottom:16px}
+.intro h1{font-family:var(--f-display);font-size:62px;font-weight:800;letter-spacing:-.045em;
+  color:var(--navy);line-height:1.04}
+.intro h1 .q{color:var(--cobalt)}
+.intro p{margin-top:18px;font-size:20px;line-height:1.6;color:var(--muted);max-width:940px;
+  letter-spacing:-.02em;font-weight:500}
+.intro .meta{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px 26px;
+  font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--muted-2);text-transform:uppercase}
+.chapter{margin-bottom:64px;scroll-margin-top:24px}
+.ch-head{display:flex;align-items:baseline;gap:14px;margin-bottom:14px;
+  padding-bottom:11px;border-bottom:1px solid rgba(14,35,64,.16)}
+.ch-n{font-family:var(--f-mono);font-size:13px;letter-spacing:.14em;color:var(--cobalt);flex:0 0 auto}
+.ch-t{font-size:21px;font-weight:800;color:var(--navy);letter-spacing:-.028em;line-height:1.3;
+  flex:1;min-width:0}
+.ch-part{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted-2);flex:0 0 auto;white-space:nowrap}
+.ch-link{font-family:var(--f-mono);font-size:15px;color:var(--muted-2);text-decoration:none;
+  opacity:0;transition:opacity .2s,color .2s;flex:0 0 auto}
+.chapter:hover .ch-link{opacity:1}
+.ch-link:hover{color:var(--cobalt)}
+.sheet{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:3px;
+  background:var(--paper);box-shadow:0 14px 44px rgba(14,35,64,.18),0 2px 6px rgba(14,35,64,.10)}
+.sheet .slide{position:absolute;left:0;top:0;width:1920px;height:1080px;
+  visibility:visible;opacity:1;pointer-events:auto;transform-origin:0 0;overflow:hidden}
+.note{margin-top:16px;background:#FFFFFF;border:1px solid var(--line);border-top:4px solid var(--cobalt);
+  border-radius:2px;padding:6px 30px 24px;box-shadow:0 2px 10px rgba(14,35,64,.06)}
+body.notes-hidden .note{display:none}
+.note-head{font-family:var(--f-body);font-size:12.5px;font-weight:800;letter-spacing:.02em;
+  color:var(--cobalt);margin:16px 0 13px;padding-bottom:11px;border-bottom:1px solid #EFECE4;
+  display:flex;align-items:center;cursor:pointer;user-select:none;transition:color .18s}
+.note-head::before{content:"";display:inline-block;width:8px;height:8px;background:var(--cobalt);
+  transform:rotate(45deg);margin-right:9px;flex:0 0 auto}
+.note-head:hover{color:var(--navy)}
+.note-head:focus-visible{outline:2px solid var(--cobalt);outline-offset:3px}
+.note-toggle{margin-left:auto;flex:0 0 auto;display:flex;align-items:center;gap:7px;
+  font-family:var(--f-mono);font-size:10.5px;font-weight:500;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--muted-2);background:var(--white);
+  border:1px solid var(--line);border-radius:2px;padding:4px 9px;
+  transition:color .18s,border-color .18s,background .18s}
+.note-head:hover .note-toggle{color:var(--cobalt);border-color:var(--cobalt-soft);background:var(--cobalt-tint)}
+.note-caret{display:inline-block;width:0;height:0;border-left:4px solid transparent;
+  border-right:4px solid transparent;border-top:5px solid currentColor;
+  transition:transform .2s var(--ease)}
+.note.collapsed .note-caret{transform:rotate(-90deg)}
+.note.collapsed{padding-bottom:8px}
+.note.collapsed .note-head{margin-bottom:0;padding-bottom:0;border-bottom-color:transparent}
+.note.collapsed .note-body{display:none}
+.note-body{font-size:16.5px;line-height:1.76;color:#37475A;letter-spacing:-.012em}
+.note-body p{margin-bottom:11px}
+.note-body p:last-child{margin-bottom:0}
+.note-body b,.note-body strong{color:var(--navy);font-weight:700}
+.note-body em{font-style:normal;color:var(--cobalt);font-weight:700}
+.note-body ul{margin:6px 0 13px;padding-left:21px}
+.note-body li{margin-bottom:7px}
+.note-body li::marker{color:var(--cobalt)}
+.note-body .q{display:block;margin-top:13px;padding-top:11px;
+  border-top:1px solid var(--line);color:var(--muted);font-size:15.5px}
+.note-body .badge{font-size:12px;padding:3px 8px}
+.note-body dl.gloss{margin:14px 0 4px;border-top:1px solid var(--line);padding-top:13px}
+.note-body dl.gloss::before{content:"용어 · 제품 설명";display:block;font-family:var(--f-body);
+  font-size:12.5px;font-weight:800;letter-spacing:.02em;color:var(--cobalt);margin-bottom:10px}
+.note-body dl.gloss dt{font-weight:700;color:var(--navy);font-size:16.5px;margin-top:11px}
+.note-body dl.gloss dt:first-of-type{margin-top:0}
+.note-body dl.gloss dd{margin:3px 0 0;color:#4A5B70;font-size:16px;line-height:1.72}
+.to-top{position:fixed;right:26px;bottom:26px;z-index:75;width:44px;height:44px;border-radius:2px;
+  background:var(--navy);color:#fff;border:1px solid rgba(255,255,255,.2);cursor:pointer;
+  font-size:15px;opacity:0;pointer-events:none;transition:opacity .25s,background .2s}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{background:var(--cobalt)}
+.sb-toggle{display:none;position:fixed;left:14px;top:14px;z-index:90;width:44px;height:44px;
+  border-radius:2px;background:var(--navy);color:#fff;border:1px solid rgba(255,255,255,.2);
+  font-size:17px;cursor:pointer;transition:background .2s}
+.sb-toggle:hover{background:var(--cobalt)}
+body.sb-collapsed .sb-toggle{display:block}
+.sb-scrim{display:none;position:fixed;inset:0;background:rgba(8,14,24,.55);z-index:65}
+@media (max-width:1100px){
+  .chapter{scroll-margin-top:72px}
+  .sb-toggle{display:block}
+  .sidebar{transform:translateX(-100%);box-shadow:0 0 44px rgba(0,0,0,.4)}
+  body.sb-open .sidebar,
+  body.sb-collapsed.sb-open .sidebar{transform:translateX(0)}
+  body.sb-open .sb-scrim{display:block}
+  .main,
+  body.sb-collapsed .main{margin-left:0;margin-right:0;max-width:none;padding:74px 22px 90px}
+  .intro h1{font-size:40px}
+  .intro p{font-size:17px}
+  .ch-part{display:none}
+  .note{padding:18px 20px 20px}
+  .note-body{font-size:15px}
+  .note-toggle{letter-spacing:.08em;padding:4px 7px}
+}
+@media print{
+  .sidebar,.sb-toggle,.sb-scrim,.top-prog,.to-top,.intro .meta{display:none!important}
+  body{background:#fff}
+  .main{margin-left:0;padding:0;max-width:none}
+  .chapter{margin-bottom:0;break-after:page;page-break-after:always}
+  .sheet{box-shadow:none;border:1px solid #ccc}
+  .note{break-inside:avoid}
+  .note.collapsed .note-body{display:block}
+  .note.collapsed .note-head{border-bottom-color:#EFECE4}
+  .note-toggle{display:none!important}
+}
+html{word-break:keep-all;overflow-wrap:break-word;line-break:strict}
+code,kbd,samp,pre{word-break:normal;overflow-wrap:break-word}
+:root {
+ --sb-w:314px;--page-bg:#F5F4F1;--page-bg-2:#EDECE8;--white:#FFFFFF;--navy:#0E0E0E;--navy-2:#202020;--navy-3:#131313;
+ --cobalt:#0F62FE;--cobalt-soft:#78A9FF;--cobalt-tint:#EDF5FF;--muted:#6B6B6B;--muted-2:#777777;
+ --on-dark:#0E0E0E;--on-dark-dim:#6B6B6B;--line:#E7E7E7;
+ --f-display:var(--font-body);--f-body:var(--font-body);--f-mono:var(--font-mono);
+}
+.sidebar{background:#FFF;border-right:1px solid var(--line)}
+.sb-title,.nav-label,.nav-t,.nav-link.active .nav-t{color:var(--ink)}
+.sb-kick,.nav-kicker,.nav-link.active .nav-n{color:var(--accent)}
+.sb-close,.sb-btn{background:#FFF;color:var(--ink-soft);border-color:var(--rule)}
+.sb-btn.on{color:var(--accent);background:var(--accent-tint)}
+.nav-label{border-color:var(--rule)}.nav-link.active{background:var(--accent-tint)}
+.sb-btn:hover,.sb-close:hover{color:var(--accent);background:var(--accent-tint)}
+.nav-link:hover{background:var(--panel)}.nav-n{color:var(--ink-soft)}
+.sheet{border-radius:0;box-shadow:none;border:1px solid var(--rule)}
+.note{border-radius:0;box-shadow:none}.note-body,.note-body dl.gloss dd{color:var(--ink-soft)}
+.sb-sq,.note-head::before{transform:none}
+.sheet .slide{padding:var(--pad-y) var(--pad-x);-webkit-font-smoothing:auto}
+.sheet .title-slide{padding-top:96px;padding-bottom:96px}
+@media print {
+  html,body{width:100%!important;height:auto!important;overflow:visible!important}
+  .main,body.sb-collapsed .main{width:100%;margin:0;padding:0;max-width:none}
+  body.notes-hidden .note,.note.collapsed .note-body{display:block!important}
+  .sheet .slide{position:absolute;break-after:auto;page-break-after:auto}
+  .slide .reveal,.slide .stagger>*,.slide .cv{opacity:1!important;transform:none!important;animation:none!important}
+}
+@media(prefers-reduced-motion:reduce) {
+  .slide .reveal,.slide .stagger>*,.slide .cv{opacity:1!important;transform:none!important;animation:none!important}
+}
+</style>
+<style>
+.layout-technical .layout-body{grid-template-rows:62px 424px 150px}
+.layout-technical .layout-tech-svg{display:block;width:1680px;height:424px;font:25px var(--font-body);fill:var(--ink)}
+.layout-technical svg rect{fill:var(--paper);stroke:var(--ink);stroke-width:1}
+.layout-technical svg path{fill:none;stroke:var(--accent);stroke-width:2}
+.layout-technical svg [data-boundary]>rect{stroke:var(--rule)}
+.layout-technical svg .layout-highlight{fill:var(--accent-tint);stroke:var(--accent)}
+.layout-technical svg .layout-dashed{stroke-dasharray:8 7}
+.layout-sequence [data-participant] path{stroke:var(--ink-faint);stroke-width:1}
+.layout-network [data-path="blocked"] path{stroke:var(--ink)}
+.layout-metrics [data-value]{fill:var(--accent);stroke:none}
+.layout-metrics svg path{stroke:var(--rule);stroke-width:1}
+.layout-metrics svg path+path{stroke:var(--ink)}
+.layout-metrics .layout-body{grid-template-rows:62px 586px}
+.layout-metrics .layout-metric-board{display:grid;grid-template-columns:1100px 1fr;gap:40px}
+.layout-metrics .layout-chart{display:grid;grid-template-rows:38px 356px 168px;gap:12px}
+.layout-metrics .layout-tech-svg{width:1100px;height:356px}
+.layout-metrics .layout-data-table{width:100%;border-collapse:collapse;font-size:25px;line-height:1}
+.layout-metrics .layout-data-table caption{text-align:left;font-weight:600;margin-bottom:8px}
+.layout-metrics .layout-data-table :is(th,td){text-align:left;padding:3px 18px;border-bottom:1px solid var(--rule)}
+.layout-metrics .layout-data-table th{font-weight:600}
+.layout-metrics .layout-metric-notes{display:grid;grid-template-rows:repeat(3,1fr);gap:16px}
+.layout-metrics .layout-metric-notes .layout-annotation:first-child{border-top:5px solid var(--accent)}
+.layout-walkthrough .layout-screen{display:grid;grid-template-columns:1040px 1fr;gap:40px}
+.layout-walkthrough .layout-code-pane{border:1px solid var(--ink)}
+.layout-walkthrough .layout-screen-label{padding:14px 24px;border-bottom:1px solid var(--ink);font-size:25px;font-weight:600;color:var(--accent)}
+.layout-walkthrough pre{padding:15px 24px;font:27px/44px var(--font-mono);white-space:pre}
+.layout-walkthrough code{font:inherit}
+.layout-walkthrough code>span{display:block;scroll-margin-top:100px}
+.layout-walkthrough code>span:target{background:var(--accent-tint)}
+.layout-walkthrough code i{display:inline-block;width:55px;font-style:normal;color:var(--ink-soft)}
+.layout-walkthrough .layout-callouts{display:grid;grid-template-rows:repeat(3,1fr)}
+.layout-walkthrough .layout-callout{display:grid;grid-template-columns:46px 1fr;gap:12px;border-top:1px solid var(--ink);padding-top:14px}
+.layout-walkthrough .layout-callout .layout-index{font-size:32px}
+.layout-walkthrough .layout-callout a{display:block;font-size:28px;font-weight:600;color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:5px;margin-bottom:10px}
+.layout-walkthrough .layout-callout a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+</style>
+</head>
+<body>
+
+
+
+<div class="top-prog"><span id="topProg"></span></div>
+<button class="sb-toggle" id="sbToggle" title="목차 열기 (M)" aria-label="목차 열기">☰</button>
+<div class="sb-scrim" id="sbScrim"></div>
+
+<nav class="sidebar" id="sidebar" aria-label="목차">
+  <div class="sb-head">
+    <button class="sb-close" id="sbClose" title="목차 접기 (M)" aria-label="목차 접기">&#10094;</button>
+    <div class="sb-brand"><span class="sb-sq"></span><span class="sb-kick"><!-- kicker:start -->WHITE COBALT<!-- kicker:end --></span></div>
+    <div class="sb-title"><!-- sb-title:start -->White Cobalt<!-- sb-title:end --></div>
+    <div class="sb-sub"><!-- subtitle:start -->순백 디자인 · 목차 · 세로 스크롤 · 설명과 스크립트<!-- subtitle:end --></div>
+  </div>
+  <div class="sb-tools">
+    <button class="sb-btn on" id="notesBtn" title="슬라이드 설명 표시/숨김 (N)">슬라이드 설명</button>
+  </div>
+  <div class="sb-nav" id="sbNav">
+
+  </div>
+</nav>
+
+<main class="main">
+  <header class="intro">
+    <div class="ik">READING DOCUMENT</div>
+    <h1><!-- h1:start -->White Cobalt<!-- h1:end --><span class="q">.</span></h1>
+    <p><!-- intro:start -->시트 안의 원래 White Cobalt 디자인은 유지하고, 바깥 구성은 Deep Navy와 같은 읽는 문서입니다. 스크롤하며 읽고 각 장의 설명·스크립트를 펼칠 수 있습니다.<!-- intro:end --></p>
+    <div class="meta"><!-- meta:start --><span>15 Sections</span><span>1920×1080</span><span>J/K · N · M</span><!-- meta:end --></div>
+  </header>
+
+<!-- chapters:start -->
+<article class="chapter" data-layout="cover" data-part="시작하기" data-part-kicker="INTRO">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">더 나은 결정을 만드는 대화</h2><span class="ch-part">시작하기</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-cover" data-layout="cover">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->COVER<!-- slot:eyebrow:end --></div><div class="chrome"><div class="stages"></div><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->더 나은 결정을 만드는 대화<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <div class="layout-opening reveal r3"><span class="layout-index" aria-hidden="true">01</span><p class="layout-lead"><!-- slot:lead:start -->문제와 기준을 연결하고, 함께 실행할 첫 행동을 정합니다.<!-- slot:lead:end --></p></div>
+<div class="layout-contents reveal r4"><div class="layout-content-row"><span class="layout-index">01</span><div><h3 class="layout-item-title"><!-- slot:item1-title:start -->문제를 함께 정의하는 시간<!-- slot:item1-title:end --></h3><p class="layout-item-body"><!-- slot:item1-body:start -->반복되는 불편을 한 문장으로 쓰고, 이번 논의가 다루지 않을 범위도 함께 정합니다.<!-- slot:item1-body:end --></p></div></div>
+<div class="layout-content-row"><span class="layout-index">02</span><div><h3 class="layout-item-title"><!-- slot:item2-title:start -->판단 기준을 나란히 놓기<!-- slot:item2-title:end --></h3><p class="layout-item-body"><!-- slot:item2-body:start -->선택지의 이름보다 기대하는 변화와 반드시 지켜야 할 조건을 먼저 비교합니다.<!-- slot:item2-body:end --></p></div></div>
+<div class="layout-content-row"><span class="layout-index">03</span><div><h3 class="layout-item-title"><!-- slot:item3-title:start -->작은 실행으로 확인하기<!-- slot:item3-title:end --></h3><p class="layout-item-body"><!-- slot:item3-body:start -->다음에 할 행동과 확인할 근거를 정해 논의가 실제 검토로 이어지게 합니다.<!-- slot:item3-body:end --></p></div></div>
+</div><div class="layout-annotations reveal r5"><div class="layout-annotation "><span class="layout-label">출발점</span><p class="layout-copy"><!-- slot:context:start -->서로 다른 경험을 가진 사람이 같은 결정을 내려야 할 때, 먼저 공통의 질문과 논의 범위를 확인합니다.<!-- slot:context:end --></p></div><div class="layout-annotation "><span class="layout-label">읽는 방향</span><p class="layout-copy"><!-- slot:insight:start -->문제에서 기준으로, 기준에서 실행으로 이동합니다. 각 장은 다음 판단에 필요한 근거를 하나씩 보탭니다.<!-- slot:insight:end --></p></div><div class="layout-annotation "><span class="layout-label">범위</span><p class="layout-copy"><!-- slot:caution:start -->모든 문제를 한 번에 해결하려 하지 않습니다. 아직 합의하지 않은 가정은 결정 사항과 분리해 기록합니다.<!-- slot:caution:end --></p></div></div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>주제와 읽는 관점 세 가지를 함께 시작할 때 씁니다. 행 3개와 맥락·해석·주의를 교체하고 긴 배경은 설명란에 둡니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="contrast" data-part="레이아웃 예시">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">요청의 처리에서 조건의 개선으로</h2><span class="ch-part">레이아웃 예시</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-contrast" data-layout="contrast">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->CONTRAST<!-- slot:eyebrow:end --></div><div class="chrome"><div class="stages"></div><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->요청의 처리에서 조건의 개선으로<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->같은 현상을 두 관점으로 읽고, 무엇을 바꿔야 하는지 구분합니다.<!-- slot:lead:end --></p><div class="layout-theses reveal r4"><div class="layout-thesis"><span class="layout-index">01</span><h3 class="layout-item-title"><!-- slot:item1-title:start -->눈앞의 요청을 바로 처리<!-- slot:item1-title:end --></h3><p class="layout-item-body"><!-- slot:item1-body:start -->요청한 결과를 빠르게 만들지만, 그 요청을 낳은 조건이 남으면 비슷한 일이 다시 생깁니다.<!-- slot:item1-body:end --></p></div><div class="layout-cause"><span class="layout-label">전환의 이유 <span aria-hidden="true">→</span></span><p class="layout-copy"><!-- slot:context:start -->같은 요청이 반복된다면 속도만의 문제가 아닐 수 있습니다. 무엇이 요청을 만들었는지 먼저 확인해야 합니다.<!-- slot:context:end --></p></div><div class="layout-thesis"><span class="layout-index">02</span><h3 class="layout-item-title"><!-- slot:item2-title:start -->반복되는 조건을 함께 수정<!-- slot:item2-title:end --></h3><p class="layout-item-body"><!-- slot:item2-body:start -->요청의 배경을 확인하고 작업 기준을 바꿉니다. 다음 사람이 같은 결정을 다시 내리지 않도록 돕습니다.<!-- slot:item2-body:end --></p></div></div><div class="layout-annotations layout-pair reveal r5"><div class="layout-annotation "><span class="layout-label">선택 기준</span><p class="layout-copy"><!-- slot:insight:start -->긴급한 대응과 원인 개선은 서로 배타적이지 않습니다. 당장 할 일과 구조적으로 바꿀 일을 구분해 진행합니다.<!-- slot:insight:end --></p></div><div class="layout-annotation "><span class="layout-label">주의할 해석</span><p class="layout-copy"><!-- slot:caution:start -->빠른 처리가 항상 나쁘다는 뜻은 아닙니다. 반복성, 영향, 수정 권한을 확인한 뒤 적절한 접근을 고릅니다.<!-- slot:caution:end --></p></div></div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>두 상태의 차이와 전환 이유를 설명합니다. 행 2개를 같은 관점으로 비교하고 주의점을 함께 둡니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="architecture" data-part="레이아웃 예시">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">입력과 플랫폼, 응용의 관계를 나눕니다</h2><span class="ch-part">레이아웃 예시</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-architecture" data-layout="architecture">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->ARCHITECTURE · 논리 구성<!-- slot:eyebrow:end --></div><div class="chrome"><div class="stages"></div><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->입력과 플랫폼, 응용의 관계를 나눕니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->입력·기반, 중심 플랫폼, 소비·응용을 개념적 역할과 관계로 구분합니다.<!-- slot:lead:end --></p>
+    <div class="layout-diagram reveal r4" data-diagram="logical">
+      <div class="layout-domain" data-boundary="input-foundation">
+        <span class="layout-label">입력 / 기반 경계</span>
+        <div class="layout-component">
+          <h3 class="layout-item-title"><!-- slot:item1-title:start -->판단에 필요한 입력과 기반<!-- slot:item1-title:end --></h3>
+          <p class="layout-item-body"><!-- slot:item1-body:start -->자료와 작업 조건을 제공합니다. 어떤 근거를 쓸 수 있는지와 자료의 의미를 중심 처리 역할에 전달합니다.<!-- slot:item1-body:end --></p>
+        </div>
+      </div>
+      <div class="layout-relation" data-edge="foundation-supports-core"><span>기반 관계</span><svg viewBox="0 0 120 24" role="img"><title>개념적 기반 관계</title><desc>기반이 중심 역할을 뒷받침하는 논리 관계이며 실제 호출 방향이 아님</desc><path d="M0 12H116 M106 3L116 12L106 21" fill="none" stroke="#0F62FE" stroke-width="2"/></svg></div>
+      <div class="layout-domain layout-platform" data-boundary="core-platform">
+        <span class="layout-label">중심 플랫폼 경계</span>
+        <div class="layout-component">
+          <h3 class="layout-item-title"><!-- slot:item2-title:start -->근거를 연결하는 중심 플랫폼<!-- slot:item2-title:end --></h3>
+          <p class="layout-item-body"><!-- slot:item2-body:start -->입력의 맥락을 해석하고 필요한 처리 역할을 연결합니다. 활용할 결과와 그 결과를 설명할 근거를 함께 만듭니다.<!-- slot:item2-body:end --></p>
+        </div>
+      </div>
+      <div class="layout-relation" data-edge="core-relates-to-consumer"><span>의미 연결</span><svg viewBox="0 0 120 24" role="img"><title>개념적 의미 연결</title><desc>중심 역할의 의미를 소비와 응용에 연결하는 논리 관계이며 실제 전송 경로가 아님</desc><path d="M0 12H116 M106 3L116 12L106 21" fill="none" stroke="#0F62FE" stroke-width="2"/></svg></div>
+      <div class="layout-domain" data-boundary="consumer-application">
+        <span class="layout-label">소비 / 응용 경계</span>
+        <div class="layout-component">
+          <h3 class="layout-item-title"><!-- slot:item3-title:start -->결과를 활용하는 업무 응용<!-- slot:item3-title:end --></h3>
+          <p class="layout-item-body"><!-- slot:item3-body:start -->결과를 사용자의 작업에 연결합니다. 설명할 근거와 남은 예외를 함께 보여주고 다음 판단에 활용합니다.<!-- slot:item3-body:end --></p>
+        </div>
+      </div>
+    </div>
+    <div class="layout-control-rail reveal r5">
+      <div class="layout-annotation"><span class="layout-label">설계 맥락</span><p class="layout-copy"><!-- slot:context:start -->세 경계는 논리적 역할을 구분합니다. 실선 화살표는 기반 관계와 의미 연결이며 서비스 간 실행 순서나 전송을 뜻하지 않습니다.<!-- slot:context:end --></p></div>
+      <div class="layout-annotation"><span class="layout-label">운영 확인 · 설계 메모</span><p class="layout-copy"><!-- slot:insight:start -->접근 범위, 검토 책임, 예외 처리와 관찰 기록을 별도로 확인해야 합니다. 점선은 메모 영역의 구분선이며 제어 경로가 아닙니다.<!-- slot:insight:end --></p></div>
+      <div class="layout-annotation"><span class="layout-label">검증 범위</span><p class="layout-copy"><!-- slot:caution:start -->실제 연결 방식과 배포 경계는 검증하지 않았습니다. 이 그림만으로 네트워크 격리나 비공개 연결을 보장하지 않습니다.<!-- slot:caution:end --></p></div>
+    </div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>역할과 경계가 핵심일 때 씁니다. 노드 3개·관계선·범례를 실제 근거에 맞추며 논리 구성과 배포를 구분합니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="process" data-part="레이아웃 예시">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">작게 확인하고 다음 단계로 넘어갑니다</h2><span class="ch-part">레이아웃 예시</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-process" data-layout="process">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->PROCESS<!-- slot:eyebrow:end --></div><div class="chrome"><div class="stages"></div><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->작게 확인하고 다음 단계로 넘어갑니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->질문에서 적용까지, 앞 단계의 근거를 다음 행동으로 연결합니다.<!-- slot:lead:end --></p><div class="layout-route reveal r4"><div class="layout-route-step"><span class="layout-index">01</span><h3 class="layout-item-title"><!-- slot:item1-title:start -->질문과 범위를 정리하기<!-- slot:item1-title:end --></h3><p class="layout-item-body"><!-- slot:item1-body:start -->해결할 질문을 하나로 좁힙니다. 포함할 사례와 이번 검토에서 제외할 사례를 함께 적습니다.<!-- slot:item1-body:end --></p></div><div class="layout-route-step"><span class="layout-index">02</span><h3 class="layout-item-title"><!-- slot:item2-title:start -->작은 방법으로 시험하기<!-- slot:item2-title:end --></h3><p class="layout-item-body"><!-- slot:item2-body:start -->작은 범위에서 방법을 적용합니다. 기대한 결과와 실제로 관찰한 내용을 분리해 남깁니다.<!-- slot:item2-body:end --></p></div><div class="layout-route-step"><span class="layout-index">03</span><h3 class="layout-item-title"><!-- slot:item3-title:start -->차이를 설명하고 수정하기<!-- slot:item3-title:end --></h3><p class="layout-item-body"><!-- slot:item3-body:start -->결과가 달라진 조건을 살핍니다. 방법의 문제인지, 입력의 차이인지 구분해 수정합니다.<!-- slot:item3-body:end --></p></div><div class="layout-route-step"><span class="layout-index">04</span><h3 class="layout-item-title"><!-- slot:item4-title:start -->확인한 조건 안에서 적용<!-- slot:item4-title:end --></h3><p class="layout-item-body"><!-- slot:item4-body:start -->확인된 범위에만 방법을 적용합니다. 남은 예외와 다시 검토할 시점을 함께 정합니다.<!-- slot:item4-body:end --></p></div></div><div class="layout-annotations reveal r5"><div class="layout-annotation "><span class="layout-label">진행 단위</span><p class="layout-copy"><!-- slot:context:start -->앞 단계에서 남긴 기록이 다음 단계의 입력이 됩니다. 담당자가 달라져도 질문과 판단 기준은 이어져야 합니다.<!-- slot:context:end --></p></div><div class="layout-annotation "><span class="layout-label">완료 기준</span><p class="layout-copy"><!-- slot:insight:start -->각 단계를 지났다는 사실보다 다음 판단에 필요한 근거를 만들었는지가 중요합니다. 산출물로 완료를 확인합니다.<!-- slot:insight:end --></p></div><div class="layout-annotation "><span class="layout-label">되돌아갈 조건</span><p class="layout-copy"><!-- slot:caution:start -->예상과 다른 결과를 일정의 문제로만 보지 않습니다. 전제가 달라졌다면 질문과 범위부터 다시 검토합니다.<!-- slot:caution:end --></p></div></div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>인계나 해석 순서를 설명합니다. 단계 4개와 입출력·예외를 교체하고 실제 순서에 맞춰 화살표를 확인합니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="matrix" data-part="레이아웃 예시">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">선택의 기준을 먼저 나란히 놓습니다</h2><span class="ch-part">레이아웃 예시</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-matrix" data-layout="matrix">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->MATRIX<!-- slot:eyebrow:end --></div><div class="chrome"><div class="stages"></div><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->선택의 기준을 먼저 나란히 놓습니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->같은 질문을 적용하고, 양보할 수 없는 조건을 분명히 합니다.<!-- slot:lead:end --></p><div class="layout-decision reveal r4"><table class="layout-table" aria-label="선택 기준 비교"><thead><tr><th scope="col"><!-- slot:head1:start -->판단할 기준<!-- slot:head1:end --></th><th scope="col"><!-- slot:head2:start -->먼저 확인할 질문<!-- slot:head2:end --></th><th scope="col"><!-- slot:head3:start -->합의할 결과<!-- slot:head3:end --></th></tr></thead><tbody><tr><td><!-- slot:cell1-1:start -->업무의 적합성<!-- slot:cell1-1:end --></td><td><!-- slot:cell1-2:start -->어떤 문제를 먼저 줄일 수 있는가<!-- slot:cell1-2:end --></td><td><!-- slot:cell1-3:start -->검토할 대표 사례를 정합니다<!-- slot:cell1-3:end --></td></tr><tr><td><!-- slot:cell2-1:start -->운영의 지속성<!-- slot:cell2-1:end --></td><td><!-- slot:cell2-2:start -->누가 확인하고 예외를 처리하는가<!-- slot:cell2-2:end --></td><td><!-- slot:cell2-3:start -->책임과 인계 조건을 정합니다<!-- slot:cell2-3:end --></td></tr><tr><td><!-- slot:cell3-1:start -->변화의 수용성<!-- slot:cell3-1:end --></td><td><!-- slot:cell3-2:start -->무엇을 유지하고 바꿔야 하는가<!-- slot:cell3-2:end --></td><td><!-- slot:cell3-3:start -->적용 범위와 검토 시점을 정합니다<!-- slot:cell3-3:end --></td></tr></tbody></table><div class="layout-verdict layout-accent"><span class="layout-label">판단의 중심</span><span class="layout-index" aria-hidden="true">→</span><p class="layout-copy"><!-- slot:insight:start -->모든 기준에서 가장 좋은 답을 찾기보다, 이번 결정에서 양보할 수 없는 조건을 먼저 정합니다.<!-- slot:insight:end --></p></div></div><div class="layout-annotations layout-pair reveal r5"><div class="layout-annotation "><span class="layout-label">비교의 전제</span><p class="layout-copy"><!-- slot:context:start -->비교할 대상에 같은 질문을 적용해야 합니다. 항목마다 서로 다른 가정을 쓰면 표의 결과를 그대로 비교할 수 없습니다.<!-- slot:context:end --></p></div><div class="layout-annotation "><span class="layout-label">해석의 한계</span><p class="layout-copy"><!-- slot:caution:start -->이 표는 질문을 정렬하기 위한 틀입니다. 검증하지 않은 점수나 순위를 넣어 객관적인 평가처럼 보이게 하지 않습니다.<!-- slot:caution:end --></p></div></div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>같은 기준으로 대안을 비교합니다. 헤더 3개·셀 9개와 판단·한계를 교체하며 긴 문장은 설명란으로 옮깁니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="scenario" data-part="레이아웃 예시">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">하나의 요청을 네 장면으로 따라갑니다</h2><span class="ch-part">레이아웃 예시</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-scenario" data-layout="scenario">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->SCENARIO<!-- slot:eyebrow:end --></div><div class="chrome"><div class="stages"></div><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->하나의 요청을 네 장면으로 따라갑니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->요청·확인·검토·회신을 연결해 역할 사이의 경험을 살핍니다.<!-- slot:lead:end --></p><div class="layout-storyboard reveal r4"><div class="layout-scene"><h3 class="layout-item-title"><span class="layout-index">01</span><span><!-- slot:item1-title:start -->요청자가 상황을 전달합니다<!-- slot:item1-title:end --></span></h3><p class="layout-item-body"><!-- slot:item1-body:start -->무엇을 하려는지와 어디서 막혔는지 설명합니다. 필요한 답의 형태와 마감 조건도 함께 전달합니다.<!-- slot:item1-body:end --></p></div><div class="layout-scene"><h3 class="layout-item-title"><span class="layout-index">02</span><span><!-- slot:item2-title:start -->담당자가 맥락을 확인합니다<!-- slot:item2-title:end --></span></h3><p class="layout-item-body"><!-- slot:item2-body:start -->빠진 조건을 질문하고 요청의 범위를 좁힙니다. 바로 처리할 일과 별도 검토가 필요한 일을 구분합니다.<!-- slot:item2-body:end --></p></div><div class="layout-scene"><h3 class="layout-item-title"><span class="layout-index">03</span><span><!-- slot:item3-title:start -->검토자가 예외를 판단합니다<!-- slot:item3-title:end --></span></h3><p class="layout-item-body"><!-- slot:item3-body:start -->기준에 맞지 않는 부분을 확인합니다. 승인 여부뿐 아니라 다음 사람이 알아야 할 판단 이유를 남깁니다.<!-- slot:item3-body:end --></p></div><div class="layout-scene"><h3 class="layout-item-title"><span class="layout-index">04</span><span><!-- slot:item4-title:start -->요청자가 결과를 확인합니다<!-- slot:item4-title:end --></span></h3><p class="layout-item-body"><!-- slot:item4-body:start -->받은 결과로 원래 작업을 할 수 있는지 확인합니다. 남은 문제가 있으면 같은 기록에서 다음 질문을 이어갑니다.<!-- slot:item4-body:end --></p></div></div><div class="layout-annotations reveal r5"><div class="layout-annotation "><span class="layout-label">장면의 연결</span><p class="layout-copy"><!-- slot:context:start -->한 사람의 편의만 보는 대신 요청과 확인이 오가는 전체 경험을 봅니다. 각 장면에는 서로 다른 책임이 있습니다.<!-- slot:context:end --></p></div><div class="layout-annotation "><span class="layout-label">인계의 품질</span><p class="layout-copy"><!-- slot:insight:start -->좋은 인계는 결과뿐 아니라 판단의 이유도 전달합니다. 다음 사람이 맥락을 다시 찾는 일을 줄일 수 있습니다.<!-- slot:insight:end --></p></div><div class="layout-annotation "><span class="layout-label">예외의 처리</span><p class="layout-copy"><!-- slot:caution:start -->모든 요청이 같은 순서로 끝나지는 않습니다. 반려나 추가 확인의 경로는 실제 업무 규칙에 맞게 보완해야 합니다.<!-- slot:caution:end --></p></div></div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>상황·역할·행동을 구분합니다. 장면 4개와 공통 맥락을 교체하고 시간·권한 관계를 혼동하지 않습니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="checklist" data-part="레이아웃 예시">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">시작하기 전에 네 가지를 확인합니다</h2><span class="ch-part">레이아웃 예시</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-checklist" data-layout="checklist">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->CHECKLIST<!-- slot:eyebrow:end --></div><div class="chrome"><div class="stages"></div><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->시작하기 전에 네 가지를 확인합니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->질문·근거·책임·재검토 조건을 맞춘 뒤 실행으로 넘어갑니다.<!-- slot:lead:end --></p><div class="layout-review reveal r4"><div class="layout-criteria"><div class="layout-criterion"><span class="layout-check" aria-hidden="true"></span><h3 class="layout-item-title"><!-- slot:item1-title:start -->해결할 질문이 구체적인가<!-- slot:item1-title:end --></h3><p class="layout-item-body"><!-- slot:item1-body:start -->서로 다른 사람이 읽어도 같은 문제를 떠올릴 수 있는지 확인합니다. 포함과 제외 범위를 함께 적습니다.<!-- slot:item1-body:end --></p></div><div class="layout-criterion"><span class="layout-check" aria-hidden="true"></span><h3 class="layout-item-title"><!-- slot:item2-title:start -->판단할 근거가 준비됐는가<!-- slot:item2-title:end --></h3><p class="layout-item-body"><!-- slot:item2-body:start -->대표 사례와 예외 사례가 모두 있는지 살핍니다. 근거가 없는 기대는 확인할 가정으로 남깁니다.<!-- slot:item2-body:end --></p></div><div class="layout-criterion"><span class="layout-check" aria-hidden="true"></span><h3 class="layout-item-title"><!-- slot:item3-title:start -->예외를 맡을 사람이 있는가<!-- slot:item3-title:end --></h3><p class="layout-item-body"><!-- slot:item3-body:start -->정상 흐름뿐 아니라 오류와 이견을 다룰 책임을 정합니다. 인계받을 사람과 필요한 기록도 확인합니다.<!-- slot:item3-body:end --></p></div><div class="layout-criterion"><span class="layout-check" aria-hidden="true"></span><h3 class="layout-item-title"><!-- slot:item4-title:start -->멈추고 다시 볼 수 있는가<!-- slot:item4-title:end --></h3><p class="layout-item-body"><!-- slot:item4-body:start -->적용을 중단하거나 범위를 줄일 조건을 정합니다. 재검토 시점을 업무 일정에 연결합니다.<!-- slot:item4-body:end --></p></div></div><div class="layout-review-aside"><div class="layout-annotation "><span class="layout-label">검토 방식</span><p class="layout-copy"><!-- slot:context:start -->체크 표시는 승인 자체가 아니라 논의할 항목을 뜻합니다. 판단 근거와 미해결 질문을 함께 검토합니다.<!-- slot:context:end --></p></div><div class="layout-annotation layout-tint"><span class="layout-label">통과의 의미</span><p class="layout-copy"><!-- slot:insight:start -->모든 칸을 채우는 것이 목적은 아닙니다. 다음 행동을 맡는 사람이 필요한 조건을 이해했는지 확인합니다.<!-- slot:insight:end --></p></div><div class="layout-annotation "><span class="layout-label">보류의 가치</span><p class="layout-copy"><!-- slot:caution:start -->근거가 부족한 항목은 억지로 통과시키지 않습니다. 보완할 내용과 다시 검토할 책임을 명확히 남깁니다.<!-- slot:caution:end --></p></div></div></div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>시작 전 검토 기준 4개를 제시합니다. 빈 체크 표시는 검토 대상이며 완료나 승인을 뜻하지 않습니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="evidence" data-part="레이아웃 예시">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">관찰한 사실과 해석을 분리합니다</h2><span class="ch-part">레이아웃 예시</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-evidence" data-layout="evidence">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->EVIDENCE<!-- slot:eyebrow:end --></div><div class="chrome"><div class="stages"></div><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->관찰한 사실과 해석을 분리합니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->자료의 범위를 밝히고, 기록·설명·남은 질문을 나란히 읽습니다.<!-- slot:lead:end --></p><div class="layout-board reveal r4"><div class="layout-source"><span class="layout-index" aria-hidden="true">↳</span><span class="layout-label">근거의 범위</span><p class="layout-copy"><!-- slot:context:start -->같은 업무를 수행한 기록과 참여자의 설명을 함께 봅니다. 자료가 만들어진 조건을 먼저 확인합니다.<!-- slot:context:end --></p></div><div class="layout-findings"><div class="layout-records"><div class="layout-record"><span class="layout-index">01</span><h3 class="layout-item-title"><!-- slot:item1-title:start -->기록에서 실제로 보이는 것<!-- slot:item1-title:end --></h3><p class="layout-item-body"><!-- slot:item1-body:start -->업무가 멈추거나 되돌아간 지점을 확인합니다. 관찰한 사실과 그 이유에 대한 추측은 구분합니다.<!-- slot:item1-body:end --></p></div><div class="layout-record"><span class="layout-index">02</span><h3 class="layout-item-title"><!-- slot:item2-title:start -->참여자가 설명하는 맥락<!-- slot:item2-title:end --></h3><p class="layout-item-body"><!-- slot:item2-body:start -->같은 상황을 어떻게 이해했는지 묻습니다. 개인의 설명을 전체 경험의 대표값처럼 다루지 않습니다.<!-- slot:item2-body:end --></p></div><div class="layout-record"><span class="layout-index">03</span><h3 class="layout-item-title"><!-- slot:item3-title:start -->추가로 확인해야 할 질문<!-- slot:item3-title:end --></h3><p class="layout-item-body"><!-- slot:item3-body:start -->서로 다른 자료가 맞지 않는 지점을 남깁니다. 바로 결론을 내리지 않고 확인할 방법을 정합니다.<!-- slot:item3-body:end --></p></div></div><div class="layout-annotations layout-pair reveal r5"><div class="layout-annotation "><span class="layout-label">해석</span><p class="layout-copy"><!-- slot:insight:start -->여러 근거가 같은 방향을 가리키는지 확인합니다. 하나의 설명보다 자료 사이의 일치와 차이가 판단을 돕습니다.<!-- slot:insight:end --></p></div><div class="layout-annotation "><span class="layout-label">한계</span><p class="layout-copy"><!-- slot:caution:start -->이 예시는 근거를 정리하는 방법입니다. 실제 조사 결과나 성과를 뜻하지 않으며 확인되지 않은 수치를 넣지 않습니다.<!-- slot:caution:end --></p></div></div></div></div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>근거와 해석을 구분합니다. 자료 3개와 관찰·한계를 교체하고 없는 측정값이나 성과를 만들지 않습니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="roadmap" data-part="레이아웃 예시">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">준비와 실행을 하나의 흐름으로 잇습니다</h2><span class="ch-part">레이아웃 예시</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-roadmap" data-layout="roadmap">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->ROADMAP<!-- slot:eyebrow:end --></div><div class="chrome"><div class="stages"></div><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->준비와 실행을 하나의 흐름으로 잇습니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->실행 묶음마다 시작과 검토의 범위를 정하고, 지속할 일을 구분합니다.<!-- slot:lead:end --></p><div class="layout-lanes reveal r4"><div class="layout-phase-head"><span>실행 묶음</span><span>준비</span><span>실행</span><span>검토</span></div><div class="layout-lane"><h3 class="layout-item-title"><!-- slot:item1-title:start -->판단 기준을 함께 준비<!-- slot:item1-title:end --></h3><div class="layout-road-bar"><p class="layout-item-body"><!-- slot:item1-body:start -->대표 사례와 확인할 질문을 정리합니다. 작은 실행을 시작할 때 같은 기준을 쓸 수 있게 만듭니다.<!-- slot:item1-body:end --></p></div></div><div class="layout-lane"><h3 class="layout-item-title"><!-- slot:item2-title:start -->작게 적용하며 학습<!-- slot:item2-title:end --></h3><div class="layout-road-bar"><p class="layout-item-body"><!-- slot:item2-body:start -->확인한 범위에서 실행하고 결과를 검토합니다. 달라진 조건은 다음 적용 전에 다시 합의합니다.<!-- slot:item2-body:end --></p></div></div><div class="layout-lane"><h3 class="layout-item-title"><!-- slot:item3-title:start -->기록과 책임을 이어가기<!-- slot:item3-title:end --></h3><div class="layout-road-bar"><p class="layout-item-body"><!-- slot:item3-body:start -->준비부터 검토까지 판단의 이유를 남깁니다. 담당자가 바뀌어도 다음 행동과 남은 질문을 찾을 수 있게 합니다.<!-- slot:item3-body:end --></p></div></div></div><div class="layout-annotations reveal r5"><div class="layout-annotation "><span class="layout-label">단계의 의미</span><p class="layout-copy"><!-- slot:context:start -->가로축은 날짜가 아니라 준비·실행·검토의 구분입니다. 각 실행 묶음이 어느 단계까지 이어지는지 보여줍니다.<!-- slot:context:end --></p></div><div class="layout-annotation "><span class="layout-label">이어지는 책임</span><p class="layout-copy"><!-- slot:insight:start -->기준을 만드는 일과 실행하는 일은 연결됩니다. 기록과 책임은 마지막에 정리하는 부록이 아니라 전 과정의 일입니다.<!-- slot:insight:end --></p></div><div class="layout-annotation "><span class="layout-label">계획의 한계</span><p class="layout-copy"><!-- slot:caution:start -->막대 길이는 기간이나 진척률을 나타내지 않습니다. 실제 일정으로 바꿀 때는 담당자와 선행 조건을 함께 확인합니다.<!-- slot:caution:end --></p></div></div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>단계별 판단을 설명합니다. 단계 3개와 진행·보류 조건을 교체하며 근거 없는 기간을 표시하지 않습니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="dataflow" data-part="기술 레이아웃">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">데이터 변환과 분기를 따라갑니다</h2><span class="ch-part">기술 레이아웃</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-technical layout-dataflow" data-layout="dataflow">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i>DATAFLOW · 가상 흐름</div><div class="chrome"><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->데이터 변환과 분기를 따라갑니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->원천 → 변환 → 저장 → 소비. 선 위에 전달 데이터를 표시합니다.<!-- slot:lead:end --></p>
+    <svg class="layout-tech-svg reveal r4" viewBox="0 0 1680 424" role="img" aria-labelledby="wc-flow-title wc-flow-desc" data-diagram="dataflow">
+      <title id="wc-flow-title">데이터 변환과 분기</title><desc id="wc-flow-desc">가상 흐름: 원천→정제→저장→보고서·조회 화면. 실선은 데이터 전달.</desc>
+      <g data-boundary="source"><rect x="1" y="64" width="249" height="266"/><text x="22" y="105">01 / 원천</text><text x="22" y="167">수집 기록</text><text x="22" y="222">혼합 형식</text><text x="22" y="259">중복 가능성</text></g>
+      <g data-boundary="transform"><rect class="layout-highlight" x="380" y="64" width="330" height="266"/><text x="404" y="105">02 / 처리</text><text x="404" y="167">형식 정규화</text><text x="404" y="222">필드 통일 · 중복 제거</text><text x="404" y="259">원본 식별자 보존</text></g>
+      <g data-boundary="store"><rect x="840" y="64" width="270" height="266"/><text x="864" y="105">03 / 저장</text><path d="M864 158Q975 130 1086 158V272Q975 300 864 272Z M864 158Q975 186 1086 158"/><text x="925" y="224">정제 기록</text></g>
+      <g data-boundary="consumers"><rect x="1360" y="64" width="319" height="266"/><text x="1384" y="105">04 / 소비</text><rect x="1384" y="122" width="270" height="70"/><text x="1480" y="166">보고서</text><rect x="1384" y="238" width="270" height="70"/><text x="1460" y="282">조회 화면</text></g>
+      <g data-edge="source-transform"><path d="M250 190H380m-8-6 8 6-8 6"/><text x="275" y="174">원시 행</text></g>
+      <g data-edge="transform-store"><path d="M710 190H840m-8-6 8 6-8 6"/><text x="735" y="174">정제 행</text></g>
+      <g data-edge="store-report"><path d="M1110 215H1232V157H1384m-8-6 8 6-8 6"/><text x="1260" y="139">집계표</text></g>
+      <g data-edge="store-view"><path d="M1232 215V273H1384m-8-6 8 6-8 6"/><text x="1260" y="255">조회 행</text></g>
+      <path d="M0 391H70"/><text x="90" y="400">실선 = 데이터 전달</text><text x="850" y="400">가상 설계 · 배포 아님</text>
+    </svg>
+    <div class="layout-annotations reveal r5">
+      <div class="layout-annotation"><span class="layout-label">변환</span><p class="layout-copy"><!-- slot:context:start -->필드를 통일하고 중복을 제거합니다. 오류 처리는 별도입니다.<!-- slot:context:end --></p></div>
+      <div class="layout-annotation"><span class="layout-label">분기</span><p class="layout-copy"><!-- slot:insight:start -->저장 기록을 집계표와 조회 행으로 나눕니다.<!-- slot:insight:end --></p></div>
+      <div class="layout-annotation"><span class="layout-label">가정</span><p class="layout-copy"><!-- slot:caution:start -->배포된 흐름이 아닙니다. 자동 동기화나 전달을 보장하지 않습니다.<!-- slot:caution:end --></p></div>
+    </div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>경계·변환·페이로드를 함께 수정하고 전송 조건을 검증합니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="sequence" data-part="기술 레이아웃">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">요청과 응답을 순서대로 읽습니다</h2><span class="ch-part">기술 레이아웃</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-technical layout-sequence" data-layout="sequence">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i>SEQUENCE · 가상 상호작용</div><div class="chrome"><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->요청과 응답을 순서대로 읽습니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->두 요청과 두 응답을 위에서 아래로 읽습니다.<!-- slot:lead:end --></p>
+    <svg class="layout-tech-svg reveal r4" viewBox="0 0 1680 424" role="img" aria-labelledby="wc-seq-title wc-seq-desc" data-diagram="sequence">
+      <title id="wc-seq-title">세 참여자의 네 메시지</title><desc id="wc-seq-desc">1 클라이언트→API 요청, 2 API→저장소 조회, 3 저장소→API 응답, 4 API→클라이언트 응답. 실선 요청, 점선 응답.</desc>
+      <g data-participant="client"><rect x="100" y="1" width="280" height="68"/><text x="180" y="46">클라이언트</text><path d="M240 69V360"/></g>
+      <g data-participant="api"><rect class="layout-highlight" x="700" y="1" width="280" height="68"/><text x="818" y="46">API</text><path d="M840 69V360"/></g>
+      <g data-participant="store"><rect x="1300" y="1" width="280" height="68"/><text x="1400" y="46">저장소</text><path d="M1440 69V360"/></g>
+      <g data-message="1" data-from="client" data-to="api" data-order="1"><path d="M240 143H840m-8-6 8 6-8 6"/><text x="285" y="125">1 · 조회 요청 / 조회 키</text></g>
+      <g data-message="2" data-from="api" data-to="store" data-order="2"><path d="M840 211H1440m-8-6 8 6-8 6"/><text x="885" y="193">2 · 키 조회 / 조건</text></g>
+      <g data-message="3" data-from="store" data-to="api" data-order="3"><path class="layout-dashed" d="M1440 279H840"/><path d="M848 273l-8 6 8 6"/><text x="885" y="261">3 · 조회 응답 / 결과 행</text></g>
+      <g data-message="4" data-from="api" data-to="client" data-order="4"><path class="layout-dashed" d="M840 347H240"/><path d="M248 341l-8 6 8 6"/><text x="285" y="329">4 · 결과 응답 / 표시 데이터</text></g>
+      <path d="M100 400H160"/><text x="180" y="408">실선 = 요청</text><path class="layout-dashed" d="M490 400H550"/><text x="570" y="408">점선 = 응답</text><text x="950" y="408">세로 가는 선 = 생명선</text>
+    </svg>
+    <div class="layout-annotations reveal r5">
+      <div class="layout-annotation"><span class="layout-label">순서</span><p class="layout-copy"><!-- slot:context:start -->1~4는 조회 순서입니다. 세로 간격은 소요 시간이 아닙니다.<!-- slot:context:end --></p></div>
+      <div class="layout-annotation"><span class="layout-label">책임</span><p class="layout-copy"><!-- slot:insight:start -->요청 조건과 반환 결과를 분리해 각 참여자의 책임을 확인합니다.<!-- slot:insight:end --></p></div>
+      <div class="layout-annotation"><span class="layout-label">범위</span><p class="layout-copy"><!-- slot:caution:start -->가상 정상 경로입니다. 인증·오류·재시도는 별도 정의합니다.<!-- slot:caution:end --></p></div>
+    </div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>참여자·메시지·from/to/order·화살표·접근성 설명을 함께 맞춥니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="network" data-part="기술 레이아웃">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">경로의 경계와 권한 판단을 분리합니다</h2><span class="ch-part">기술 레이아웃</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-technical layout-network" data-layout="network">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i>NETWORK · 가상 논리 구역</div><div class="chrome"><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->경로의 경계와 권한 판단을 분리합니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->열린 경로와 작업 권한은 별개입니다.<!-- slot:lead:end --></p>
+    <svg class="layout-tech-svg reveal r4" viewBox="0 0 1680 424" role="img" aria-labelledby="wc-net-title wc-net-desc" data-diagram="network">
+      <title id="wc-net-title">중첩 논리 구역</title><desc id="wc-net-desc">가상 설계: 외부→게이트웨이→응용→데이터는 허용, 직접 접근은 차단. 서비스 안의 응용·데이터 구역. ID 정책은 별도.</desc>
+      <rect x="1" y="135" width="239" height="80"/><text x="57" y="185">외부 사용자</text>
+      <g data-boundary="service-zone"><rect x="400" y="1" width="1279" height="357"/><text x="425" y="40">서비스 논리 구역 · 가상</text>
+        <rect x="430" y="130" width="240" height="100"/><text x="488" y="175">게이트웨이</text><text x="514" y="212">진입점</text>
+        <g data-boundary="app-zone"><rect x="810" y="70" width="390" height="254"/><text x="835" y="110">응용 구역</text><rect class="layout-highlight" x="840" y="130" width="270" height="100"/><text x="925" y="190">업무 응용</text><text x="835" y="290">진입 경로 제한</text></g>
+        <g data-boundary="data-zone"><rect x="1290" y="70" width="365" height="254"/><text x="1315" y="110">데이터 구역</text><rect x="1315" y="130" width="315" height="100"/><text x="1410" y="190">업무 데이터</text><text x="1315" y="290">조회 경로 제한</text></g>
+      </g>
+      <g data-edge="actor-gateway" data-path="allowed"><path d="M240 175H430m-8-6 8 6-8 6"/><text x="305" y="151">요청</text></g>
+      <g data-edge="gateway-app" data-path="allowed"><path d="M670 175H840m-8-6 8 6-8 6"/><text x="725" y="151">전달</text></g>
+      <g data-edge="app-data" data-path="allowed"><path d="M1110 175H1315m-8-6 8 6-8 6"/><text x="1217" y="151">조회</text></g>
+      <g data-edge="direct" data-path="blocked"><path class="layout-dashed" d="M120 215V334H380"/><path d="M370 324L390 344M390 324L370 344"/><text x="140" y="308">직접 접근 차단</text></g>
+      <path d="M0 399H60"/><text x="80" y="408">실선 = 허용 경로</text><g data-path="blocked"><path class="layout-dashed" d="M420 399H480"/><path d="M472 391L488 407M488 391L472 407"/></g><text x="500" y="408">점선 × = 차단 경로</text><text x="1040" y="408">ID / 작업 정책 · 별도 검사</text>
+    </svg>
+    <div class="layout-annotations reveal r5">
+      <div class="layout-annotation"><span class="layout-label">경계</span><p class="layout-copy"><!-- slot:context:start -->서비스 구역 안에 응용·데이터 구역을 둔 가상 업무 경로입니다.<!-- slot:context:end --></p></div>
+      <div class="layout-annotation"><span class="layout-label">ID와 정책</span><p class="layout-copy"><!-- slot:insight:start -->신원·작업 권한은 별도 확인합니다. 관리 경로는 생략했습니다.<!-- slot:insight:end --></p></div>
+      <div class="layout-annotation"><span class="layout-label">검증 전 설계</span><p class="layout-copy"><!-- slot:caution:start -->가상 설계로 사설 연결·보안·격리를 보장하지 않습니다.<!-- slot:caution:end --></p></div>
+    </div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>구역·경로 수정 후 접근 시험이 필요합니다. 관리 경로에는 별도 범례를 둡니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="metrics" data-part="기술 레이아웃">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">같은 단위와 기준선으로 비교합니다</h2><span class="ch-part">기술 레이아웃</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-technical layout-metrics" data-layout="metrics">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i>METRICS · 가상 수치</div><div class="chrome"><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->같은 단위와 기준선으로 비교합니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->완료 건수를 0부터 읽고 해석 조건을 확인합니다.<!-- slot:lead:end --></p>
+    <div class="layout-metric-board reveal r4">
+      <div class="layout-chart" data-chart-max="100" data-chart-axis="y" data-chart-baseline="0" data-chart-unit="건">
+        <strong class="layout-label">가상 예시 · 실측 아님</strong>
+        <!-- h=value*2.4; y=290-h. Sync labels/table/geometry/data-value/desc. -->
+        <svg class="layout-tech-svg" viewBox="0 0 1100 356" role="img" aria-labelledby="wc-metric-title wc-metric-desc">
+          <title id="wc-metric-title">완료 건수 · 가상 예시</title><desc id="wc-metric-desc">0~100건. 묶음 A 40건, 묶음 B 65건, 묶음 C 85건. 표와 같은 값이며 실측이 아닙니다.</desc>
+          <path d="M85 50H1080M85 170H1080"/><path data-chart-plot d="M85 50V290H1080"/>
+          <text x="90" y="29">건</text><text x="67" y="60" text-anchor="end">100</text><text x="67" y="180" text-anchor="end">50</text><text x="67" y="300" text-anchor="end">0</text>
+          <rect x="190" y="194" width="160" height="96" data-value="40"/><text x="270" y="178" text-anchor="middle"><!-- slot:value1:start -->40건<!-- slot:value1:end --></text><text x="270" y="336" text-anchor="middle">묶음 A</text>
+          <rect x="510" y="134" width="160" height="156" data-value="65"/><text x="590" y="118" text-anchor="middle"><!-- slot:value2:start -->65건<!-- slot:value2:end --></text><text x="590" y="336" text-anchor="middle">묶음 B</text>
+          <rect x="830" y="86" width="160" height="204" data-value="85"/><text x="910" y="70" text-anchor="middle"><!-- slot:value3:start -->85건<!-- slot:value3:end --></text><text x="910" y="336" text-anchor="middle">묶음 C</text>
+        </svg>
+        <table class="layout-data-table" data-chart-table><caption>차트와 같은 값 · 단위: 건</caption><thead><tr><th scope="col">묶음</th><th scope="col">완료 건수</th></tr></thead><tbody>
+          <tr><th scope="row">묶음 A</th><td>40건</td></tr>
+          <tr><th scope="row">묶음 B</th><td>65건</td></tr>
+          <tr><th scope="row">묶음 C</th><td>85건</td></tr>
+        </tbody></table>
+      </div>
+      <div class="layout-metric-notes">
+        <div class="layout-annotation"><span class="layout-label">정의 / 완료 건수</span><p class="layout-copy"><!-- slot:context:start -->같은 기준을 통과한 항목 수입니다. 완료율이나 처리 속도가 아닙니다.<!-- slot:context:end --></p></div>
+        <div class="layout-annotation"><span class="layout-label">해석 / 규모 차이</span><p class="layout-copy"><!-- slot:insight:start -->C가 가장 큽니다. 입력량·기간 없이는 생산성 우위를 판단할 수 없습니다.<!-- slot:insight:end --></p></div>
+        <div class="layout-annotation"><span class="layout-label">표본 / 실측 아님</span><p class="layout-copy"><!-- slot:caution:start -->가상 수치로 실측 표본은 없습니다. 실제 비교에는 출처·기간·모집단이 필요합니다.<!-- slot:caution:end --></p></div>
+      </div>
+    </div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>값 변경 시 라벨·표·data-value·막대 높이와 y·접근성 설명을 함께 수정합니다. 기준선 y=290, 1건=2.4px, 높이=값×2.4입니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="walkthrough" data-part="기술 레이아웃">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">한 줄의 동작을 판단 근거에 연결합니다</h2><span class="ch-part">기술 레이아웃</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-technical layout-walkthrough" data-layout="walkthrough">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i>WALKTHROUGH · 예시 의사 코드</div><div class="chrome"><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->한 줄의 동작을 판단 근거에 연결합니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <p class="layout-lead reveal r3"><!-- slot:lead:start -->입력·조건·결과를 읽는 비실행 의사 코드입니다.<!-- slot:lead:end --></p>
+    <div class="layout-screen reveal r4" data-code-example="illustrative">
+      <div class="layout-code-pane">
+        <div class="layout-screen-label">예시 의사 코드 · 실행 불가 / 제품 화면 아님</div>
+        <pre><code><!-- slot:code:start --><span id="wc-code-line-1" data-code-line="1"><i aria-hidden="true">01</i>INPUT rows</span><span id="wc-code-line-2" data-code-line="2"><i aria-hidden="true">02</i>REQUIRE rows ARE PRESENT</span><span id="wc-code-line-3" data-code-line="3"><i aria-hidden="true">03</i>FOR EACH row IN rows</span><span id="wc-code-line-4" data-code-line="4"><i aria-hidden="true">04</i>  IF row IS INCOMPLETE: SKIP</span><span id="wc-code-line-5" data-code-line="5"><i aria-hidden="true">05</i>  ADD row TO accepted</span><span id="wc-code-line-6" data-code-line="6"><i aria-hidden="true">06</i>BUILD summary FROM accepted</span><span id="wc-code-line-7" data-code-line="7"><i aria-hidden="true">07</i>RETURN summary</span><!-- slot:code:end --></code></pre>
+      </div>
+      <div class="layout-callouts">
+        <div class="layout-callout" data-callout="2"><span class="layout-index">2</span><div><a href="#wc-code-line-2">02행 · 입력 확인</a><p class="layout-copy">비어 있는 입력을 구분합니다.</p></div></div>
+        <div class="layout-callout" data-callout="4"><span class="layout-index">4</span><div><a href="#wc-code-line-4">04행 · 조건 검사</a><p class="layout-copy">불완전한 행을 제외합니다.</p></div></div>
+        <div class="layout-callout" data-callout="6"><span class="layout-index">6</span><div><a href="#wc-code-line-6">06행 · 결과 구성</a><p class="layout-copy">통과한 행으로 요약합니다.</p></div></div>
+      </div>
+    </div>
+    <div class="layout-annotations reveal r5">
+      <div class="layout-annotation"><span class="layout-label">범위</span><p class="layout-copy"><!-- slot:context:start -->설명 번호를 코드 행에 연결합니다. 제품 UI나 API를 추정하지 않습니다.<!-- slot:context:end --></p></div>
+      <div class="layout-annotation"><span class="layout-label">판단</span><p class="layout-copy"><!-- slot:insight:start -->제외 조건과 결과 구성을 나눠 입력의 반영 여부를 확인합니다.<!-- slot:insight:end --></p></div>
+      <div class="layout-annotation"><span class="layout-label">원본 교체</span><p class="layout-copy"><!-- slot:caution:start -->사용자 스크린샷+주석으로 교체할 수 있습니다. 원본 이미지·아이콘을 유지합니다.<!-- slot:caution:end --></p></div>
+    </div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>행 앵커·번호를 함께 수정합니다. 사용자 화면+주석으로 교체해도 원본 이미지·아이콘을 보존합니다.</p></div></aside>
+</article>
+<article class="chapter" data-layout="closing" data-part="마무리" data-part-kicker="OUTRO">
+<div class="ch-head"><span class="ch-n"></span><h2 class="ch-t">다음 행동이 분명한 합의로 마무리합니다</h2><span class="ch-part">마무리</span><a class="ch-link" href="#">#</a></div>
+<div class="sheet"><section class="slide layout-sheet layout-closing" data-layout="closing">
+  <header class="topbar reveal r1"><div class="sec"><i class="sq"></i><!-- slot:eyebrow:start -->CLOSING<!-- slot:eyebrow:end --></div><div class="chrome"><div class="stages"></div><div class="pg"></div></div></header>
+  <h2 class="layout-title reveal r2"><!-- slot:title:start -->다음 행동이 분명한 합의로 마무리합니다<!-- slot:title:end --></h2>
+  <div class="layout-body">
+    <div class="layout-final-thesis reveal r3"><span class="layout-index" aria-hidden="true">→</span><p class="layout-lead"><!-- slot:lead:start -->좋은 결론은 다음 사람이 바로 움직일 수 있는 문장입니다.<!-- slot:lead:end --></p><div class="layout-annotation "><span class="layout-label">이제 정할 것</span><p class="layout-copy"><!-- slot:context:start -->전체 방향에 동의하는 것만으로는 실행이 시작되지 않습니다. 다음에 할 행동과 확인할 근거를 구체적으로 정합니다.<!-- slot:context:end --></p></div></div><div class="layout-action-board reveal r4"><div class="layout-actions"><div class="layout-action"><span class="layout-index">01</span><h3 class="layout-item-title"><!-- slot:item1-title:start -->함께 풀 질문을 하나 선택<!-- slot:item1-title:end --></h3><p class="layout-item-body"><!-- slot:item1-body:start -->이번에 해결할 질문과 범위를 기록합니다. 함께 판단할 사람이 같은 문장을 읽고 합의하게 합니다.<!-- slot:item1-body:end --></p></div><div class="layout-action"><span class="layout-index">02</span><h3 class="layout-item-title"><!-- slot:item2-title:start -->확인할 작은 실행을 정하기<!-- slot:item2-title:end --></h3><p class="layout-item-body"><!-- slot:item2-body:start -->바로 해볼 수 있는 행동을 정합니다. 결과와 함께 무엇을 관찰해야 하는지도 미리 적습니다.<!-- slot:item2-body:end --></p></div><div class="layout-action"><span class="layout-index">03</span><h3 class="layout-item-title"><!-- slot:item3-title:start -->다시 만날 기준을 남기기<!-- slot:item3-title:end --></h3><p class="layout-item-body"><!-- slot:item3-body:start -->검토할 책임과 다음 확인 시점을 정합니다. 예상과 다른 결과가 나왔을 때 돌아갈 기준도 남깁니다.<!-- slot:item3-body:end --></p></div></div><div class="layout-annotations layout-pair reveal r5"><div class="layout-annotation "><span class="layout-label">남길 합의</span><p class="layout-copy"><!-- slot:insight:start -->작은 행동이라도 담당·산출물·검토 조건이 명확하면 다음 논의는 의견이 아니라 실제 근거에서 시작할 수 있습니다.<!-- slot:insight:end --></p></div><div class="layout-annotation "><span class="layout-label">남길 질문</span><p class="layout-copy"><!-- slot:caution:start -->아직 모르는 내용을 결정한 것처럼 쓰지 않습니다. 확인할 가정과 보류한 쟁점을 다음 검토의 출발점으로 남깁니다.<!-- slot:caution:end --></p></div></div></div>
+  </div>
+</section></div>
+<aside class="note"><div class="note-head">슬라이드 설명</div><div class="note-body"><p>핵심 판단과 다음 행동을 정리합니다. 행 3개와 남은 질문을 교체하고 새 주제를 무리하게 추가하지 않습니다.</p></div></aside>
+</article>
+<!-- chapters:end -->
+</main>
+
+<button class="to-top" id="toTop" aria-label="맨 위로">↑</button>
+
+<script>
+/* Rebuild navigation from content; no cached HTML or external runtime. */
+const chapters = [...document.querySelectorAll('.chapter')];
+const nav = document.getElementById('sbNav');
+let group, part, partNo = 0;
+chapters.forEach((chapter, index) => {
+  const id = 's' + String(index + 1).padStart(2, '0');
+  chapter.id = id; chapter.dataset.n = String(index + 1).padStart(2, '0');
+  chapter.querySelector('.ch-n').textContent = chapter.dataset.n;
+  chapter.querySelector('.ch-link').href = '#' + id;
+  chapter.querySelectorAll('.pg').forEach(el => {
+    el.textContent = chapter.dataset.n;
+    if (el.closest('.chrome')) {
+      const total = document.createElement('em'); total.textContent = ' / ' + chapters.length; el.append(total);
+    } else el.append(' / ' + chapters.length);
+  });
+  const pageNo = chapter.querySelector('.pageno');
+  if (pageNo) pageNo.textContent = chapter.dataset.n;
+  const stages = chapter.querySelector('.stages');
+  if (stages && !stages.children.length) {
+    const selected = (chapter.querySelector('.slide').dataset.stage || '').split(',');
+    if (!selected.some(Boolean)) stages.style.visibility = 'hidden';
+    for (let i = 1; i <= 4; i++) {
+      const marker = document.createElement('i');
+      marker.textContent = i; marker.classList.toggle('on', selected.includes(String(i))); stages.append(marker);
+    }
+  }
+  if (!group || part !== chapter.dataset.part) {
+    part = chapter.dataset.part || '본문';
+    group = document.createElement('div'); group.className = 'nav-group';
+    const label = document.createElement('div'); label.className = 'nav-label'; label.textContent = part;
+    const kick = document.createElement('div'); kick.className = 'nav-kicker';
+    kick.textContent = chapter.dataset.partKicker || 'PART ' + (++partNo);
+    const list = document.createElement('ul'); list.className = 'nav-list';
+    group.append(kick, label, list); nav.append(group);
+  }
+  const item = document.createElement('li'), link = document.createElement('a');
+  link.href = '#' + id; link.dataset.target = id; link.className = 'nav-link';
+  const number = document.createElement('span'); number.className = 'nav-n'; number.textContent = chapter.dataset.n;
+  const title = document.createElement('span'); title.className = 'nav-t'; title.textContent = chapter.querySelector('.ch-t').textContent;
+  link.title = title.textContent; link.append(number, title); item.append(link); group.querySelector('ul').append(item);
+});
+const sheets = [...document.querySelectorAll('.sheet')];
+const fit = () => sheets.forEach(sheet => sheet.firstElementChild.style.transform = `scale(${sheet.clientWidth / 1920})`);
+fit(); new ResizeObserver(fit).observe(document.querySelector('.main'));
+addEventListener('resize', fit); document.fonts.ready.then(fit); addEventListener('beforeprint', fit); addEventListener('afterprint', fit);
+const observer = new IntersectionObserver(entries => entries.forEach(e => {
+  if (e.isIntersecting) e.target.classList.add('visible');
+}), {threshold: 0.12});
+sheets.forEach(sheet => observer.observe(sheet.firstElementChild));
+const links = [...nav.querySelectorAll('a')], notesBtn = document.getElementById('notesBtn');
+let previous;
+const update = () => {
+  let active = chapters[0];
+  chapters.forEach(chapter => { if (chapter.getBoundingClientRect().top <= innerHeight * .34) active = chapter; });
+  links.forEach(link => {
+    const on = link.dataset.target === active?.id;
+    link.classList.toggle('active', on); if (on) link.setAttribute('aria-current', 'true'); else link.removeAttribute('aria-current');
+  });
+  if (active && previous !== active.id) {
+    const link = links.find(link => link.dataset.target === active.id);
+    const box = link.getBoundingClientRect(), viewport = nav.getBoundingClientRect();
+    if (box.top < viewport.top || box.bottom > viewport.bottom) nav.scrollTop += box.top - viewport.top - viewport.height / 2;
+    previous = active.id;
+  }
+  const height = document.documentElement.scrollHeight - innerHeight;
+  document.getElementById('topProg').style.width = `${height > 0 ? scrollY / height * 100 : 0}%`;
+  document.getElementById('toTop').classList.toggle('show', scrollY > 700);
+};
+let ticking = false;
+addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { update(); ticking = false; }); } }, {passive: true});
+notesBtn.onclick = () => {
+  const hidden = document.body.classList.toggle('notes-hidden');
+  notesBtn.classList.toggle('on', !hidden); notesBtn.setAttribute('aria-pressed', String(!hidden)); update();
+};
+document.querySelectorAll('.note').forEach((note, index) => {
+  const head = note.querySelector('.note-head'), body = note.querySelector('.note-body');
+  body.id = `note-${index + 1}`; head.tabIndex = 0; head.setAttribute('role', 'button'); head.setAttribute('aria-controls', body.id);
+  const toggle = document.createElement('span'); toggle.className = 'note-toggle';
+  head.append(toggle);
+  const sync = () => {
+    const open = !note.classList.contains('collapsed');
+    head.setAttribute('aria-expanded', String(open)); toggle.textContent = open ? '접기' : '펼치기';
+  };
+  head.onclick = () => { note.classList.toggle('collapsed'); sync(); update(); };
+  head.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); head.click(); } };
+  sync();
+});
+const sidebar = () => {
+  document.body.classList.toggle(innerWidth > 1100 ? 'sb-collapsed' : 'sb-open'); fit();
+};
+document.getElementById('sbToggle').onclick = sidebar;
+document.getElementById('sbClose').onclick = sidebar;
+document.getElementById('sbScrim').onclick = () => document.body.classList.remove('sb-open');
+links.forEach(link => link.addEventListener('click', () => document.body.classList.remove('sb-open')));
+document.getElementById('toTop').onclick = () => scrollTo({top: 0, behavior: 'smooth'});
+document.addEventListener('keydown', e => {
+  if (e.ctrlKey || e.metaKey || e.altKey || e.target.closest('input,textarea,select,[contenteditable="true"]')) return;
+  const key = e.key.toLowerCase();
+  if (key === 'n') { e.preventDefault(); notesBtn.click(); }
+  if (key === 'm') { e.preventDefault(); sidebar(); }
+  if (key === 'escape') document.body.classList.remove('sb-open');
+  if (key === 'j' || key === 'k') {
+    e.preventDefault();
+    const i = Math.max(0, links.findIndex(link => link.classList.contains('active')));
+    chapters[Math.max(0, Math.min(chapters.length - 1, i + (key === 'j' ? 1 : -1)))].scrollIntoView({
+      block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+    });
+  }
+});
+update();
+if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+</script>
+</body>
+</html>

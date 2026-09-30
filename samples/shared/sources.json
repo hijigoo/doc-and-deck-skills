@@ -1,0 +1,30 @@
+{
+  "checked": "2026-09-30",
+  "sources": {
+    "overview": {
+      "title": "What is Microsoft Foundry?",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/what-is-foundry",
+      "supports": "현재 브랜드, 모델·에이전트·도구의 통합, 개발 경로와 Foundry project"
+    },
+    "agents": {
+      "title": "What is Microsoft Foundry Agent Service?",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+      "supports": "Prompt / voice-based prompt / hosted agents와 직접 API 호출의 차이"
+    },
+    "observability": {
+      "title": "Observability in Generative AI",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/observability",
+      "supports": "평가·추적·모니터링의 역할, 품질과 안전 지표 및 과금 주의"
+    },
+    "ga": {
+      "title": "Microsoft Foundry portal general availability overview",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/general-availability",
+      "supports": "GA와 Preview 구분, classic와 신규 포털 범위, 기능별 리전·권한 검토"
+    }
+  },
+  "limitations": [
+    "가격, 특정 리전·모델의 가용성, 쿼터는 조사하거나 측정하지 않았음",
+    "개념 구성도, 도입 단계, Q&A 흐름, 출시 게이트는 설명용 제안",
+    "실제 Azure 배포·구독 접근·과금·성능 평가를 실행하지 않았음"
+  ]
+}

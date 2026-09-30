@@ -1,0 +1,14 @@
+The 43 SVGs in icons.json are the unchanged geometry vendored by the original
+deep-navy-md-to-pptx skill, consolidated into one JSON object keyed by icon name.
+They originated from Font Awesome 5 Free/Brands, via react-icons/fa.
+
+Font Awesome Free icons: Copyright Fonticons, Inc.
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://fontawesome.com/license/free
+https://creativecommons.org/licenses/by/4.0/
+Source: https://github.com/FortAwesome/Font-Awesome (5.x)
+React Icons source: https://github.com/react-icons/react-icons (MIT code license).
+
+Color is substituted for currentColor at build time. Brand marks remain the
+property of their respective owners; inclusion does not imply endorsement.
+The layout engine is adapted from this repository's deep-navy-md-to-pptx skill.

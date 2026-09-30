@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "pptxgenjs": "4.0.1",
+    "sharp": "0.35.3"
+  },
+  "description": "Standalone white-cobalt-md-to-pptx tools; install only the dependencies needed for your workflow.",
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "name": "white-cobalt-md-to-pptx",
+  "private": true,
+  "type": "commonjs",
+  "version": "1.0.0"
+}

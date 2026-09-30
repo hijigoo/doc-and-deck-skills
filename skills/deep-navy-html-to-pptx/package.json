@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "pptxgenjs": "4.0.1",
+    "sharp": "0.35.3"
+  },
+  "description": "Standalone deep-navy-html-to-pptx porting, animation, notes and structural-check tools.",
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "name": "deep-navy-html-to-pptx",
+  "private": true,
+  "type": "commonjs",
+  "version": "1.0.0"
+}

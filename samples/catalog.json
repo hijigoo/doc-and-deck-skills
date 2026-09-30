@@ -1,0 +1,1229 @@
+{
+  "subject": "Microsoft Foundry on Azure",
+  "checked": "2026-09-30",
+  "layouts": [
+    "cover",
+    "contrast",
+    "architecture",
+    "process",
+    "matrix",
+    "scenario",
+    "checklist",
+    "evidence",
+    "roadmap",
+    "dataflow",
+    "sequence",
+    "network",
+    "metrics",
+    "walkthrough",
+    "closing"
+  ],
+  "samples": [
+    {
+      "skill": "deep-navy-html-to-pptx",
+      "output": "deep-navy-html-to-pptx/foundry.pptx",
+      "slides": 15,
+      "input": "deep-navy-md-to-html/foundry.html",
+      "mode": "native text/tables/shapes; SVG and complex CSS decorations as images; entrance effects",
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "coverage": {
+        "template": "skills/deep-navy-md-to-html/deck.html",
+        "template_sha256": "07bb1ff3acbf56b0820473792e740aff226a71ad6e616b13ac74df6484af5df2",
+        "slides": [
+          {
+            "slide": 1,
+            "layout": "cover",
+            "template_sha256": "95ec38a683693c03bc29be3ec7e47fa2966e21620cb3b468bd1ea4b0992c7d5c",
+            "chapter_sha256": "a9657d5edd0a6e3d2f063818f6c7e03952cf78f734154e9a9bdbd60b94873f8f"
+          },
+          {
+            "slide": 2,
+            "layout": "contrast",
+            "template_sha256": "836fe8a77dc0ab973b54885aae7e815beaf00594d0e889c234033a7f3c70d184",
+            "chapter_sha256": "33958b6b52cd4e5134771d25139b8535bb64c65d626f3fea082ca1b9c161c493"
+          },
+          {
+            "slide": 3,
+            "layout": "architecture",
+            "template_sha256": "15b2e5e031430aa167481f393bac9a02725a22c83febe2776e1b3ea30739b8df",
+            "chapter_sha256": "90090f1007852c1cd458021b63144d501a5c06813ccfd1edcdd9ab401944aec4"
+          },
+          {
+            "slide": 4,
+            "layout": "process",
+            "template_sha256": "8d35df3ee94c49be335f6b44ee829ba73a55552723d132b67675ff0b0d7c2e26",
+            "chapter_sha256": "805e954831af0f2b6357060232b0ac1eafb3aff912791815f971c697b740fc99"
+          },
+          {
+            "slide": 5,
+            "layout": "matrix",
+            "template_sha256": "31247bb51dba0b7bb375aeaabc78e382c3ea306262f95df5cb17617e7472e257",
+            "chapter_sha256": "d34afc7c3edf6bd342ce82d38c5cdaded691676b81ee2359ef2c66c9df0c5e9d"
+          },
+          {
+            "slide": 6,
+            "layout": "scenario",
+            "template_sha256": "928b071fad592b996056c4e51dc4dc90983e70353606692c44ef293db9a82a78",
+            "chapter_sha256": "d17e7810795c4f1db97a4786031c412ee067ee8f6663573df2c80a0634845941"
+          },
+          {
+            "slide": 7,
+            "layout": "checklist",
+            "template_sha256": "5e770b4790bbe9799f84d5a6941774fd02d15d610914e6212254bfe661af7870",
+            "chapter_sha256": "f10aefe4e0e3f645786c6af4b68a2aecdfe25eb0d4f9ccc49d8032f7b32de5f0"
+          },
+          {
+            "slide": 8,
+            "layout": "evidence",
+            "template_sha256": "ad861090c05e91988776589da8f83ff82adc9eff828585343b3f6f1aa5e80176",
+            "chapter_sha256": "28ccd9fa90c0100dc033feb7622604210c9dc699469463d462af4b05935057ba"
+          },
+          {
+            "slide": 9,
+            "layout": "roadmap",
+            "template_sha256": "26cf959865a9c0760a1753635daffacb11a4384df0dda54375738df72acb033c",
+            "chapter_sha256": "11fb31399af674d2823c626422df8f83c5ea2ccf1386d2a9b101ec3574640ce8"
+          },
+          {
+            "slide": 10,
+            "layout": "dataflow",
+            "template_sha256": "ebbbc72a678dd47d9dc865e89fc3ec949c327824d4c314e5f947ebff4d36ec7c",
+            "chapter_sha256": "b5c4a88d1bd640e529ad6eb9bec3c7b27a3ff0744e7ba78741f7d0b509e3f980"
+          },
+          {
+            "slide": 11,
+            "layout": "sequence",
+            "template_sha256": "d3383ff3f9c18957c99529157796c2ac434494660b202e5b199854085b91f578",
+            "chapter_sha256": "a7d8bab5b1aaa98b162002513578ab98afcbbc80ffc1e5b661ce6b5ef949478f"
+          },
+          {
+            "slide": 12,
+            "layout": "network",
+            "template_sha256": "807d039ea17f184ec1dcbba688da713a01c39bb42b7b671dbbf201ad95221a98",
+            "chapter_sha256": "eb9733eb049d1c773faabc2a1be9960786182f989d893025976182596ce20862"
+          },
+          {
+            "slide": 13,
+            "layout": "metrics",
+            "template_sha256": "928c02cb23b603ab65506a62e5b5d4882c6be5b8f38ba7e9c533c3c66055f519",
+            "chapter_sha256": "25f1a203f8a2e75be468e111fdb56b79b78d39894d76904061c1cb3c9bc7f3af"
+          },
+          {
+            "slide": 14,
+            "layout": "walkthrough",
+            "template_sha256": "5b30d7ecfd084ea6be72bfdca70cf87613c42335398182ddc3506388d838c4dc",
+            "chapter_sha256": "95b22d90b40fb2fdcbcaacd50903a5dbf7c6165c0235c04eeff18001e2fb2609"
+          },
+          {
+            "slide": 15,
+            "layout": "closing",
+            "template_sha256": "0a1e52387b43a311225d0b6fca88de602f249ce94adb04c4523a8018db677146",
+            "chapter_sha256": "89acf189d8f85bbe0a3a89527e6d9554578f26937cb7a61a03219e5ebdcfd5f5"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "deep-navy-md-to-html",
+      "output": "deep-navy-md-to-html/foundry.html",
+      "slides": 15,
+      "input": "shared/foundry.md",
+      "mode": "standalone HTML; all actual templates",
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "coverage": {
+        "template": "skills/deep-navy-md-to-html/deck.html",
+        "template_sha256": "07bb1ff3acbf56b0820473792e740aff226a71ad6e616b13ac74df6484af5df2",
+        "slides": [
+          {
+            "slide": 1,
+            "layout": "cover",
+            "template_sha256": "95ec38a683693c03bc29be3ec7e47fa2966e21620cb3b468bd1ea4b0992c7d5c",
+            "chapter_sha256": "a9657d5edd0a6e3d2f063818f6c7e03952cf78f734154e9a9bdbd60b94873f8f"
+          },
+          {
+            "slide": 2,
+            "layout": "contrast",
+            "template_sha256": "836fe8a77dc0ab973b54885aae7e815beaf00594d0e889c234033a7f3c70d184",
+            "chapter_sha256": "33958b6b52cd4e5134771d25139b8535bb64c65d626f3fea082ca1b9c161c493"
+          },
+          {
+            "slide": 3,
+            "layout": "architecture",
+            "template_sha256": "15b2e5e031430aa167481f393bac9a02725a22c83febe2776e1b3ea30739b8df",
+            "chapter_sha256": "90090f1007852c1cd458021b63144d501a5c06813ccfd1edcdd9ab401944aec4"
+          },
+          {
+            "slide": 4,
+            "layout": "process",
+            "template_sha256": "8d35df3ee94c49be335f6b44ee829ba73a55552723d132b67675ff0b0d7c2e26",
+            "chapter_sha256": "805e954831af0f2b6357060232b0ac1eafb3aff912791815f971c697b740fc99"
+          },
+          {
+            "slide": 5,
+            "layout": "matrix",
+            "template_sha256": "31247bb51dba0b7bb375aeaabc78e382c3ea306262f95df5cb17617e7472e257",
+            "chapter_sha256": "d34afc7c3edf6bd342ce82d38c5cdaded691676b81ee2359ef2c66c9df0c5e9d"
+          },
+          {
+            "slide": 6,
+            "layout": "scenario",
+            "template_sha256": "928b071fad592b996056c4e51dc4dc90983e70353606692c44ef293db9a82a78",
+            "chapter_sha256": "d17e7810795c4f1db97a4786031c412ee067ee8f6663573df2c80a0634845941"
+          },
+          {
+            "slide": 7,
+            "layout": "checklist",
+            "template_sha256": "5e770b4790bbe9799f84d5a6941774fd02d15d610914e6212254bfe661af7870",
+            "chapter_sha256": "f10aefe4e0e3f645786c6af4b68a2aecdfe25eb0d4f9ccc49d8032f7b32de5f0"
+          },
+          {
+            "slide": 8,
+            "layout": "evidence",
+            "template_sha256": "ad861090c05e91988776589da8f83ff82adc9eff828585343b3f6f1aa5e80176",
+            "chapter_sha256": "28ccd9fa90c0100dc033feb7622604210c9dc699469463d462af4b05935057ba"
+          },
+          {
+            "slide": 9,
+            "layout": "roadmap",
+            "template_sha256": "26cf959865a9c0760a1753635daffacb11a4384df0dda54375738df72acb033c",
+            "chapter_sha256": "11fb31399af674d2823c626422df8f83c5ea2ccf1386d2a9b101ec3574640ce8"
+          },
+          {
+            "slide": 10,
+            "layout": "dataflow",
+            "template_sha256": "ebbbc72a678dd47d9dc865e89fc3ec949c327824d4c314e5f947ebff4d36ec7c",
+            "chapter_sha256": "b5c4a88d1bd640e529ad6eb9bec3c7b27a3ff0744e7ba78741f7d0b509e3f980"
+          },
+          {
+            "slide": 11,
+            "layout": "sequence",
+            "template_sha256": "d3383ff3f9c18957c99529157796c2ac434494660b202e5b199854085b91f578",
+            "chapter_sha256": "a7d8bab5b1aaa98b162002513578ab98afcbbc80ffc1e5b661ce6b5ef949478f"
+          },
+          {
+            "slide": 12,
+            "layout": "network",
+            "template_sha256": "807d039ea17f184ec1dcbba688da713a01c39bb42b7b671dbbf201ad95221a98",
+            "chapter_sha256": "eb9733eb049d1c773faabc2a1be9960786182f989d893025976182596ce20862"
+          },
+          {
+            "slide": 13,
+            "layout": "metrics",
+            "template_sha256": "928c02cb23b603ab65506a62e5b5d4882c6be5b8f38ba7e9c533c3c66055f519",
+            "chapter_sha256": "25f1a203f8a2e75be468e111fdb56b79b78d39894d76904061c1cb3c9bc7f3af"
+          },
+          {
+            "slide": 14,
+            "layout": "walkthrough",
+            "template_sha256": "5b30d7ecfd084ea6be72bfdca70cf87613c42335398182ddc3506388d838c4dc",
+            "chapter_sha256": "95b22d90b40fb2fdcbcaacd50903a5dbf7c6165c0235c04eeff18001e2fb2609"
+          },
+          {
+            "slide": 15,
+            "layout": "closing",
+            "template_sha256": "0a1e52387b43a311225d0b6fca88de602f249ce94adb04c4523a8018db677146",
+            "chapter_sha256": "89acf189d8f85bbe0a3a89527e6d9554578f26937cb7a61a03219e5ebdcfd5f5"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "deep-navy-md-to-pptx",
+      "output": "deep-navy-md-to-pptx/foundry.pptx",
+      "slides": 15,
+      "input": "shared/foundry.md",
+      "mode": "Markdown → own HTML templates → native text/tables/shapes; SVG and complex CSS decorations as images; static",
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "coverage": {
+        "template": "skills/deep-navy-md-to-pptx/deck.html",
+        "template_sha256": "07bb1ff3acbf56b0820473792e740aff226a71ad6e616b13ac74df6484af5df2",
+        "slides": [
+          {
+            "slide": 1,
+            "layout": "cover",
+            "template_sha256": "95ec38a683693c03bc29be3ec7e47fa2966e21620cb3b468bd1ea4b0992c7d5c",
+            "chapter_sha256": "a9657d5edd0a6e3d2f063818f6c7e03952cf78f734154e9a9bdbd60b94873f8f"
+          },
+          {
+            "slide": 2,
+            "layout": "contrast",
+            "template_sha256": "836fe8a77dc0ab973b54885aae7e815beaf00594d0e889c234033a7f3c70d184",
+            "chapter_sha256": "33958b6b52cd4e5134771d25139b8535bb64c65d626f3fea082ca1b9c161c493"
+          },
+          {
+            "slide": 3,
+            "layout": "architecture",
+            "template_sha256": "15b2e5e031430aa167481f393bac9a02725a22c83febe2776e1b3ea30739b8df",
+            "chapter_sha256": "90090f1007852c1cd458021b63144d501a5c06813ccfd1edcdd9ab401944aec4"
+          },
+          {
+            "slide": 4,
+            "layout": "process",
+            "template_sha256": "8d35df3ee94c49be335f6b44ee829ba73a55552723d132b67675ff0b0d7c2e26",
+            "chapter_sha256": "805e954831af0f2b6357060232b0ac1eafb3aff912791815f971c697b740fc99"
+          },
+          {
+            "slide": 5,
+            "layout": "matrix",
+            "template_sha256": "31247bb51dba0b7bb375aeaabc78e382c3ea306262f95df5cb17617e7472e257",
+            "chapter_sha256": "d34afc7c3edf6bd342ce82d38c5cdaded691676b81ee2359ef2c66c9df0c5e9d"
+          },
+          {
+            "slide": 6,
+            "layout": "scenario",
+            "template_sha256": "928b071fad592b996056c4e51dc4dc90983e70353606692c44ef293db9a82a78",
+            "chapter_sha256": "d17e7810795c4f1db97a4786031c412ee067ee8f6663573df2c80a0634845941"
+          },
+          {
+            "slide": 7,
+            "layout": "checklist",
+            "template_sha256": "5e770b4790bbe9799f84d5a6941774fd02d15d610914e6212254bfe661af7870",
+            "chapter_sha256": "f10aefe4e0e3f645786c6af4b68a2aecdfe25eb0d4f9ccc49d8032f7b32de5f0"
+          },
+          {
+            "slide": 8,
+            "layout": "evidence",
+            "template_sha256": "ad861090c05e91988776589da8f83ff82adc9eff828585343b3f6f1aa5e80176",
+            "chapter_sha256": "28ccd9fa90c0100dc033feb7622604210c9dc699469463d462af4b05935057ba"
+          },
+          {
+            "slide": 9,
+            "layout": "roadmap",
+            "template_sha256": "26cf959865a9c0760a1753635daffacb11a4384df0dda54375738df72acb033c",
+            "chapter_sha256": "11fb31399af674d2823c626422df8f83c5ea2ccf1386d2a9b101ec3574640ce8"
+          },
+          {
+            "slide": 10,
+            "layout": "dataflow",
+            "template_sha256": "ebbbc72a678dd47d9dc865e89fc3ec949c327824d4c314e5f947ebff4d36ec7c",
+            "chapter_sha256": "b5c4a88d1bd640e529ad6eb9bec3c7b27a3ff0744e7ba78741f7d0b509e3f980"
+          },
+          {
+            "slide": 11,
+            "layout": "sequence",
+            "template_sha256": "d3383ff3f9c18957c99529157796c2ac434494660b202e5b199854085b91f578",
+            "chapter_sha256": "a7d8bab5b1aaa98b162002513578ab98afcbbc80ffc1e5b661ce6b5ef949478f"
+          },
+          {
+            "slide": 12,
+            "layout": "network",
+            "template_sha256": "807d039ea17f184ec1dcbba688da713a01c39bb42b7b671dbbf201ad95221a98",
+            "chapter_sha256": "eb9733eb049d1c773faabc2a1be9960786182f989d893025976182596ce20862"
+          },
+          {
+            "slide": 13,
+            "layout": "metrics",
+            "template_sha256": "928c02cb23b603ab65506a62e5b5d4882c6be5b8f38ba7e9c533c3c66055f519",
+            "chapter_sha256": "25f1a203f8a2e75be468e111fdb56b79b78d39894d76904061c1cb3c9bc7f3af"
+          },
+          {
+            "slide": 14,
+            "layout": "walkthrough",
+            "template_sha256": "5b30d7ecfd084ea6be72bfdca70cf87613c42335398182ddc3506388d838c4dc",
+            "chapter_sha256": "95b22d90b40fb2fdcbcaacd50903a5dbf7c6165c0235c04eeff18001e2fb2609"
+          },
+          {
+            "slide": 15,
+            "layout": "closing",
+            "template_sha256": "0a1e52387b43a311225d0b6fca88de602f249ce94adb04c4523a8018db677146",
+            "chapter_sha256": "89acf189d8f85bbe0a3a89527e6d9554578f26937cb7a61a03219e5ebdcfd5f5"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "deep-navy-pptx-to-html",
+      "output": "deep-navy-pptx-to-html/index.html",
+      "slides": 15,
+      "input": "deep-navy-html-to-pptx/foundry.pptx",
+      "mode": "standalone HTML; static original render; embedded pages/assets; notes + transcript",
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "coverage": {
+        "template": "skills/deep-navy-md-to-html/deck.html",
+        "template_sha256": "07bb1ff3acbf56b0820473792e740aff226a71ad6e616b13ac74df6484af5df2",
+        "slides": [
+          {
+            "slide": 1,
+            "layout": "cover",
+            "template_sha256": "95ec38a683693c03bc29be3ec7e47fa2966e21620cb3b468bd1ea4b0992c7d5c",
+            "chapter_sha256": "a9657d5edd0a6e3d2f063818f6c7e03952cf78f734154e9a9bdbd60b94873f8f"
+          },
+          {
+            "slide": 2,
+            "layout": "contrast",
+            "template_sha256": "836fe8a77dc0ab973b54885aae7e815beaf00594d0e889c234033a7f3c70d184",
+            "chapter_sha256": "33958b6b52cd4e5134771d25139b8535bb64c65d626f3fea082ca1b9c161c493"
+          },
+          {
+            "slide": 3,
+            "layout": "architecture",
+            "template_sha256": "15b2e5e031430aa167481f393bac9a02725a22c83febe2776e1b3ea30739b8df",
+            "chapter_sha256": "90090f1007852c1cd458021b63144d501a5c06813ccfd1edcdd9ab401944aec4"
+          },
+          {
+            "slide": 4,
+            "layout": "process",
+            "template_sha256": "8d35df3ee94c49be335f6b44ee829ba73a55552723d132b67675ff0b0d7c2e26",
+            "chapter_sha256": "805e954831af0f2b6357060232b0ac1eafb3aff912791815f971c697b740fc99"
+          },
+          {
+            "slide": 5,
+            "layout": "matrix",
+            "template_sha256": "31247bb51dba0b7bb375aeaabc78e382c3ea306262f95df5cb17617e7472e257",
+            "chapter_sha256": "d34afc7c3edf6bd342ce82d38c5cdaded691676b81ee2359ef2c66c9df0c5e9d"
+          },
+          {
+            "slide": 6,
+            "layout": "scenario",
+            "template_sha256": "928b071fad592b996056c4e51dc4dc90983e70353606692c44ef293db9a82a78",
+            "chapter_sha256": "d17e7810795c4f1db97a4786031c412ee067ee8f6663573df2c80a0634845941"
+          },
+          {
+            "slide": 7,
+            "layout": "checklist",
+            "template_sha256": "5e770b4790bbe9799f84d5a6941774fd02d15d610914e6212254bfe661af7870",
+            "chapter_sha256": "f10aefe4e0e3f645786c6af4b68a2aecdfe25eb0d4f9ccc49d8032f7b32de5f0"
+          },
+          {
+            "slide": 8,
+            "layout": "evidence",
+            "template_sha256": "ad861090c05e91988776589da8f83ff82adc9eff828585343b3f6f1aa5e80176",
+            "chapter_sha256": "28ccd9fa90c0100dc033feb7622604210c9dc699469463d462af4b05935057ba"
+          },
+          {
+            "slide": 9,
+            "layout": "roadmap",
+            "template_sha256": "26cf959865a9c0760a1753635daffacb11a4384df0dda54375738df72acb033c",
+            "chapter_sha256": "11fb31399af674d2823c626422df8f83c5ea2ccf1386d2a9b101ec3574640ce8"
+          },
+          {
+            "slide": 10,
+            "layout": "dataflow",
+            "template_sha256": "ebbbc72a678dd47d9dc865e89fc3ec949c327824d4c314e5f947ebff4d36ec7c",
+            "chapter_sha256": "b5c4a88d1bd640e529ad6eb9bec3c7b27a3ff0744e7ba78741f7d0b509e3f980"
+          },
+          {
+            "slide": 11,
+            "layout": "sequence",
+            "template_sha256": "d3383ff3f9c18957c99529157796c2ac434494660b202e5b199854085b91f578",
+            "chapter_sha256": "a7d8bab5b1aaa98b162002513578ab98afcbbc80ffc1e5b661ce6b5ef949478f"
+          },
+          {
+            "slide": 12,
+            "layout": "network",
+            "template_sha256": "807d039ea17f184ec1dcbba688da713a01c39bb42b7b671dbbf201ad95221a98",
+            "chapter_sha256": "eb9733eb049d1c773faabc2a1be9960786182f989d893025976182596ce20862"
+          },
+          {
+            "slide": 13,
+            "layout": "metrics",
+            "template_sha256": "928c02cb23b603ab65506a62e5b5d4882c6be5b8f38ba7e9c533c3c66055f519",
+            "chapter_sha256": "25f1a203f8a2e75be468e111fdb56b79b78d39894d76904061c1cb3c9bc7f3af"
+          },
+          {
+            "slide": 14,
+            "layout": "walkthrough",
+            "template_sha256": "5b30d7ecfd084ea6be72bfdca70cf87613c42335398182ddc3506388d838c4dc",
+            "chapter_sha256": "95b22d90b40fb2fdcbcaacd50903a5dbf7c6165c0235c04eeff18001e2fb2609"
+          },
+          {
+            "slide": 15,
+            "layout": "closing",
+            "template_sha256": "0a1e52387b43a311225d0b6fca88de602f249ce94adb04c4523a8018db677146",
+            "chapter_sha256": "89acf189d8f85bbe0a3a89527e6d9554578f26937cb7a61a03219e5ebdcfd5f5"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "deep-navy-topic-to-html",
+      "output": "deep-navy-topic-to-html/topic.html",
+      "slides": 15,
+      "input": "shared/topic-brief.md + shared/foundry.md",
+      "mode": "researched standalone HTML; all actual templates",
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "coverage": {
+        "template": "skills/deep-navy-topic-to-html/deck.html",
+        "template_sha256": "07bb1ff3acbf56b0820473792e740aff226a71ad6e616b13ac74df6484af5df2",
+        "slides": [
+          {
+            "slide": 1,
+            "layout": "cover",
+            "template_sha256": "95ec38a683693c03bc29be3ec7e47fa2966e21620cb3b468bd1ea4b0992c7d5c",
+            "chapter_sha256": "a9657d5edd0a6e3d2f063818f6c7e03952cf78f734154e9a9bdbd60b94873f8f"
+          },
+          {
+            "slide": 2,
+            "layout": "contrast",
+            "template_sha256": "836fe8a77dc0ab973b54885aae7e815beaf00594d0e889c234033a7f3c70d184",
+            "chapter_sha256": "33958b6b52cd4e5134771d25139b8535bb64c65d626f3fea082ca1b9c161c493"
+          },
+          {
+            "slide": 3,
+            "layout": "architecture",
+            "template_sha256": "15b2e5e031430aa167481f393bac9a02725a22c83febe2776e1b3ea30739b8df",
+            "chapter_sha256": "90090f1007852c1cd458021b63144d501a5c06813ccfd1edcdd9ab401944aec4"
+          },
+          {
+            "slide": 4,
+            "layout": "process",
+            "template_sha256": "8d35df3ee94c49be335f6b44ee829ba73a55552723d132b67675ff0b0d7c2e26",
+            "chapter_sha256": "805e954831af0f2b6357060232b0ac1eafb3aff912791815f971c697b740fc99"
+          },
+          {
+            "slide": 5,
+            "layout": "matrix",
+            "template_sha256": "31247bb51dba0b7bb375aeaabc78e382c3ea306262f95df5cb17617e7472e257",
+            "chapter_sha256": "d34afc7c3edf6bd342ce82d38c5cdaded691676b81ee2359ef2c66c9df0c5e9d"
+          },
+          {
+            "slide": 6,
+            "layout": "scenario",
+            "template_sha256": "928b071fad592b996056c4e51dc4dc90983e70353606692c44ef293db9a82a78",
+            "chapter_sha256": "d17e7810795c4f1db97a4786031c412ee067ee8f6663573df2c80a0634845941"
+          },
+          {
+            "slide": 7,
+            "layout": "checklist",
+            "template_sha256": "5e770b4790bbe9799f84d5a6941774fd02d15d610914e6212254bfe661af7870",
+            "chapter_sha256": "f10aefe4e0e3f645786c6af4b68a2aecdfe25eb0d4f9ccc49d8032f7b32de5f0"
+          },
+          {
+            "slide": 8,
+            "layout": "evidence",
+            "template_sha256": "ad861090c05e91988776589da8f83ff82adc9eff828585343b3f6f1aa5e80176",
+            "chapter_sha256": "28ccd9fa90c0100dc033feb7622604210c9dc699469463d462af4b05935057ba"
+          },
+          {
+            "slide": 9,
+            "layout": "roadmap",
+            "template_sha256": "26cf959865a9c0760a1753635daffacb11a4384df0dda54375738df72acb033c",
+            "chapter_sha256": "11fb31399af674d2823c626422df8f83c5ea2ccf1386d2a9b101ec3574640ce8"
+          },
+          {
+            "slide": 10,
+            "layout": "dataflow",
+            "template_sha256": "ebbbc72a678dd47d9dc865e89fc3ec949c327824d4c314e5f947ebff4d36ec7c",
+            "chapter_sha256": "b5c4a88d1bd640e529ad6eb9bec3c7b27a3ff0744e7ba78741f7d0b509e3f980"
+          },
+          {
+            "slide": 11,
+            "layout": "sequence",
+            "template_sha256": "d3383ff3f9c18957c99529157796c2ac434494660b202e5b199854085b91f578",
+            "chapter_sha256": "a7d8bab5b1aaa98b162002513578ab98afcbbc80ffc1e5b661ce6b5ef949478f"
+          },
+          {
+            "slide": 12,
+            "layout": "network",
+            "template_sha256": "807d039ea17f184ec1dcbba688da713a01c39bb42b7b671dbbf201ad95221a98",
+            "chapter_sha256": "eb9733eb049d1c773faabc2a1be9960786182f989d893025976182596ce20862"
+          },
+          {
+            "slide": 13,
+            "layout": "metrics",
+            "template_sha256": "928c02cb23b603ab65506a62e5b5d4882c6be5b8f38ba7e9c533c3c66055f519",
+            "chapter_sha256": "25f1a203f8a2e75be468e111fdb56b79b78d39894d76904061c1cb3c9bc7f3af"
+          },
+          {
+            "slide": 14,
+            "layout": "walkthrough",
+            "template_sha256": "5b30d7ecfd084ea6be72bfdca70cf87613c42335398182ddc3506388d838c4dc",
+            "chapter_sha256": "95b22d90b40fb2fdcbcaacd50903a5dbf7c6165c0235c04eeff18001e2fb2609"
+          },
+          {
+            "slide": 15,
+            "layout": "closing",
+            "template_sha256": "0a1e52387b43a311225d0b6fca88de602f249ce94adb04c4523a8018db677146",
+            "chapter_sha256": "89acf189d8f85bbe0a3a89527e6d9554578f26937cb7a61a03219e5ebdcfd5f5"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "white-cobalt-html-to-pptx",
+      "output": "white-cobalt-html-to-pptx/foundry.pptx",
+      "slides": 15,
+      "input": "white-cobalt-md-to-html/foundry.html",
+      "mode": "native text/tables/shapes; SVG and complex CSS decorations as images; entrance effects",
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "coverage": {
+        "template": "skills/white-cobalt-md-to-html/deck.html",
+        "template_sha256": "e65d7e94bb6ff7d449504fefbf634610e7f7b50a5f5fa64b742b4af9ac54b3b0",
+        "slides": [
+          {
+            "slide": 1,
+            "layout": "cover",
+            "template_sha256": "63b00962364ab5b322fc5f83f509c8371f631554411c4810ad8dd55309c9d27d",
+            "chapter_sha256": "ec059a7457c5952e493382c7bbdb864e4396aa3e09c2a0b04cc523c65858af26"
+          },
+          {
+            "slide": 2,
+            "layout": "contrast",
+            "template_sha256": "80faeee8f86f84ca948d6e63ee18006f5bff31a380fbe075fea305bb29b2896e",
+            "chapter_sha256": "be55a98eba7edd256f3e0b06963cfe563ea66d38780ff69c32e05c67590576df"
+          },
+          {
+            "slide": 3,
+            "layout": "architecture",
+            "template_sha256": "095010d3b235b03c4f4f02ad5f79fd67dad0c72dde37445fc93891554ad10cee",
+            "chapter_sha256": "ec7dca0c2d45c5e4f6f455ca28843f53ee1114cfd27682bf6ffc8d5805b8e744"
+          },
+          {
+            "slide": 4,
+            "layout": "process",
+            "template_sha256": "5c1f56f8690f75491cadcfa8227d2cabe3bc2f7a35d726bc90a4cf5be40ad302",
+            "chapter_sha256": "9c2258a2cdac746cc6cfb03566028e6beda79bdb4e9d307229fb8f64d4a3621f"
+          },
+          {
+            "slide": 5,
+            "layout": "matrix",
+            "template_sha256": "ecef5c1cbc122e63013a4c74dd2efc0cdc487607e37c701566aa48045987150a",
+            "chapter_sha256": "1c668be4f239951b1ca5930bef0fc74a88e2ad7470c67aef56bd042c5403ac7c"
+          },
+          {
+            "slide": 6,
+            "layout": "scenario",
+            "template_sha256": "5f0cc04f791437c28ba33dc8a956ed7b34985c7a1bd97150f6918ec6a3b6d29a",
+            "chapter_sha256": "a4addff9c046ed635253aca0d3f4f64f0d1152e6e6a1e9ada37bbbf86a6b0c2c"
+          },
+          {
+            "slide": 7,
+            "layout": "checklist",
+            "template_sha256": "e4c5ae91ba2283f19f55909652d823c67978c69e48d9c2f5cc984d4a1d0d7f77",
+            "chapter_sha256": "07f75c0840605f52b87034f07b0b525096a2ad4c17d5437efe41a1c76b5617d1"
+          },
+          {
+            "slide": 8,
+            "layout": "evidence",
+            "template_sha256": "008ca8af60f8a97772f9f8da5f700f61f93772d46c35ac65c84f55cd6582fe25",
+            "chapter_sha256": "cfd514f0ed239d796b92f16ddf150238ed86cf9e7ae878830e479d57d09896c0"
+          },
+          {
+            "slide": 9,
+            "layout": "roadmap",
+            "template_sha256": "3e93ac791de918bf6c8e4c2095db2317ebbcd5ba7d5070b40ecf80c7f84d7cd7",
+            "chapter_sha256": "52939eee7d74c1f6c06ef4237f0773b5fc7ddb5500f1fe229277a2a1c49328ac"
+          },
+          {
+            "slide": 10,
+            "layout": "dataflow",
+            "template_sha256": "9dab0a52dc653eefa88ebd060d358832bab14b04d839c1723b2f16ff7cb6fc46",
+            "chapter_sha256": "4132e9b33257007af32b34609be2ef4d1ee99a35f87e5a895f53a051047fc36c"
+          },
+          {
+            "slide": 11,
+            "layout": "sequence",
+            "template_sha256": "dc1c5af6a531e858581d74f9d6a5cda9df65b7e631a3c0cbfa7c879c06b1a399",
+            "chapter_sha256": "6f5e3a89c8c92c846fe77b1f3654b369ce7dace6f4fcff18990f2c1977d07379"
+          },
+          {
+            "slide": 12,
+            "layout": "network",
+            "template_sha256": "9583ede2de416d32ed50ab80100ba466fc001e1ed2e8d087e557bf44e52bc398",
+            "chapter_sha256": "395f571c155cc1b2bd4acd95d902399c32c84803a92684cdac192117babb82e2"
+          },
+          {
+            "slide": 13,
+            "layout": "metrics",
+            "template_sha256": "4b728f1c64cbed7868c6ed33e40a18779163497a0e2ba805aa78476db3d3d88e",
+            "chapter_sha256": "9c20774f9d10c0231c16eaa4975419e287ce2178cc95e42e44b90a9cc20beb0f"
+          },
+          {
+            "slide": 14,
+            "layout": "walkthrough",
+            "template_sha256": "ed3202902ea0137e29a02585bbd99e28dcdb5d0ddec5d82c5fcc9c9b60fba07e",
+            "chapter_sha256": "8ac68f23c25188e8d4d206bdff77561f2be0f77b843ae8ea6cf669d99477d26c"
+          },
+          {
+            "slide": 15,
+            "layout": "closing",
+            "template_sha256": "9bcdf80e2aa94673f218f730d7aae93bf6ddfdfe417a9df4fc30f4bbaff2381f",
+            "chapter_sha256": "f55ee50b9da30012941dff50a0eb2cc114b101c3c20bdca14821601c2e776f7e"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "white-cobalt-md-to-html",
+      "output": "white-cobalt-md-to-html/foundry.html",
+      "slides": 15,
+      "input": "shared/foundry.md",
+      "mode": "standalone HTML; all actual templates",
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "coverage": {
+        "template": "skills/white-cobalt-md-to-html/deck.html",
+        "template_sha256": "e65d7e94bb6ff7d449504fefbf634610e7f7b50a5f5fa64b742b4af9ac54b3b0",
+        "slides": [
+          {
+            "slide": 1,
+            "layout": "cover",
+            "template_sha256": "63b00962364ab5b322fc5f83f509c8371f631554411c4810ad8dd55309c9d27d",
+            "chapter_sha256": "ec059a7457c5952e493382c7bbdb864e4396aa3e09c2a0b04cc523c65858af26"
+          },
+          {
+            "slide": 2,
+            "layout": "contrast",
+            "template_sha256": "80faeee8f86f84ca948d6e63ee18006f5bff31a380fbe075fea305bb29b2896e",
+            "chapter_sha256": "be55a98eba7edd256f3e0b06963cfe563ea66d38780ff69c32e05c67590576df"
+          },
+          {
+            "slide": 3,
+            "layout": "architecture",
+            "template_sha256": "095010d3b235b03c4f4f02ad5f79fd67dad0c72dde37445fc93891554ad10cee",
+            "chapter_sha256": "ec7dca0c2d45c5e4f6f455ca28843f53ee1114cfd27682bf6ffc8d5805b8e744"
+          },
+          {
+            "slide": 4,
+            "layout": "process",
+            "template_sha256": "5c1f56f8690f75491cadcfa8227d2cabe3bc2f7a35d726bc90a4cf5be40ad302",
+            "chapter_sha256": "9c2258a2cdac746cc6cfb03566028e6beda79bdb4e9d307229fb8f64d4a3621f"
+          },
+          {
+            "slide": 5,
+            "layout": "matrix",
+            "template_sha256": "ecef5c1cbc122e63013a4c74dd2efc0cdc487607e37c701566aa48045987150a",
+            "chapter_sha256": "1c668be4f239951b1ca5930bef0fc74a88e2ad7470c67aef56bd042c5403ac7c"
+          },
+          {
+            "slide": 6,
+            "layout": "scenario",
+            "template_sha256": "5f0cc04f791437c28ba33dc8a956ed7b34985c7a1bd97150f6918ec6a3b6d29a",
+            "chapter_sha256": "a4addff9c046ed635253aca0d3f4f64f0d1152e6e6a1e9ada37bbbf86a6b0c2c"
+          },
+          {
+            "slide": 7,
+            "layout": "checklist",
+            "template_sha256": "e4c5ae91ba2283f19f55909652d823c67978c69e48d9c2f5cc984d4a1d0d7f77",
+            "chapter_sha256": "07f75c0840605f52b87034f07b0b525096a2ad4c17d5437efe41a1c76b5617d1"
+          },
+          {
+            "slide": 8,
+            "layout": "evidence",
+            "template_sha256": "008ca8af60f8a97772f9f8da5f700f61f93772d46c35ac65c84f55cd6582fe25",
+            "chapter_sha256": "cfd514f0ed239d796b92f16ddf150238ed86cf9e7ae878830e479d57d09896c0"
+          },
+          {
+            "slide": 9,
+            "layout": "roadmap",
+            "template_sha256": "3e93ac791de918bf6c8e4c2095db2317ebbcd5ba7d5070b40ecf80c7f84d7cd7",
+            "chapter_sha256": "52939eee7d74c1f6c06ef4237f0773b5fc7ddb5500f1fe229277a2a1c49328ac"
+          },
+          {
+            "slide": 10,
+            "layout": "dataflow",
+            "template_sha256": "9dab0a52dc653eefa88ebd060d358832bab14b04d839c1723b2f16ff7cb6fc46",
+            "chapter_sha256": "4132e9b33257007af32b34609be2ef4d1ee99a35f87e5a895f53a051047fc36c"
+          },
+          {
+            "slide": 11,
+            "layout": "sequence",
+            "template_sha256": "dc1c5af6a531e858581d74f9d6a5cda9df65b7e631a3c0cbfa7c879c06b1a399",
+            "chapter_sha256": "6f5e3a89c8c92c846fe77b1f3654b369ce7dace6f4fcff18990f2c1977d07379"
+          },
+          {
+            "slide": 12,
+            "layout": "network",
+            "template_sha256": "9583ede2de416d32ed50ab80100ba466fc001e1ed2e8d087e557bf44e52bc398",
+            "chapter_sha256": "395f571c155cc1b2bd4acd95d902399c32c84803a92684cdac192117babb82e2"
+          },
+          {
+            "slide": 13,
+            "layout": "metrics",
+            "template_sha256": "4b728f1c64cbed7868c6ed33e40a18779163497a0e2ba805aa78476db3d3d88e",
+            "chapter_sha256": "9c20774f9d10c0231c16eaa4975419e287ce2178cc95e42e44b90a9cc20beb0f"
+          },
+          {
+            "slide": 14,
+            "layout": "walkthrough",
+            "template_sha256": "ed3202902ea0137e29a02585bbd99e28dcdb5d0ddec5d82c5fcc9c9b60fba07e",
+            "chapter_sha256": "8ac68f23c25188e8d4d206bdff77561f2be0f77b843ae8ea6cf669d99477d26c"
+          },
+          {
+            "slide": 15,
+            "layout": "closing",
+            "template_sha256": "9bcdf80e2aa94673f218f730d7aae93bf6ddfdfe417a9df4fc30f4bbaff2381f",
+            "chapter_sha256": "f55ee50b9da30012941dff50a0eb2cc114b101c3c20bdca14821601c2e776f7e"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "white-cobalt-md-to-pptx",
+      "output": "white-cobalt-md-to-pptx/foundry.pptx",
+      "slides": 15,
+      "input": "shared/foundry.md",
+      "mode": "Markdown → own HTML templates → native text/tables/shapes; SVG and complex CSS decorations as images; entrance effects",
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "coverage": {
+        "template": "skills/white-cobalt-md-to-pptx/deck.html",
+        "template_sha256": "e65d7e94bb6ff7d449504fefbf634610e7f7b50a5f5fa64b742b4af9ac54b3b0",
+        "slides": [
+          {
+            "slide": 1,
+            "layout": "cover",
+            "template_sha256": "63b00962364ab5b322fc5f83f509c8371f631554411c4810ad8dd55309c9d27d",
+            "chapter_sha256": "ec059a7457c5952e493382c7bbdb864e4396aa3e09c2a0b04cc523c65858af26"
+          },
+          {
+            "slide": 2,
+            "layout": "contrast",
+            "template_sha256": "80faeee8f86f84ca948d6e63ee18006f5bff31a380fbe075fea305bb29b2896e",
+            "chapter_sha256": "be55a98eba7edd256f3e0b06963cfe563ea66d38780ff69c32e05c67590576df"
+          },
+          {
+            "slide": 3,
+            "layout": "architecture",
+            "template_sha256": "095010d3b235b03c4f4f02ad5f79fd67dad0c72dde37445fc93891554ad10cee",
+            "chapter_sha256": "ec7dca0c2d45c5e4f6f455ca28843f53ee1114cfd27682bf6ffc8d5805b8e744"
+          },
+          {
+            "slide": 4,
+            "layout": "process",
+            "template_sha256": "5c1f56f8690f75491cadcfa8227d2cabe3bc2f7a35d726bc90a4cf5be40ad302",
+            "chapter_sha256": "9c2258a2cdac746cc6cfb03566028e6beda79bdb4e9d307229fb8f64d4a3621f"
+          },
+          {
+            "slide": 5,
+            "layout": "matrix",
+            "template_sha256": "ecef5c1cbc122e63013a4c74dd2efc0cdc487607e37c701566aa48045987150a",
+            "chapter_sha256": "1c668be4f239951b1ca5930bef0fc74a88e2ad7470c67aef56bd042c5403ac7c"
+          },
+          {
+            "slide": 6,
+            "layout": "scenario",
+            "template_sha256": "5f0cc04f791437c28ba33dc8a956ed7b34985c7a1bd97150f6918ec6a3b6d29a",
+            "chapter_sha256": "a4addff9c046ed635253aca0d3f4f64f0d1152e6e6a1e9ada37bbbf86a6b0c2c"
+          },
+          {
+            "slide": 7,
+            "layout": "checklist",
+            "template_sha256": "e4c5ae91ba2283f19f55909652d823c67978c69e48d9c2f5cc984d4a1d0d7f77",
+            "chapter_sha256": "07f75c0840605f52b87034f07b0b525096a2ad4c17d5437efe41a1c76b5617d1"
+          },
+          {
+            "slide": 8,
+            "layout": "evidence",
+            "template_sha256": "008ca8af60f8a97772f9f8da5f700f61f93772d46c35ac65c84f55cd6582fe25",
+            "chapter_sha256": "cfd514f0ed239d796b92f16ddf150238ed86cf9e7ae878830e479d57d09896c0"
+          },
+          {
+            "slide": 9,
+            "layout": "roadmap",
+            "template_sha256": "3e93ac791de918bf6c8e4c2095db2317ebbcd5ba7d5070b40ecf80c7f84d7cd7",
+            "chapter_sha256": "52939eee7d74c1f6c06ef4237f0773b5fc7ddb5500f1fe229277a2a1c49328ac"
+          },
+          {
+            "slide": 10,
+            "layout": "dataflow",
+            "template_sha256": "9dab0a52dc653eefa88ebd060d358832bab14b04d839c1723b2f16ff7cb6fc46",
+            "chapter_sha256": "4132e9b33257007af32b34609be2ef4d1ee99a35f87e5a895f53a051047fc36c"
+          },
+          {
+            "slide": 11,
+            "layout": "sequence",
+            "template_sha256": "dc1c5af6a531e858581d74f9d6a5cda9df65b7e631a3c0cbfa7c879c06b1a399",
+            "chapter_sha256": "6f5e3a89c8c92c846fe77b1f3654b369ce7dace6f4fcff18990f2c1977d07379"
+          },
+          {
+            "slide": 12,
+            "layout": "network",
+            "template_sha256": "9583ede2de416d32ed50ab80100ba466fc001e1ed2e8d087e557bf44e52bc398",
+            "chapter_sha256": "395f571c155cc1b2bd4acd95d902399c32c84803a92684cdac192117babb82e2"
+          },
+          {
+            "slide": 13,
+            "layout": "metrics",
+            "template_sha256": "4b728f1c64cbed7868c6ed33e40a18779163497a0e2ba805aa78476db3d3d88e",
+            "chapter_sha256": "9c20774f9d10c0231c16eaa4975419e287ce2178cc95e42e44b90a9cc20beb0f"
+          },
+          {
+            "slide": 14,
+            "layout": "walkthrough",
+            "template_sha256": "ed3202902ea0137e29a02585bbd99e28dcdb5d0ddec5d82c5fcc9c9b60fba07e",
+            "chapter_sha256": "8ac68f23c25188e8d4d206bdff77561f2be0f77b843ae8ea6cf669d99477d26c"
+          },
+          {
+            "slide": 15,
+            "layout": "closing",
+            "template_sha256": "9bcdf80e2aa94673f218f730d7aae93bf6ddfdfe417a9df4fc30f4bbaff2381f",
+            "chapter_sha256": "f55ee50b9da30012941dff50a0eb2cc114b101c3c20bdca14821601c2e776f7e"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "white-cobalt-pptx-to-html",
+      "output": "white-cobalt-pptx-to-html/index.html",
+      "slides": 15,
+      "input": "white-cobalt-html-to-pptx/foundry.pptx",
+      "mode": "standalone HTML; static original render; embedded pages/assets; notes + transcript",
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "coverage": {
+        "template": "skills/white-cobalt-md-to-html/deck.html",
+        "template_sha256": "e65d7e94bb6ff7d449504fefbf634610e7f7b50a5f5fa64b742b4af9ac54b3b0",
+        "slides": [
+          {
+            "slide": 1,
+            "layout": "cover",
+            "template_sha256": "63b00962364ab5b322fc5f83f509c8371f631554411c4810ad8dd55309c9d27d",
+            "chapter_sha256": "ec059a7457c5952e493382c7bbdb864e4396aa3e09c2a0b04cc523c65858af26"
+          },
+          {
+            "slide": 2,
+            "layout": "contrast",
+            "template_sha256": "80faeee8f86f84ca948d6e63ee18006f5bff31a380fbe075fea305bb29b2896e",
+            "chapter_sha256": "be55a98eba7edd256f3e0b06963cfe563ea66d38780ff69c32e05c67590576df"
+          },
+          {
+            "slide": 3,
+            "layout": "architecture",
+            "template_sha256": "095010d3b235b03c4f4f02ad5f79fd67dad0c72dde37445fc93891554ad10cee",
+            "chapter_sha256": "ec7dca0c2d45c5e4f6f455ca28843f53ee1114cfd27682bf6ffc8d5805b8e744"
+          },
+          {
+            "slide": 4,
+            "layout": "process",
+            "template_sha256": "5c1f56f8690f75491cadcfa8227d2cabe3bc2f7a35d726bc90a4cf5be40ad302",
+            "chapter_sha256": "9c2258a2cdac746cc6cfb03566028e6beda79bdb4e9d307229fb8f64d4a3621f"
+          },
+          {
+            "slide": 5,
+            "layout": "matrix",
+            "template_sha256": "ecef5c1cbc122e63013a4c74dd2efc0cdc487607e37c701566aa48045987150a",
+            "chapter_sha256": "1c668be4f239951b1ca5930bef0fc74a88e2ad7470c67aef56bd042c5403ac7c"
+          },
+          {
+            "slide": 6,
+            "layout": "scenario",
+            "template_sha256": "5f0cc04f791437c28ba33dc8a956ed7b34985c7a1bd97150f6918ec6a3b6d29a",
+            "chapter_sha256": "a4addff9c046ed635253aca0d3f4f64f0d1152e6e6a1e9ada37bbbf86a6b0c2c"
+          },
+          {
+            "slide": 7,
+            "layout": "checklist",
+            "template_sha256": "e4c5ae91ba2283f19f55909652d823c67978c69e48d9c2f5cc984d4a1d0d7f77",
+            "chapter_sha256": "07f75c0840605f52b87034f07b0b525096a2ad4c17d5437efe41a1c76b5617d1"
+          },
+          {
+            "slide": 8,
+            "layout": "evidence",
+            "template_sha256": "008ca8af60f8a97772f9f8da5f700f61f93772d46c35ac65c84f55cd6582fe25",
+            "chapter_sha256": "cfd514f0ed239d796b92f16ddf150238ed86cf9e7ae878830e479d57d09896c0"
+          },
+          {
+            "slide": 9,
+            "layout": "roadmap",
+            "template_sha256": "3e93ac791de918bf6c8e4c2095db2317ebbcd5ba7d5070b40ecf80c7f84d7cd7",
+            "chapter_sha256": "52939eee7d74c1f6c06ef4237f0773b5fc7ddb5500f1fe229277a2a1c49328ac"
+          },
+          {
+            "slide": 10,
+            "layout": "dataflow",
+            "template_sha256": "9dab0a52dc653eefa88ebd060d358832bab14b04d839c1723b2f16ff7cb6fc46",
+            "chapter_sha256": "4132e9b33257007af32b34609be2ef4d1ee99a35f87e5a895f53a051047fc36c"
+          },
+          {
+            "slide": 11,
+            "layout": "sequence",
+            "template_sha256": "dc1c5af6a531e858581d74f9d6a5cda9df65b7e631a3c0cbfa7c879c06b1a399",
+            "chapter_sha256": "6f5e3a89c8c92c846fe77b1f3654b369ce7dace6f4fcff18990f2c1977d07379"
+          },
+          {
+            "slide": 12,
+            "layout": "network",
+            "template_sha256": "9583ede2de416d32ed50ab80100ba466fc001e1ed2e8d087e557bf44e52bc398",
+            "chapter_sha256": "395f571c155cc1b2bd4acd95d902399c32c84803a92684cdac192117babb82e2"
+          },
+          {
+            "slide": 13,
+            "layout": "metrics",
+            "template_sha256": "4b728f1c64cbed7868c6ed33e40a18779163497a0e2ba805aa78476db3d3d88e",
+            "chapter_sha256": "9c20774f9d10c0231c16eaa4975419e287ce2178cc95e42e44b90a9cc20beb0f"
+          },
+          {
+            "slide": 14,
+            "layout": "walkthrough",
+            "template_sha256": "ed3202902ea0137e29a02585bbd99e28dcdb5d0ddec5d82c5fcc9c9b60fba07e",
+            "chapter_sha256": "8ac68f23c25188e8d4d206bdff77561f2be0f77b843ae8ea6cf669d99477d26c"
+          },
+          {
+            "slide": 15,
+            "layout": "closing",
+            "template_sha256": "9bcdf80e2aa94673f218f730d7aae93bf6ddfdfe417a9df4fc30f4bbaff2381f",
+            "chapter_sha256": "f55ee50b9da30012941dff50a0eb2cc114b101c3c20bdca14821601c2e776f7e"
+          }
+        ]
+      }
+    },
+    {
+      "skill": "white-cobalt-topic-to-html",
+      "output": "white-cobalt-topic-to-html/topic.html",
+      "slides": 15,
+      "input": "shared/topic-brief.md + shared/foundry.md",
+      "mode": "researched standalone HTML; all actual templates",
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "coverage": {
+        "template": "skills/white-cobalt-topic-to-html/deck.html",
+        "template_sha256": "e65d7e94bb6ff7d449504fefbf634610e7f7b50a5f5fa64b742b4af9ac54b3b0",
+        "slides": [
+          {
+            "slide": 1,
+            "layout": "cover",
+            "template_sha256": "63b00962364ab5b322fc5f83f509c8371f631554411c4810ad8dd55309c9d27d",
+            "chapter_sha256": "ec059a7457c5952e493382c7bbdb864e4396aa3e09c2a0b04cc523c65858af26"
+          },
+          {
+            "slide": 2,
+            "layout": "contrast",
+            "template_sha256": "80faeee8f86f84ca948d6e63ee18006f5bff31a380fbe075fea305bb29b2896e",
+            "chapter_sha256": "be55a98eba7edd256f3e0b06963cfe563ea66d38780ff69c32e05c67590576df"
+          },
+          {
+            "slide": 3,
+            "layout": "architecture",
+            "template_sha256": "095010d3b235b03c4f4f02ad5f79fd67dad0c72dde37445fc93891554ad10cee",
+            "chapter_sha256": "ec7dca0c2d45c5e4f6f455ca28843f53ee1114cfd27682bf6ffc8d5805b8e744"
+          },
+          {
+            "slide": 4,
+            "layout": "process",
+            "template_sha256": "5c1f56f8690f75491cadcfa8227d2cabe3bc2f7a35d726bc90a4cf5be40ad302",
+            "chapter_sha256": "9c2258a2cdac746cc6cfb03566028e6beda79bdb4e9d307229fb8f64d4a3621f"
+          },
+          {
+            "slide": 5,
+            "layout": "matrix",
+            "template_sha256": "ecef5c1cbc122e63013a4c74dd2efc0cdc487607e37c701566aa48045987150a",
+            "chapter_sha256": "1c668be4f239951b1ca5930bef0fc74a88e2ad7470c67aef56bd042c5403ac7c"
+          },
+          {
+            "slide": 6,
+            "layout": "scenario",
+            "template_sha256": "5f0cc04f791437c28ba33dc8a956ed7b34985c7a1bd97150f6918ec6a3b6d29a",
+            "chapter_sha256": "a4addff9c046ed635253aca0d3f4f64f0d1152e6e6a1e9ada37bbbf86a6b0c2c"
+          },
+          {
+            "slide": 7,
+            "layout": "checklist",
+            "template_sha256": "e4c5ae91ba2283f19f55909652d823c67978c69e48d9c2f5cc984d4a1d0d7f77",
+            "chapter_sha256": "07f75c0840605f52b87034f07b0b525096a2ad4c17d5437efe41a1c76b5617d1"
+          },
+          {
+            "slide": 8,
+            "layout": "evidence",
+            "template_sha256": "008ca8af60f8a97772f9f8da5f700f61f93772d46c35ac65c84f55cd6582fe25",
+            "chapter_sha256": "cfd514f0ed239d796b92f16ddf150238ed86cf9e7ae878830e479d57d09896c0"
+          },
+          {
+            "slide": 9,
+            "layout": "roadmap",
+            "template_sha256": "3e93ac791de918bf6c8e4c2095db2317ebbcd5ba7d5070b40ecf80c7f84d7cd7",
+            "chapter_sha256": "52939eee7d74c1f6c06ef4237f0773b5fc7ddb5500f1fe229277a2a1c49328ac"
+          },
+          {
+            "slide": 10,
+            "layout": "dataflow",
+            "template_sha256": "9dab0a52dc653eefa88ebd060d358832bab14b04d839c1723b2f16ff7cb6fc46",
+            "chapter_sha256": "4132e9b33257007af32b34609be2ef4d1ee99a35f87e5a895f53a051047fc36c"
+          },
+          {
+            "slide": 11,
+            "layout": "sequence",
+            "template_sha256": "dc1c5af6a531e858581d74f9d6a5cda9df65b7e631a3c0cbfa7c879c06b1a399",
+            "chapter_sha256": "6f5e3a89c8c92c846fe77b1f3654b369ce7dace6f4fcff18990f2c1977d07379"
+          },
+          {
+            "slide": 12,
+            "layout": "network",
+            "template_sha256": "9583ede2de416d32ed50ab80100ba466fc001e1ed2e8d087e557bf44e52bc398",
+            "chapter_sha256": "395f571c155cc1b2bd4acd95d902399c32c84803a92684cdac192117babb82e2"
+          },
+          {
+            "slide": 13,
+            "layout": "metrics",
+            "template_sha256": "4b728f1c64cbed7868c6ed33e40a18779163497a0e2ba805aa78476db3d3d88e",
+            "chapter_sha256": "9c20774f9d10c0231c16eaa4975419e287ce2178cc95e42e44b90a9cc20beb0f"
+          },
+          {
+            "slide": 14,
+            "layout": "walkthrough",
+            "template_sha256": "ed3202902ea0137e29a02585bbd99e28dcdb5d0ddec5d82c5fcc9c9b60fba07e",
+            "chapter_sha256": "8ac68f23c25188e8d4d206bdff77561f2be0f77b843ae8ea6cf669d99477d26c"
+          },
+          {
+            "slide": 15,
+            "layout": "closing",
+            "template_sha256": "9bcdf80e2aa94673f218f730d7aae93bf6ddfdfe417a9df4fc30f4bbaff2381f",
+            "chapter_sha256": "f55ee50b9da30012941dff50a0eb2cc114b101c3c20bdca14821601c2e776f7e"
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "PowerPoint native open/playback not verified.",
+    "SVG diagrams and complex CSS decorations in PPTX are images; other text/tables/basic shapes are native.",
+    "PPTX-to-HTML is static LibreOffice rendering.",
+    "Illustrative chart values are not measured performance."
+  ]
+}

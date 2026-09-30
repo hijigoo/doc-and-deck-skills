@@ -1,0 +1,1571 @@
+{
+  "checked": "2026-09-30",
+  "html": [
+    {
+      "file": "deep-navy-md-to-html/foundry.html",
+      "count": 15,
+      "reading": true,
+      "errors": [],
+      "pages": [
+        {
+          "width": 1600,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 15,
+          "issues": []
+        }
+      ],
+      "ok": true,
+      "textOverflow": [],
+      "resourceFailures": [],
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "isolatedOffline": {
+        "onlyHtmlCopied": true,
+        "linkedResources": [],
+        "errors": []
+      },
+      "noteToggle": true,
+      "printVisible": true
+    },
+    {
+      "file": "deep-navy-pptx-to-html/index.html",
+      "count": 15,
+      "reading": true,
+      "errors": [],
+      "pages": [
+        {
+          "width": 1600,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 15,
+          "issues": []
+        }
+      ],
+      "ok": true,
+      "textOverflow": [],
+      "resourceFailures": [],
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "isolatedOffline": {
+        "onlyHtmlCopied": true,
+        "linkedResources": [],
+        "errors": []
+      },
+      "noteToggle": true,
+      "embeddedOriginalOpens": true,
+      "printVisible": true
+    },
+    {
+      "file": "deep-navy-topic-to-html/topic.html",
+      "count": 15,
+      "reading": true,
+      "errors": [],
+      "pages": [
+        {
+          "width": 1600,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 15,
+          "issues": []
+        }
+      ],
+      "ok": true,
+      "textOverflow": [],
+      "resourceFailures": [],
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "isolatedOffline": {
+        "onlyHtmlCopied": true,
+        "linkedResources": [],
+        "errors": []
+      },
+      "noteToggle": true,
+      "printVisible": true
+    },
+    {
+      "file": "white-cobalt-md-to-html/foundry.html",
+      "count": 15,
+      "reading": true,
+      "errors": [],
+      "pages": [
+        {
+          "width": 1600,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 15,
+          "issues": []
+        }
+      ],
+      "ok": true,
+      "textOverflow": [],
+      "resourceFailures": [],
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "isolatedOffline": {
+        "onlyHtmlCopied": true,
+        "linkedResources": [],
+        "errors": []
+      },
+      "noteToggle": true,
+      "printVisible": true
+    },
+    {
+      "file": "white-cobalt-pptx-to-html/index.html",
+      "count": 15,
+      "reading": true,
+      "errors": [],
+      "pages": [
+        {
+          "width": 1600,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 15,
+          "issues": []
+        }
+      ],
+      "ok": true,
+      "textOverflow": [],
+      "resourceFailures": [],
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "isolatedOffline": {
+        "onlyHtmlCopied": true,
+        "linkedResources": [],
+        "errors": []
+      },
+      "noteToggle": true,
+      "embeddedOriginalOpens": true,
+      "printVisible": true
+    },
+    {
+      "file": "white-cobalt-topic-to-html/topic.html",
+      "count": 15,
+      "reading": true,
+      "errors": [],
+      "pages": [
+        {
+          "width": 1600,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 1600,
+          "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 768,
+          "slide": 15,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 1,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 2,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 3,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 4,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 5,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 6,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 7,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 8,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 9,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 10,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 11,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 12,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 13,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 14,
+          "issues": []
+        },
+        {
+          "width": 390,
+          "slide": 15,
+          "issues": []
+        }
+      ],
+      "ok": true,
+      "textOverflow": [],
+      "resourceFailures": [],
+      "layouts": [
+        "cover",
+        "contrast",
+        "architecture",
+        "process",
+        "matrix",
+        "scenario",
+        "checklist",
+        "evidence",
+        "roadmap",
+        "dataflow",
+        "sequence",
+        "network",
+        "metrics",
+        "walkthrough",
+        "closing"
+      ],
+      "isolatedOffline": {
+        "onlyHtmlCopied": true,
+        "linkedResources": [],
+        "errors": []
+      },
+      "noteToggle": true,
+      "printVisible": true
+    }
+  ],
+  "fontsBundled": true,
+  "powerpointOpenAndPlayback": "not performed",
+  "renderer": "LibreOffice",
+  "failures": []
+}
