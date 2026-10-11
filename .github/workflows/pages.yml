@@ -1,0 +1,55 @@
+name: Deploy HTML previews
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pages.yml'
+      - 'samples/*/*.html'
+      - 'skills/deep-navy-md-to-html/deck.html'
+      - 'skills/white-cobalt-md-to-html/deck.html'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Collect public HTML previews
+        shell: bash
+        run: |
+          set -euo pipefail
+          for theme in deep-navy white-cobalt; do
+            for route in md-to-html topic-to-html pptx-to-html; do
+              case "$route" in
+                md-to-html) file=foundry.html ;;
+                topic-to-html) file=topic.html ;;
+                pptx-to-html) file=index.html ;;
+              esac
+              directory="samples/$theme-$route"
+              mkdir -p "_site/$directory"
+              cp "$directory/$file" "_site/$directory/$file"
+            done
+            directory="skills/$theme-md-to-html"
+            mkdir -p "_site/$directory"
+            cp "$directory/deck.html" "_site/$directory/deck.html"
+          done
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

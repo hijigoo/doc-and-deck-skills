@@ -46,13 +46,13 @@ Copilot CLI에서 `/skills reload`를 실행하면 바로 쓸 수 있습니다.
 
 | 경로 | 입력 → 출력 | Deep Navy 샘플 | White Cobalt 샘플 |
 |---|---|---|---|
-| `md-to-html` | Markdown → HTML | [HTML](samples/deep-navy-md-to-html/foundry.html) | [HTML](samples/white-cobalt-md-to-html/foundry.html) |
-| `topic-to-html` | 주제 → 조사 → HTML | [HTML](samples/deep-navy-topic-to-html/topic.html) | [HTML](samples/white-cobalt-topic-to-html/topic.html) |
+| `md-to-html` | Markdown → HTML | [HTML 보기](https://hijigoo.github.io/doc-and-deck-skills/samples/deep-navy-md-to-html/foundry.html) | [HTML 보기](https://hijigoo.github.io/doc-and-deck-skills/samples/white-cobalt-md-to-html/foundry.html) |
+| `topic-to-html` | 주제 → 조사 → HTML | [HTML 보기](https://hijigoo.github.io/doc-and-deck-skills/samples/deep-navy-topic-to-html/topic.html) | [HTML 보기](https://hijigoo.github.io/doc-and-deck-skills/samples/white-cobalt-topic-to-html/topic.html) |
 | `md-to-pptx` | Markdown → PPTX | [PPTX](samples/deep-navy-md-to-pptx/foundry.pptx) | [PPTX](samples/white-cobalt-md-to-pptx/foundry.pptx) |
 | `html-to-pptx` | HTML → PPTX | [PPTX](samples/deep-navy-html-to-pptx/foundry.pptx) | [PPTX](samples/white-cobalt-html-to-pptx/foundry.pptx) |
-| `pptx-to-html` | PPTX → HTML | [HTML](samples/deep-navy-pptx-to-html/index.html) | [HTML](samples/white-cobalt-pptx-to-html/index.html) |
+| `pptx-to-html` | PPTX → HTML | [HTML 보기](https://hijigoo.github.io/doc-and-deck-skills/samples/deep-navy-pptx-to-html/index.html) | [HTML 보기](https://hijigoo.github.io/doc-and-deck-skills/samples/white-cobalt-pptx-to-html/index.html) |
 
-- HTML 결과는 폰트·이미지·스크립트를 내장한 **파일 하나**입니다. 내려받아 브라우저에서 엽니다.
+- **HTML 보기**를 클릭하면 GitHub Pages에서 바로 열립니다. HTML 결과는 폰트·이미지·스크립트를 내장한 파일 하나이며, 내려받아 오프라인으로도 볼 수 있습니다.
 - HTML에는 목차, 장별 설명·발표 스크립트, 키보드 조작, 모바일·인쇄 화면이 포함됩니다.
 - `pptx-to-html`은 원본 슬라이드를 다시 디자인하지 않고 그대로 보존합니다.
 
@@ -64,8 +64,8 @@ Copilot CLI에서 `/skills reload`를 실행하면 바로 쓸 수 있습니다.
 `evidence` · `roadmap` · `dataflow` · `sequence` · `network` · `metrics` · `walkthrough` ·
 `decision` · `pyramid` · `funnel` · `riskmap` · `swimlane` · `closing`
 
-전체 디자인은 [Deep Navy 갤러리](skills/deep-navy-md-to-html/deck.html)와
-[White Cobalt 갤러리](skills/white-cobalt-md-to-html/deck.html)에서 볼 수 있습니다.
+전체 디자인은 [Deep Navy 갤러리](https://hijigoo.github.io/doc-and-deck-skills/skills/deep-navy-md-to-html/deck.html)와
+[White Cobalt 갤러리](https://hijigoo.github.io/doc-and-deck-skills/skills/white-cobalt-md-to-html/deck.html)에서 바로 볼 수 있습니다.
 맞는 템플릿이 없으면 같은 디자인 원칙으로 새 레이아웃을 만듭니다.
 
 ![Deep Navy 샘플: 표지부터 마무리까지 20종 템플릿](samples/previews/deep-navy-md-to-html/overview.png)

@@ -10,18 +10,19 @@
 
 | 스킬 | 결과 | 미리보기 |
 |---|---|---|
-| `deep-navy-md-to-html` | [foundry.html](deep-navy-md-to-html/foundry.html) | [PNG](previews/deep-navy-md-to-html/overview.png) |
-| `deep-navy-topic-to-html` | [topic.html](deep-navy-topic-to-html/topic.html) | [PNG](previews/deep-navy-topic-to-html/overview.png) |
+| `deep-navy-md-to-html` | [HTML 보기](https://hijigoo.github.io/doc-and-deck-skills/samples/deep-navy-md-to-html/foundry.html) | [PNG](previews/deep-navy-md-to-html/overview.png) |
+| `deep-navy-topic-to-html` | [HTML 보기](https://hijigoo.github.io/doc-and-deck-skills/samples/deep-navy-topic-to-html/topic.html) | [PNG](previews/deep-navy-topic-to-html/overview.png) |
 | `deep-navy-md-to-pptx` | [foundry.pptx](deep-navy-md-to-pptx/foundry.pptx) | [PNG](previews/deep-navy-md-to-pptx/overview.png) · [PDF](deep-navy-md-to-pptx/foundry.pdf) |
 | `deep-navy-html-to-pptx` | [foundry.pptx](deep-navy-html-to-pptx/foundry.pptx) | [PNG](previews/deep-navy-html-to-pptx/overview.png) · [PDF](deep-navy-html-to-pptx/foundry.pdf) |
-| `deep-navy-pptx-to-html` | [index.html](deep-navy-pptx-to-html/index.html) | [PNG](previews/deep-navy-pptx-to-html/overview.png) |
-| `white-cobalt-md-to-html` | [foundry.html](white-cobalt-md-to-html/foundry.html) | [PNG](previews/white-cobalt-md-to-html/overview.png) |
-| `white-cobalt-topic-to-html` | [topic.html](white-cobalt-topic-to-html/topic.html) | [PNG](previews/white-cobalt-topic-to-html/overview.png) |
+| `deep-navy-pptx-to-html` | [HTML 보기](https://hijigoo.github.io/doc-and-deck-skills/samples/deep-navy-pptx-to-html/index.html) | [PNG](previews/deep-navy-pptx-to-html/overview.png) |
+| `white-cobalt-md-to-html` | [HTML 보기](https://hijigoo.github.io/doc-and-deck-skills/samples/white-cobalt-md-to-html/foundry.html) | [PNG](previews/white-cobalt-md-to-html/overview.png) |
+| `white-cobalt-topic-to-html` | [HTML 보기](https://hijigoo.github.io/doc-and-deck-skills/samples/white-cobalt-topic-to-html/topic.html) | [PNG](previews/white-cobalt-topic-to-html/overview.png) |
 | `white-cobalt-md-to-pptx` | [foundry.pptx](white-cobalt-md-to-pptx/foundry.pptx) | [PNG](previews/white-cobalt-md-to-pptx/overview.png) · [PDF](white-cobalt-md-to-pptx/foundry.pdf) |
 | `white-cobalt-html-to-pptx` | [foundry.pptx](white-cobalt-html-to-pptx/foundry.pptx) | [PNG](previews/white-cobalt-html-to-pptx/overview.png) · [PDF](white-cobalt-html-to-pptx/foundry.pdf) |
-| `white-cobalt-pptx-to-html` | [index.html](white-cobalt-pptx-to-html/index.html) | [PNG](previews/white-cobalt-pptx-to-html/overview.png) |
+| `white-cobalt-pptx-to-html` | [HTML 보기](https://hijigoo.github.io/doc-and-deck-skills/samples/white-cobalt-pptx-to-html/index.html) | [PNG](previews/white-cobalt-pptx-to-html/overview.png) |
 
-HTML은 파일 하나만 내려받아 브라우저에서 열면 됩니다.
+**HTML 보기**를 클릭하면 GitHub Pages에서 바로 열립니다.
+오프라인으로 보려면 해당 스킬 폴더의 HTML 파일 하나만 내려받으면 됩니다.
 
 ## 샘플 프롬프트
 
