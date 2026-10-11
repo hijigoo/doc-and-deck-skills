@@ -3,10 +3,6 @@
 Markdown 원고나 주제로 **읽는 HTML 문서와 PowerPoint**를 만드는 에이전트 스킬 10개입니다.
 디자인은 **Deep Navy**와 **White Cobalt** 두 가지이며, 각각 템플릿 20종을 제공합니다.
 
-![Deep Navy 샘플: 표지부터 마무리까지 20종 템플릿](samples/previews/deep-navy-md-to-html/overview.png)
-
-![White Cobalt 샘플: 표지부터 마무리까지 20종 템플릿](samples/previews/white-cobalt-md-to-html/overview.png)
-
 ## 설치
 
 ```sh
@@ -59,6 +55,10 @@ Copilot CLI에서 `/skills reload`를 실행하면 바로 쓸 수 있습니다.
 전체 디자인은 [Deep Navy 갤러리](skills/deep-navy-md-to-html/deck.html)와
 [White Cobalt 갤러리](skills/white-cobalt-md-to-html/deck.html)에서 볼 수 있습니다.
 맞는 템플릿이 없으면 같은 디자인 원칙으로 새 레이아웃을 만듭니다.
+
+![Deep Navy 샘플: 표지부터 마무리까지 20종 템플릿](samples/previews/deep-navy-md-to-html/overview.png)
+
+![White Cobalt 샘플: 표지부터 마무리까지 20종 템플릿](samples/previews/white-cobalt-md-to-html/overview.png)
 
 ## 요구 사항
 
