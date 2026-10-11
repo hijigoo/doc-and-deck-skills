@@ -20,12 +20,24 @@ Copilot CLI에서 `/skills reload`를 실행하면 바로 쓸 수 있습니다.
 필요하면 대상 독자·목적·다룰 내용을 덧붙이세요.
 디자인·템플릿 선택·출력 형식·단일 HTML 구성·검사는 스킬이 처리하므로 반복해서 지정할 필요가 없습니다.
 
+### Deep Navy
+
 ```text
 /deep-navy-md-to-html notes.md
-/white-cobalt-topic-to-html 개발팀을 위한 Microsoft Foundry 소개. 모델 선택, 에이전트 개발, 평가와 운영을 다뤄줘.
+/deep-navy-topic-to-html 개발팀을 위한 Microsoft Foundry 소개. 모델 선택, 에이전트 개발, 평가와 운영을 다뤄줘.
 /deep-navy-md-to-pptx notes.md
-/white-cobalt-html-to-pptx deck.html
+/deep-navy-html-to-pptx deck.html
 /deep-navy-pptx-to-html slides.pptx
+```
+
+### White Cobalt
+
+```text
+/white-cobalt-md-to-html notes.md
+/white-cobalt-topic-to-html 개발팀을 위한 Microsoft Foundry 소개. 모델 선택, 에이전트 개발, 평가와 운영을 다뤄줘.
+/white-cobalt-md-to-pptx notes.md
+/white-cobalt-html-to-pptx deck.html
+/white-cobalt-pptx-to-html slides.pptx
 ```
 
 ## 스킬
