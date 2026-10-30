@@ -1,6 +1,6 @@
 # doc-and-deck-skills
 
-Markdown 원고나 주제로 **읽는 HTML 문서와 PowerPoint**를 만드는 에이전트 스킬 10개입니다.
+Markdown 원고나 주제로 **읽는 HTML 문서와 PowerPoint**를 만드는 에이전트 스킬 11개입니다.
 디자인은 **Deep Navy**와 **White Cobalt** 두 가지이며, 각각 템플릿 20종을 제공합니다.
 
 ## 설치
@@ -40,9 +40,21 @@ Copilot CLI에서 `/skills reload`를 실행하면 바로 쓸 수 있습니다.
 /white-cobalt-pptx-to-html slides.pptx
 ```
 
+### 원본 PowerPoint → HTML
+
+```text
+/pptx-to-html "발표 자료.pptx"
+```
+
+원본 슬라이드와 발표 노트를 같은 폴더의 `발표 자료.html` 하나로 만듭니다.
+**Microsoft PowerPoint가 필수**이며 LibreOffice로 대체하지 않습니다.
+White Cobalt는 바깥 읽기 UI에만 적용하고 원본 슬라이드는 다시 디자인하지 않습니다.
+자세한 내용은 [pptx-to-html 사용 안내](skills/pptx-to-html/README.md)를 보세요.
+
 ## 스킬
 
-스킬 이름은 `<테마>-<경로>`입니다. 테마는 `deep-navy` 또는 `white-cobalt`입니다.
+테마별 스킬 10개의 이름은 `<테마>-<경로>`입니다. 테마는 `deep-navy` 또는 `white-cobalt`입니다.
+별도 원본 보존 스킬 [pptx-to-html](skills/pptx-to-html/SKILL.md)도 제공합니다.
 
 | 경로 | 입력 → 출력 | Deep Navy 샘플 | White Cobalt 샘플 |
 |---|---|---|---|
@@ -56,7 +68,8 @@ Copilot CLI에서 `/skills reload`를 실행하면 바로 쓸 수 있습니다.
 - HTML에는 목차, 장별 설명·발표 스크립트, 키보드 조작, 모바일·인쇄 화면이 포함됩니다.
 - `pptx-to-html`은 원본 슬라이드를 다시 디자인하지 않고 그대로 보존합니다.
 
-샘플은 모두 Microsoft Foundry를 주제로 만든 20장 자료입니다. 자세한 내용은 [samples/README.md](samples/README.md)를 보세요.
+기존 테마별 스킬 10개의 샘플은 Microsoft Foundry를 주제로 만든 20장 자료입니다.
+새 `pptx-to-html`의 전용 샘플은 아직 없습니다. 자세한 내용은 [samples/README.md](samples/README.md)를 보세요.
 
 ## 템플릿 20종
 
