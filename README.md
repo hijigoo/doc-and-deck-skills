@@ -52,7 +52,7 @@ Copilot CLI에서 `/skills reload`를 실행하면 바로 쓸 수 있습니다.
 White Cobalt는 바깥 읽기 UI에만 적용하고 원본 슬라이드는 다시 디자인하지 않습니다.
 슬라이드 순서·비율·제목·노트·원문 텍스트·링크를 보존하며, 목차·노트 접기·확대·인쇄를 제공합니다.
 결과는 정적 화면으로, 애니메이션·동영상·편집 가능한 슬라이드를 재현하지 않습니다.
-자세한 내용은 [pptx-to-html 사용 안내](skills/pptx-to-html/README.md)를 보세요.
+전체 작업 절차는 [pptx-to-html 스킬 지침](skills/pptx-to-html/SKILL.md)을 보세요.
 
 ## 스킬
 
@@ -69,7 +69,7 @@ White Cobalt는 바깥 읽기 UI에만 적용하고 원본 슬라이드는 다�
 
 | 별도 스킬 | 입력 → 출력 | 특징 |
 |---|---|---|
-| [pptx-to-html](skills/pptx-to-html/README.md) | PPTX → 단일 HTML | PowerPoint 직접 렌더 필수, 원본 화면·노트 보존, White Cobalt 읽기 UI |
+| [pptx-to-html](skills/pptx-to-html/SKILL.md) | PPTX → 단일 HTML | PowerPoint 직접 렌더 필수, 원본 화면·노트 보존, White Cobalt 읽기 UI |
 
 - **HTML 보기**를 클릭하면 GitHub Pages에서 바로 열립니다. HTML 결과는 폰트·이미지·스크립트를 내장한 파일 하나이며, 내려받아 오프라인으로도 볼 수 있습니다.
 - HTML에는 목차, 장별 설명·발표 스크립트, 키보드 조작, 모바일·인쇄 화면이 포함됩니다.
